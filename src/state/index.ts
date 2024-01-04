@@ -1,0 +1,76 @@
+import { createStateContext } from 'react-use'
+import useOmniSearch from './useOmniSearch'
+import useRFCTree from './useRFCTree'
+import useOmniChat from './useOmniChat'
+import useForm from './useForm'
+import useDebounce from './useDebounce'
+import useSearch from './useSearch'
+import { RFCDOCTREE } from 'src/config'
+
+export type Store = {
+  omniSearch: {
+    scopes?: string[]
+    search?: string
+    filter?: {
+      [x: string]: any
+    }
+    [x: string]: any
+  }
+  search: {
+    resultsById: {
+      [x: string]: any
+    }
+    ids: string[]
+    loading: boolean
+    [x: string]: any
+  }
+  omniChat: {
+    [x: string]: any
+  }
+  rfcDocumentTree: {
+    defaults: any[]
+    [x: string]: any
+  }
+  rfcDocumentDetail: {
+    [x: string]: any
+  }
+  settings: {
+    [x: string]: any
+  }
+}
+
+export const defaultState: Store = {
+  omniSearch: {
+    scopes: ['recents', 'bookmarked', 'global', 'tags'],
+    search: '',
+    filter: {},
+  },
+  search: {
+    resultsById: {},
+    ids: [],
+    loading: false,
+  },
+  omniChat: {
+    byCompletionId: {},
+    completions: [],
+    rfcThreadLinks: {},
+  },
+  rfcDocumentTree: {
+    defaults: RFCDOCTREE,
+  },
+  rfcDocumentDetail: {},
+  settings: {},
+}
+
+const [useStore, SharedStoreProvider] = createStateContext<Store>(defaultState)
+
+export {
+  useSearch,
+  useDebounce,
+  useForm,
+  useOmniChat,
+  useOmniSearch,
+  useRFCTree,
+  useStore,
+  SharedStoreProvider,
+}

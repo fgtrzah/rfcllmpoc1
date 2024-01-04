@@ -1,0 +1,56 @@
+[cmdk-list] {
+  min-height: 300px;
+  height: var(--cmdk-list-height);
+  max-height: 500px;
+  transition: height 100ms ease;
+  scroll-padding-block-start: 8px;
+  scroll-padding-block-end: 8px;
+}
+
+.os-dialog {
+  position: absolute;
+  top: 70px;
+  left: 180px;
+  right: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.os-input,
+.os-results {
+  padding: 8px;
+  border-radius: 6px;
+  background-color: #444;
+  border: none;
+  outline: none !important;
+  color: inherit;
+  box-shadow: 0px 0px 7px -25px rgba(0, 0, 0, 0.062), 0px 0px 16.8px -25px rgba(0, 0, 0, 0.089),
+    0px 0px 31.6px -25px rgba(0, 0, 0, 0.11), 0px 0px 56.3px -25px rgba(0, 0, 0, 0.131),
+    0px 0px 105.3px -25px rgba(0, 0, 0, 0.158), 0px 0px 252px -25px rgba(0, 0, 0, 0.22);
+  font-size: 10px;
+}
+
+.os-input input {
+  appearance: unset;
+  background: none;
+  outline: none;
+  border: none;
+  padding: 2px;
+}
+
+.os-heading {
+  font-weight: bold;
+}
+
+.os-results {
+  z-index: 9990;
+}
+
+.os-input {
+  z-index: 9999;
+}
+
+.os-results {
+  margin-top: 8px;
+}
