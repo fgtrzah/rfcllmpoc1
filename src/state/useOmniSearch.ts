@@ -8,7 +8,7 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
   const [store, dispatch] = useStore()
   const omniSearch = store.omniSearch
 
-  const handleSearch = (v: React.ChangeEvent<HTMLInputElement> | string) => {
+  const handleSearch = (v: any) => {
     dispatch({
       ...store,
       omniSearch: {
@@ -17,6 +17,7 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
       },
     })
   }
+
   const handleFilter = (v: any) => {
     dispatch({
       ...store,

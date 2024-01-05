@@ -7,6 +7,8 @@ import useDebounce from './useDebounce'
 import useSearch from './useSearch'
 import { RFCDOCTREE } from 'src/config'
 
+export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
+export type SearchResult = string[] | any
 export type Store = {
   omniSearch: {
     scopes?: string[]
@@ -18,10 +20,11 @@ export type Store = {
   }
   search: {
     resultsById: {
-      [x: string]: any
+      [x: string]: SearchResult
     }
     ids: string[]
     loading: boolean
+    channels: SearchChannel[]
     [x: string]: any
   }
   omniChat: {
@@ -49,6 +52,7 @@ export const defaultState: Store = {
     resultsById: {},
     ids: [],
     loading: false,
+    channels: ['RFC', 'Group'],
   },
   omniChat: {
     byCompletionId: {},

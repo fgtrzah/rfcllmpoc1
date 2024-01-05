@@ -1,10 +1,15 @@
 import React from 'react'
 import './Overview.css'
-import { AuthorDems, NumAPCitations, NumCitations, NumDocAuths } from '../components'
+import {
+  AuthorDems,
+  NumAPCitations,
+  NumCitations,
+  NumDocAuths,
+} from '../components'
 
 const Overview = (_props: React.PropsWithChildren) => {
   return (
-    <main style={{ paddingLeft: 50, fontSize: 8 }}>
+    <main style={{ fontSize: 8 }}>
       <section className='cf mt5 pv5 bt b--black-05 ph6-l'>
         <h1 className='f5 ttu fw6 mb4'>Overview</h1>
 

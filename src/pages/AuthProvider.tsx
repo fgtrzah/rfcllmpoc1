@@ -14,11 +14,18 @@ const queryClient = new QueryClient({
   defaultOptions: {},
 })
 
-const authContext = createContext<{ token?: Token | string | null; client?: any }>({
+const authContext = createContext<{
+  token?: Token | string | null
+  client?: any
+}>({
   token: undefined,
   client: queryClient,
 })
-export default function AuthProvider({ children }: { children: React.ReactNode }) {
+export default function AuthProvider({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   const key = import.meta.env.APICLIENTACCESSTOKEN
   const { token, error, login } = useAuth<any>()
 

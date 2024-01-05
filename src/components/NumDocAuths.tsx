@@ -1,6 +1,10 @@
 export default function NumDocAuths() {
   return (
-    <table tabIndex={-1} summary='Table representation of chart.' id='highcharts-data-table-0'>
+    <table
+      tabIndex={-1}
+      summary='Table representation of chart.'
+      id='highcharts-data-table-0'
+    >
       <caption className='highcharts-table-caption'>
         Number of document authors per country over the years
       </caption>

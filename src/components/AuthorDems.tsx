@@ -616,7 +616,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Advanced Security Division, Internet Initiative Japan</td>
+          <td className='affiliation'>
+            Advanced Security Division, Internet Initiative Japan
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -711,7 +713,9 @@ function AuthorDems() {
           <td className='count text-end'>4</td>
         </tr>
         <tr>
-          <td className='affiliation'>African Network Information Centre (AFRINIC)</td>
+          <td className='affiliation'>
+            African Network Information Centre (AFRINIC)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -826,7 +830,9 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>Airbus Defence and Space CyberSecurity</td>
+          <td className='affiliation'>
+            Airbus Defence and Space CyberSecurity
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -1316,7 +1322,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>American Registry for Internet Numbers</td>
+          <td className='affiliation'>
+            American Registry for Internet Numbers
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -1801,7 +1809,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Arrcus &amp; Internet Initiative Japan</td>
+          <td className='affiliation'>
+            Arrcus &amp; Internet Initiative Japan
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -1811,7 +1821,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Arrcus, Inc. &amp; Internet Initiative Japan</td>
+          <td className='affiliation'>
+            Arrcus, Inc. &amp; Internet Initiative Japan
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -1931,12 +1943,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Asia Pacific Network Information Centre</td>
+          <td className='affiliation'>
+            Asia Pacific Network Information Centre
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>Asia-Pacific Network Information Centre</td>
+          <td className='affiliation'>
+            Asia-Pacific Network Information Centre
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -1986,7 +2002,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Association for Progressive Communications</td>
+          <td className='affiliation'>
+            Association for Progressive Communications
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -2031,7 +2049,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>AT&amp;T Customer Information Services</td>
+          <td className='affiliation'>
+            AT&amp;T Customer Information Services
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -2371,7 +2391,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>AVIC China Aero-Polytechnology Establishment</td>
+          <td className='affiliation'>
+            AVIC China Aero-Polytechnology Establishment
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -2561,7 +2583,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>BAE Systems Advanced Technology Centre</td>
+          <td className='affiliation'>
+            BAE Systems Advanced Technology Centre
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -2841,7 +2865,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Beijing Capital Highway Development Group Co.</td>
+          <td className='affiliation'>
+            Beijing Capital Highway Development Group Co.
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -2896,7 +2922,9 @@ function AuthorDems() {
           <td className='count text-end'>5</td>
         </tr>
         <tr>
-          <td className='affiliation'>Beijing University of Post and Telecommunication</td>
+          <td className='affiliation'>
+            Beijing University of Post and Telecommunication
+          </td>
           <td className='percent text-end'>0.04%</td>
           <td className='count text-end'>5</td>
         </tr>
@@ -2911,17 +2939,23 @@ function AuthorDems() {
           <td className='count text-end'>18</td>
         </tr>
         <tr>
-          <td className='affiliation'>Beijing University of Posts and Telecommunications</td>
+          <td className='affiliation'>
+            Beijing University of Posts and Telecommunications
+          </td>
           <td className='percent text-end'>0.05%</td>
           <td className='count text-end'>7</td>
         </tr>
         <tr>
-          <td className='affiliation'>Beijing University of Posts and Telecommunications</td>
+          <td className='affiliation'>
+            Beijing University of Posts and Telecommunications
+          </td>
           <td className='percent text-end'>0.31%</td>
           <td className='count text-end'>41</td>
         </tr>
         <tr>
-          <td className='affiliation'>Beijing University of Posts and Telecommunications.</td>
+          <td className='affiliation'>
+            Beijing University of Posts and Telecommunications.
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -3816,7 +3850,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Budapest University of Technology and Economics</td>
+          <td className='affiliation'>
+            Budapest University of Technology and Economics
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4286,7 +4322,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Capital University of Science and Technology</td>
+          <td className='affiliation'>
+            Capital University of Science and Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4551,7 +4589,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Center for Information Technology Integration</td>
+          <td className='affiliation'>
+            Center for Information Technology Integration
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4626,7 +4666,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Centre for Research and Innovation Hellas</td>
+          <td className='affiliation'>
+            Centre for Research and Innovation Hellas
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4636,7 +4678,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Centre National de la Recherche Scientifique</td>
+          <td className='affiliation'>
+            Centre National de la Recherche Scientifique
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4798,7 +4842,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Changchun University of Science and Technology</td>
+          <td className='affiliation'>
+            Changchun University of Science and Technology
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -4902,7 +4948,9 @@ function AuthorDems() {
           <td className='count text-end'>10</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Academy of Information Communications Technology</td>
+          <td className='affiliation'>
+            China Academy of Information Communications Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4922,17 +4970,23 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Academy of Telecommunication Research</td>
+          <td className='affiliation'>
+            China Academy of Telecommunication Research
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Automotive Innovation Corporation</td>
+          <td className='affiliation'>
+            China Automotive Innovation Corporation
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Broadcast Mobile Network Company</td>
+          <td className='affiliation'>
+            China Broadcast Mobile Network Company
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4952,17 +5006,23 @@ function AuthorDems() {
           <td className='count text-end'>4</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Electric Power Research Institute</td>
+          <td className='affiliation'>
+            China Electric Power Research Institute
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Future Internet Engineering Center</td>
+          <td className='affiliation'>
+            China Future Internet Engineering Center
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Information Communication Technologies Group</td>
+          <td className='affiliation'>
+            China Information Communication Technologies Group
+          </td>
           <td className='percent text-end'>0.03%</td>
           <td className='count text-end'>4</td>
         </tr>
@@ -4977,7 +5037,9 @@ function AuthorDems() {
           <td className='count text-end'>133</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Mobile (Hangzhou) Information Technology Co.</td>
+          <td className='affiliation'>
+            China Mobile (Hangzhou) Information Technology Co.
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -4987,12 +5049,16 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Mobile Communication Corporation</td>
+          <td className='affiliation'>
+            China Mobile Communication Corporation
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Mobile Communications Corporation</td>
+          <td className='affiliation'>
+            China Mobile Communications Corporation
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -5017,7 +5083,9 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Mobile(Hangzhou)Information Technology Co</td>
+          <td className='affiliation'>
+            China Mobile(Hangzhou)Information Technology Co
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -5067,7 +5135,9 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>China Telecom Beijing Research Institute</td>
+          <td className='affiliation'>
+            China Telecom Beijing Research Institute
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -5397,7 +5467,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>CISPA Helmholtz Center for Information Security</td>
+          <td className='affiliation'>
+            CISPA Helmholtz Center for Information Security
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -5832,7 +5904,9 @@ function AuthorDems() {
           <td className='count text-end'>6</td>
         </tr>
         <tr>
-          <td className='affiliation'>Columbia U./Siemens/U. Goettingen/Siemens</td>
+          <td className='affiliation'>
+            Columbia U./Siemens/U. Goettingen/Siemens
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -5977,7 +6051,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>ComNets, Hamburg University of Technology</td>
+          <td className='affiliation'>
+            ComNets, Hamburg University of Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -6072,7 +6148,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Computer Incident Response Center Luxembourg</td>
+          <td className='affiliation'>
+            Computer Incident Response Center Luxembourg
+          </td>
           <td className='percent text-end'>0.03%</td>
           <td className='count text-end'>4</td>
         </tr>
@@ -6254,7 +6332,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Consiglio Nazionale delle Ricerche (CNR)</td>
+          <td className='affiliation'>
+            Consiglio Nazionale delle Ricerche (CNR)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -6264,7 +6344,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Consortium of Cloud Computing Research</td>
+          <td className='affiliation'>
+            Consortium of Cloud Computing Research
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -6459,7 +6541,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Corporation for National Research Initiatives</td>
+          <td className='affiliation'>
+            Corporation for National Research Initiatives
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -6909,7 +6993,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Cybersecurity &amp; Privacy Senior Consultant</td>
+          <td className='affiliation'>
+            Cybersecurity &amp; Privacy Senior Consultant
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -7054,7 +7140,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>DACS group, EEMCS, University of Twente</td>
+          <td className='affiliation'>
+            DACS group, EEMCS, University of Twente
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -7464,7 +7552,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Department of Computer Science and Engineering</td>
+          <td className='affiliation'>
+            Department of Computer Science and Engineering
+          </td>
           <td className='percent text-end'>0.04%</td>
           <td className='count text-end'>5</td>
         </tr>
@@ -7474,12 +7564,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Department of Electical and Computer Engineering</td>
+          <td className='affiliation'>
+            Department of Electical and Computer Engineering
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Department of Electrical and Computer Engineering</td>
+          <td className='affiliation'>
+            Department of Electrical and Computer Engineering
+          </td>
           <td className='percent text-end'>0.04%</td>
           <td className='count text-end'>5</td>
         </tr>
@@ -7546,7 +7640,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>deSEC, SSE - Secure Systems Engineering</td>
+          <td className='affiliation'>
+            deSEC, SSE - Secure Systems Engineering
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -7607,7 +7703,8 @@ function AuthorDems() {
         </tr>
         <tr>
           <td className='affiliation'>
-            Deutsches Forschungsnetz | German National Research and Education Network
+            Deutsches Forschungsnetz | German National Research and Education
+            Network
           </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
@@ -7763,7 +7860,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Digital Railway (DSD) at Deutsche Bahn</td>
+          <td className='affiliation'>
+            Digital Railway (DSD) at Deutsche Bahn
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -7783,7 +7882,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Digital Transformation Department, Italian Government</td>
+          <td className='affiliation'>
+            Digital Transformation Department, Italian Government
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -7828,7 +7929,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Dipartimento per la trasformazione digitale</td>
+          <td className='affiliation'>
+            Dipartimento per la trasformazione digitale
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -7838,7 +7941,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Directory Tools and Application Services</td>
+          <td className='affiliation'>
+            Directory Tools and Application Services
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -8138,7 +8243,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>draft-nakhjiri-seamoby-ppp-ct-00.txt Motorola</td>
+          <td className='affiliation'>
+            draft-nakhjiri-seamoby-ppp-ct-00.txt Motorola
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -8268,7 +8375,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>DVB Digital Video Broadcasting Project</td>
+          <td className='affiliation'>
+            DVB Digital Video Broadcasting Project
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -8328,7 +8437,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>EADS Defence and Security Systems Limited</td>
+          <td className='affiliation'>
+            EADS Defence and Security Systems Limited
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -8478,7 +8589,9 @@ function AuthorDems() {
           <td className='count text-end'>4</td>
         </tr>
         <tr>
-          <td className='affiliation'>Edinburgh University Computing Service</td>
+          <td className='affiliation'>
+            Edinburgh University Computing Service
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -8663,7 +8776,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Electronics and Telecommunications Research Institute</td>
+          <td className='affiliation'>
+            Electronics and Telecommunications Research Institute
+          </td>
           <td className='percent text-end'>0.08%</td>
           <td className='count text-end'>10</td>
         </tr>
@@ -8838,7 +8953,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Endress + Hauser Liquid Analysis - Gerlingen</td>
+          <td className='affiliation'>
+            Endress + Hauser Liquid Analysis - Gerlingen
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -9398,7 +9515,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>European Telecommunication Standards Institute</td>
+          <td className='affiliation'>
+            European Telecommunication Standards Institute
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -9703,12 +9822,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Federal University of Rio Grande do Sul</td>
+          <td className='affiliation'>
+            Federal University of Rio Grande do Sul
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Federal University of Rio Grande do Sul (UFRGS)</td>
+          <td className='affiliation'>
+            Federal University of Rio Grande do Sul (UFRGS)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -9918,7 +10041,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Fondation Restena | Restena Foundation</td>
+          <td className='affiliation'>
+            Fondation Restena | Restena Foundation
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -10135,7 +10260,9 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>Fraunhofer Institute for Secure Information Technology</td>
+          <td className='affiliation'>
+            Fraunhofer Institute for Secure Information Technology
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -10260,12 +10387,16 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Friedrich-Alexander Universitaet Erlangen-Nuernberg</td>
+          <td className='affiliation'>
+            Friedrich-Alexander Universitaet Erlangen-Nuernberg
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Friedrich-Alexander-Universität Erlangen-Nürnberg</td>
+          <td className='affiliation'>
+            Friedrich-Alexander-Universität Erlangen-Nürnberg
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -11045,7 +11176,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Golisano College of Computing and Information Sciences</td>
+          <td className='affiliation'>
+            Golisano College of Computing and Information Sciences
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -11352,7 +11485,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Gunnar Hellstrom Accessible Communication</td>
+          <td className='affiliation'>
+            Gunnar Hellstrom Accessible Communication
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -11719,7 +11854,9 @@ function AuthorDems() {
           <td className='count text-end'>7</td>
         </tr>
         <tr>
-          <td className='affiliation'>Helsinki Institute for Information Technology</td>
+          <td className='affiliation'>
+            Helsinki Institute for Information Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -11859,7 +11996,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>HFT Stuttgart - Univ. of Applied Sciences</td>
+          <td className='affiliation'>
+            HFT Stuttgart - Univ. of Applied Sciences
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -11979,7 +12118,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Hitachi (China) Research and Development Corporation</td>
+          <td className='affiliation'>
+            Hitachi (China) Research and Development Corporation
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -12019,7 +12160,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>HK University of Science and Technology</td>
+          <td className='affiliation'>
+            HK University of Science and Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -12064,12 +12207,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Hochschule Esslingen - University of Applied Sciences</td>
+          <td className='affiliation'>
+            Hochschule Esslingen - University of Applied Sciences
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Hochschule Esslingen - University of Applied Sciences</td>
+          <td className='affiliation'>
+            Hochschule Esslingen - University of Applied Sciences
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -12089,7 +12236,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Hong Kong University of Science and Technology</td>
+          <td className='affiliation'>
+            Hong Kong University of Science and Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -12511,7 +12660,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Huazhong University of Science and Technology</td>
+          <td className='affiliation'>
+            Huazhong University of Science and Technology
+          </td>
           <td className='percent text-end'>0.04%</td>
           <td className='count text-end'>5</td>
         </tr>
@@ -13506,12 +13657,16 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>INESC-ID, Instituto Superior Tecnico, MIT</td>
+          <td className='affiliation'>
+            INESC-ID, Instituto Superior Tecnico, MIT
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>INESC-ID, Instituto Superior Tentity-valuecnico</td>
+          <td className='affiliation'>
+            INESC-ID, Instituto Superior Tentity-valuecnico
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -13881,7 +14036,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Institut MINES TELECOM ; IMT Atlantique</td>
+          <td className='affiliation'>
+            Institut MINES TELECOM ; IMT Atlantique
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -13891,22 +14048,30 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Institut Mines Telecom-Telecom Bretagne</td>
+          <td className='affiliation'>
+            Institut Mines Telecom-Telecom Bretagne
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Institut Mines Telecom-Telecom Sud Paris</td>
+          <td className='affiliation'>
+            Institut Mines Telecom-Telecom Sud Paris
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Institut MINES TELECOM; IMT Atlantique</td>
+          <td className='affiliation'>
+            Institut MINES TELECOM; IMT Atlantique
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Institut MINES TELECOM; IMT-Atlantique</td>
+          <td className='affiliation'>
+            Institut MINES TELECOM; IMT-Atlantique
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -13916,7 +14081,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Institut National des Telecommunications</td>
+          <td className='affiliation'>
+            Institut National des Telecommunications
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -14017,7 +14184,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Instituto Superior de Engenharia do Porto</td>
+          <td className='affiliation'>
+            Instituto Superior de Engenharia do Porto
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -14297,7 +14466,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Internet Corporation for Assigned Names and Numbers</td>
+          <td className='affiliation'>
+            Internet Corporation for Assigned Names and Numbers
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -14327,7 +14498,9 @@ function AuthorDems() {
           <td className='count text-end'>6</td>
         </tr>
         <tr>
-          <td className='affiliation'>Internet Initiative Japan &amp; Arrcus</td>
+          <td className='affiliation'>
+            Internet Initiative Japan &amp; Arrcus
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -14347,7 +14520,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Internet Neutral Exchange Association CLG</td>
+          <td className='affiliation'>
+            Internet Neutral Exchange Association CLG
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -15282,7 +15457,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Japan Electronic Publishing Association</td>
+          <td className='affiliation'>
+            Japan Electronic Publishing Association
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -15582,7 +15759,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Johns Hopkins Applied Physics Laboratory</td>
+          <td className='affiliation'>
+            Johns Hopkins Applied Physics Laboratory
+          </td>
           <td className='percent text-end'>0.04%</td>
           <td className='count text-end'>5</td>
         </tr>
@@ -15607,12 +15786,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Johns Hopkins University Applied Physics Lab</td>
+          <td className='affiliation'>
+            Johns Hopkins University Applied Physics Lab
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Johns Hopkins University Applied Physics Laboratory</td>
+          <td className='affiliation'>
+            Johns Hopkins University Applied Physics Laboratory
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -15867,7 +16050,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Karlsruhe Institute of Technology (KIT)</td>
+          <td className='affiliation'>
+            Karlsruhe Institute of Technology (KIT)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -16192,7 +16377,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Korea Electronics Technology Institute</td>
+          <td className='affiliation'>
+            Korea Electronics Technology Institute
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -16557,7 +16744,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Latin American and Caribbean IP Address Regional Registry</td>
+          <td className='affiliation'>
+            Latin American and Caribbean IP Address Regional Registry
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -17167,7 +17356,9 @@ function AuthorDems() {
           <td className='count text-end'>4</td>
         </tr>
         <tr>
-          <td className='affiliation'>Lucent Technologies Microelectronics Group</td>
+          <td className='affiliation'>
+            Lucent Technologies Microelectronics Group
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -17217,7 +17408,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Lulea University of Technology/Telia Research AB</td>
+          <td className='affiliation'>
+            Lulea University of Technology/Telia Research AB
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -17267,7 +17460,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Luxembourg Institute of Science and Technology</td>
+          <td className='affiliation'>
+            Luxembourg Institute of Science and Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -18192,7 +18387,9 @@ function AuthorDems() {
           <td className='count text-end'>20</td>
         </tr>
         <tr>
-          <td className='affiliation'>MIT Artificial Intelligence Laboratory</td>
+          <td className='affiliation'>
+            MIT Artificial Intelligence Laboratory
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -18282,7 +18479,9 @@ function AuthorDems() {
           <td className='count text-end'>6</td>
         </tr>
         <tr>
-          <td className='affiliation'>Mitsubishi Electric Research Laboratories</td>
+          <td className='affiliation'>
+            Mitsubishi Electric Research Laboratories
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -18407,7 +18606,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Mongolian University of Science and Technology</td>
+          <td className='affiliation'>
+            Mongolian University of Science and Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -18622,7 +18823,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Muenster University of Applied Sciences</td>
+          <td className='affiliation'>
+            Muenster University of Applied Sciences
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -18677,7 +18880,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Münster University of Applied Sciences</td>
+          <td className='affiliation'>
+            Münster University of Applied Sciences
+          </td>
           <td className='percent text-end'>0.03%</td>
           <td className='count text-end'>4</td>
         </tr>
@@ -18742,7 +18947,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Namibian Network Information Center (Pty)</td>
+          <td className='affiliation'>
+            Namibian Network Information Center (Pty)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -18767,7 +18974,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Nanjing University of Posts and Telecommunications</td>
+          <td className='affiliation'>
+            Nanjing University of Posts and Telecommunications
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -18897,7 +19106,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>National Center for Supercomputing Applications</td>
+          <td className='affiliation'>
+            National Center for Supercomputing Applications
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -18953,7 +19164,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>National Institute of Standards and Technology</td>
+          <td className='affiliation'>
+            National Institute of Standards and Technology
+          </td>
           <td className='percent text-end'>0.05%</td>
           <td className='count text-end'>6</td>
         </tr>
@@ -18968,7 +19181,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>National Internet Exchange of India (NIXI)</td>
+          <td className='affiliation'>
+            National Internet Exchange of India (NIXI)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -19035,7 +19250,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Naval Information Warfare Center Pacific</td>
+          <td className='affiliation'>
+            Naval Information Warfare Center Pacific
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -20060,7 +20277,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Nippon Telegraph and Telephone Corporation</td>
+          <td className='affiliation'>
+            Nippon Telegraph and Telephone Corporation
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -21695,7 +21914,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Ostfalia University of Applied Sciences</td>
+          <td className='affiliation'>
+            Ostfalia University of Applied Sciences
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -22325,7 +22546,9 @@ function AuthorDems() {
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Physikalisch-Technische Bundesanstalt (PTB)</td>
+          <td className='affiliation'>
+            Physikalisch-Technische Bundesanstalt (PTB)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -22705,7 +22928,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Preferred Networks, Inc. / WIDE Project</td>
+          <td className='affiliation'>
+            Preferred Networks, Inc. / WIDE Project
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -23245,7 +23470,9 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>QuTech, Delft University of Technology</td>
+          <td className='affiliation'>
+            QuTech, Delft University of Technology
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -23790,7 +24017,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Research Institute of Tsinghua University in Shenzhen</td>
+          <td className='affiliation'>
+            Research Institute of Tsinghua University in Shenzhen
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -24015,7 +24244,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Riphah Institute of Systems Engineering</td>
+          <td className='affiliation'>
+            Riphah Institute of Systems Engineering
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
@@ -24895,7 +25126,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>School of Communication and and Information Engineering</td>
+          <td className='affiliation'>
+            School of Communication and and Information Engineering
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -25002,7 +25235,9 @@ function AuthorDems() {
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>SECOM Co., Ltd. Intelligent System Laboratory</td>
+          <td className='affiliation'>
+            SECOM Co., Ltd. Intelligent System Laboratory
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -25397,7 +25632,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Shenzhen Institute of Information Technology</td>
+          <td className='affiliation'>
+            Shenzhen Institute of Information Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -25742,7 +25979,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Simula Metropolitan Centre for Digital Engineering</td>
+          <td className='affiliation'>
+            Simula Metropolitan Centre for Digital Engineering
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -26497,7 +26736,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Special Research Centre for Optical Internet and</td>
+          <td className='affiliation'>
+            Special Research Centre for Optical Internet and
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -26747,7 +26988,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Standards &amp; Open Source Research Division</td>
+          <td className='affiliation'>
+            Standards &amp; Open Source Research Division
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -26882,7 +27125,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Stichting Internet Domeinregistratie Nederland</td>
+          <td className='affiliation'>
+            Stichting Internet Domeinregistratie Nederland
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -27237,7 +27482,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Swedish Defence Material Administration (FMV)</td>
+          <td className='affiliation'>
+            Swedish Defence Material Administration (FMV)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -28627,12 +28874,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>The Johns Hopkins University Applied Physics Laboratory</td>
+          <td className='affiliation'>
+            The Johns Hopkins University Applied Physics Laboratory
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>3</td>
         </tr>
         <tr>
-          <td className='affiliation'>The Johns Hopkins University Applied Physics Laboratory</td>
+          <td className='affiliation'>
+            The Johns Hopkins University Applied Physics Laboratory
+          </td>
           <td className='percent text-end'>0.03%</td>
           <td className='count text-end'>4</td>
         </tr>
@@ -29157,7 +29408,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>Tokyo University of Agriculture and Technology</td>
+          <td className='affiliation'>
+            Tokyo University of Agriculture and Technology
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -30184,7 +30437,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>UK Dept. for Science, Innovation &amp; Technology</td>
+          <td className='affiliation'>
+            UK Dept. for Science, Innovation &amp; Technology
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
@@ -30469,7 +30724,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>United States National Security Agency</td>
+          <td className='affiliation'>
+            United States National Security Agency
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -30869,12 +31126,16 @@ function AuthorDems() {
           <td className='count text-end'>8</td>
         </tr>
         <tr>
-          <td className='affiliation'>Universitat Politecnica de Catalunya/Fundacio i2CAT</td>
+          <td className='affiliation'>
+            Universitat Politecnica de Catalunya/Fundacio i2CAT
+          </td>
           <td className='percent text-end'>0.02%</td>
           <td className='count text-end'>2</td>
         </tr>
         <tr>
-          <td className='affiliation'>Universitat Politecnica de Catalunya/i2CAT</td>
+          <td className='affiliation'>
+            Universitat Politecnica de Catalunya/i2CAT
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -30944,7 +31205,9 @@ function AuthorDems() {
           <td className='count text-end'>19</td>
         </tr>
         <tr>
-          <td className='affiliation'>University Computing Centre, University of Zagreb (SRCE)</td>
+          <td className='affiliation'>
+            University Computing Centre, University of Zagreb (SRCE)
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -30954,7 +31217,9 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>University for Applied Sciences Munich</td>
+          <td className='affiliation'>
+            University for Applied Sciences Munich
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -31006,17 +31271,23 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Applied Sciences Augsburg</td>
+          <td className='affiliation'>
+            University of Applied Sciences Augsburg
+          </td>
           <td className='percent text-end'>0.03%</td>
           <td className='count text-end'>4</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Applied Sciences Darmstadt</td>
+          <td className='affiliation'>
+            University of Applied Sciences Darmstadt
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Applied Sciences Emden/Leer</td>
+          <td className='affiliation'>
+            University of Applied Sciences Emden/Leer
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -31106,7 +31377,9 @@ function AuthorDems() {
           <td className='count text-end'>11</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Cambridge Computing Service</td>
+          <td className='affiliation'>
+            University of Cambridge Computing Service
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -31205,7 +31478,9 @@ function AuthorDems() {
           <td className='count text-end'>5</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Electronic Science and Technology of China</td>
+          <td className='affiliation'>
+            University of Electronic Science and Technology of China
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -31275,12 +31550,16 @@ function AuthorDems() {
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Haifa and Amazon Web Services</td>
+          <td className='affiliation'>
+            University of Haifa and Amazon Web Services
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
         <tr>
-          <td className='affiliation'>University of Haifa and Intel Corporation</td>
+          <td className='affiliation'>
+            University of Haifa and Intel Corporation
+          </td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>
@@ -31421,2863 +31700,6 @@ function AuthorDems() {
         </tr>
         <tr>
           <td className='affiliation'>University of Memphis</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Michigan</td>
-          <td className='percent text-end'>0.06%</td>
-          <td className='count text-end'>8</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Michigan Library IT</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Milan</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Minnesota</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Mons (UMONS)</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Montenegro</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Murcia</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>11</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Namur</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Nantes</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Naples Federico II</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Napoli</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Nebraska, Omaha</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Nebraska-Lincoln</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of New South Wales</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of New Hampshire</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>
-            University of New Hampshire, Interoperability Lab (UNH-IOL)
-          </td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of New Mexico</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of New South Wales</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Newcastle</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Newcastle upon Tyne</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of North Texas</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Notre Dame</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Novi Sad</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oregon</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oregon/Cisco Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oslo</td>
-          <td className='percent text-end'>0.07%</td>
-          <td className='count text-end'>9</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Osnabrueck</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Ottawa</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oulou</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oulu</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>7</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oviedo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Oxford</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Paderborn</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Padova</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Palermo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Paris-Diderot</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Patras</td>
-          <td className='percent text-end'>0.06%</td>
-          <td className='count text-end'>8</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Pennsylvania</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Perugia</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Piraeus</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Pisa</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University Of Plymouth</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Portsmouth</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Quebec in Montreal</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Reggio Calabria</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Rome Tor Vergata</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Rostock</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Salford</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Salzburg</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Science and</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Seoul</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of South Florida</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Southampton</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Southern California</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Southern California/ISI</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Split</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of St Andrews</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of St. Andrews</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Stirling</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Strathclyde</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Stuttgart</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Surrey</td>
-          <td className='percent text-end'>0.07%</td>
-          <td className='count text-end'>9</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Surrey 5/6GIC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Surrey 5GIC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Surrey ICS</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Surrey ISC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Sussex</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Suwon</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Tennessee</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Texas</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Texas at Austin</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Texas at Dallas</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of the Western Cape</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Tokyo</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Toronto</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Trento</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Tuebingen</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>11</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Twente</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>10</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Twente/Ericsson</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Ulm</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Utah</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Utrecht</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Vale do Rio dos Sinos</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of WA</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Warsaw</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Washington</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>10</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Waterloo</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Waterloo, Zcash Foundation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Wisconsin</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Wisconsin Milwaukee</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Wuerzburg</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Wurzburg</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of York</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Zagreb</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Zaragoza</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Zilina</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University of Zurich</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University Politehnica of Bucharest</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>University Tor Vergata</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Universität Bremen</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Universität Bremen TZI</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Université catholique de Louvain</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Université de Liège</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Université de Montréal</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Université Paris-Saclay, CEA, LIST</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Unix-AG Universitaet Hannover</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UNL</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UNLP Argentina</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UnrealIRCd</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UNSW</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UNSW Sydney</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UO</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UoG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPB</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPC</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPC-BarcelonaTech</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPC/BarcelonaTech</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPC/i2CAT</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPenn</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPM</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPMC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Uppsala University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Upsec</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPV</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UPVLC</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UQAM University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Army</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Army CERDEC</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Bank</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Cellular</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Geological Survey</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Ignite</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Naval Research Laboratory</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US NIST</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Robotics</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US Robotics Access Corp.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>US VRS Providers</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USA National Institute of Standards and Technology</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USA NIST</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USAA</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USC</td>
-          <td className='percent text-end'>0.09%</td>
-          <td className='count text-end'>12</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USC Information Sciences Institute</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USC-ISI</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USC/Information Sciences</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USC/Information Sciences Institute</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USC/ISI</td>
-          <td className='percent text-end'>0.18%</td>
-          <td className='count text-end'>23</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USCERT</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USCL</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Users</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UST Global</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>USTC</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>7</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Utah State University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Utah Valley State College</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTD</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTexas</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Utfors AB</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTFPR, Brazil</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Utimaco IS</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTN FRH</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTN-FRM/Aalto</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTN/FRH</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTokyo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UtopiaCompression Corporation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Utrecht University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UTStarcom</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UUNET</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>7</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UUNET (MCI Worldcom)</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UUNET Technologies</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UUNET/WorldCom</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>UWisc-Mad</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>V. Heinau</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>V. Hilt</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>V. Narayanan</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>V. Paxson</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>V434 Project</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VA</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VA Linux Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VAF.NET Internet Consulting</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vail Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ValiCert</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Valimail</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vallona</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Van Dyke Technologies</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vancouver Webpages</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>vanderstok consultancy</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VanDyke Software</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>vArmour</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Varsa Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vasco</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vasona Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vaughan Enterprises</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VB NetConsult</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vecima</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Velocix</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Velocix (Alcatel-Lucent)</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Venafi</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vencore Labs</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Venkitaraman</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Venture Cryptography.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Veraz Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Veridify Security</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verilink</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verio</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VeriSign</td>
-          <td className='percent text-end'>0.34%</td>
-          <td className='count text-end'>45</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verisign Labs</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>11</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verismart Software</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verison</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verison Business</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verivue</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verivue, Inc.</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Veriwave</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon</td>
-          <td className='percent text-end'>0.36%</td>
-          <td className='count text-end'>47</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Business</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Business Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Communications</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>10</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Communications Inc. (VZ)</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Federal Network Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Internet Services</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Laboratories</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Labs</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Media</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon Wireless</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verizon/NASA GRC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Versa Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Versatica</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vertical Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verve</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verve Interactive Pty</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Veryx Technologies</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Verzion Global Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vesa Torvinen</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VESvault Corp</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VGEC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vi</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Viagenie</td>
-          <td className='percent text-end'>0.06%</td>
-          <td className='count text-end'>8</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Viagenie/SANA</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Viasat</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Viataal</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ViaThinkSoft</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vibrant Solutions</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Victoria University of Wellington</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Video Services Forum</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VideoLAN project</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VideoServer Corp.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Videotron</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Videotron G.P.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vidiator Technology US</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vidyo</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vienna University of Technology</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vieo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vigil Security</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vigil Securiy</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vigilsec</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Villamicro</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Villanova University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vinca Corporation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vinci Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VineGen</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>vIPtela</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Virata Corporation</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Virgin Media</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Virginia Tech</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Viris</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Virtu</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>virtual-presence.org</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Virtualized</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vishal Sharma</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Visionist</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VisionTech</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vitesse</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vivace Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vivaldi Technologies AS</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vixie Enterprises</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>vLine</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VMware</td>
-          <td className='percent text-end'>0.26%</td>
-          <td className='count text-end'>34</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VN Telecom Consultancy</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VOCAL Technologies</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vocoder Speech Qualcomm</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>vocTone</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodafone</td>
-          <td className='percent text-end'>0.12%</td>
-          <td className='count text-end'>16</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodafone D2</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodafone Espana</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodafone Group</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodafone Group Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VODAFONE SPAIN</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodaphone</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vodaphone Airtouch</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Voicetronix</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VoIP.co.uk</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VOIPFUTURE</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vollbrecht Consulting</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Volta</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Volta Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Voltage Security</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Voxeo</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Voxpath Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VPN Consortium</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VPNC</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VPNet Technologies</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vrije Universiteit Amsterdam</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vrije Universiteit Brussel</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Vrizon</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VSS Monitoring</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VT iDirect</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VTT Electronics</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VTT Technical Research Centre of</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>VTT Technical Research Centre of Finland</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W. Adamson</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W. Britto</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W. Diss</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W. Polk</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W. Townsley</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>w. Zhang</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C</td>
-          <td className='percent text-end'>0.12%</td>
-          <td className='count text-end'>16</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C CEO</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C URI Interest Group</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/Canon</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/INRIA</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/INRIA/MIT</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/Keio University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/MIT</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/MIT/UNIVE</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>W3C/Volantis</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wachovia</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Waikato University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WAIS</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wall Data</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wampumpeag</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wang Laboratories</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Waseda University</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Washington State University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Washington University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WaterCove Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WaterSprings.ORG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Watsen Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Watteco.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Web3D Consortium</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>webMethods</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WebPKI.org</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>webrtchacks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Webster Computer</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Webstorage</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Webtide</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WebTV Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>webwasher AG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>webwasher.com</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WebWeaving</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WebWeaving Internet Engineering</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wei Li</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wei Sun</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Well-Typed</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wellcome Sanger Institute</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wellfleet</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wellfleet Communications</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wells Fargo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wellstorm Development</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wenzhou-Kean University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Werk Mikro Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Werner Management Services e.U.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wes Rishel Consulting</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Western Mining Company Limited</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WeSync.com</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WG Chair</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WGSI, A Getronics Company</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WHOI</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wi-SUN Alliance</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WiChorus</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wickr</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WIDE</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WIDE and INRIA</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WIDE at Keio University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WIDE Project</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>7</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WIDE Project and INRIA</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wild Packets</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wildbear Consulting</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>William A. Simpson</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WilmerHale</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wind River</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wind River Systems</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Windriver</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Windrock</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Windy Hill Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wingaa</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WINGS</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wink Communications</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WINLAB, Rutgers University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Winterb Consulting Services</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wipro Limited</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wipro Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wipro Technologies</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>7</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wire</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wireless Broadband Alliance</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wireless Network Laboratory</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wireless Telcom Consultant</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wireshark Foundation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wirtschaftsuniversitaet</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wissenschaftszentrum Berlin</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WJR Consulting</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WMN Research Group</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WMN Research Group, Kingston University London</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WMware</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wonder Hamster</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wonder Hamster Internetworking</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Word to the Wise</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Workday Incorporated</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WorkingCode</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Workonline</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Workonline Communications</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>World Wide Web Consortium</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WorldCom</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>10</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WorldCom Advanced Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Worldcom/Jet Propulsion Laboratory</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WorldGate Communications</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Worldsensing</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Worldtalk</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Woven Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wroclaw University of Technology</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WRQ</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WU-FTPD Development Group</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>WU-Wien</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Wuxi Institute of Technology</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>www.sutton-signwriting.io</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>X-OBI</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>X. Li</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>X. W. Zhou</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>X. Wang</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>X.N.Miao</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XACCT Technologies</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xapiens Corporation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xavient</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xbind</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xcert</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XConnect</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XConnect Global Networks</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xebeo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xebeo Communications</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xedia Corp.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xelerance</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xerox</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xerox Corp.</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xerox Corporation</td>
-          <td className='percent text-end'>0.14%</td>
-          <td className='count text-end'>19</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xerox Palo Alto Research Center</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xerox PARC</td>
-          <td className='percent text-end'>0.06%</td>
-          <td className='count text-end'>8</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xerox PARC/MIT LCS</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xi'an Jiaotong University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiamen University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xian Jiaotong University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xian-wei Zhou</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiao-Hua Chen</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiao-Ming Guang</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiaofeng Xu</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XiaoPeng Yang</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiaoqian Li</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xidian Univ.</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xidian University</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>10</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xilinx</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiph</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiph.Org</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xiph.Org Foundation</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XIson</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XJTU</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XL Axiata</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XMLgrrl.com</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XMPP Standards Foundation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xoriant Corporation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XSF</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>XtraTelecom S.A.</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xunlei network</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xura</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>xxx</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xylogics</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xyplex</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xythos</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Xythos Software</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>xyzzy</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Y&amp;D ISG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Y-H. Choi</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Y. Jiang</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Y. Yang</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Y.Bo</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Y.P.Zhu</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yahoo</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>10</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yahoo!</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yakov Rekhter</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yale</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yale University</td>
-          <td className='percent text-end'>0.10%</td>
-          <td className='count text-end'>13</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yandex</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yanzi Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yanzi Networks AB</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YAS Corporation</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YAuth.JP</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YES Europe AG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>yes.com</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YES.com AG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YFS</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YingChun Xu</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YoGoKo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yokogawa Electric Corp.</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>7</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yokogawa Electric Corporation</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yong Xue UUNet/WorldCom</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yong-Jin Kim</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yorktown Museum of Asian Art</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yoyodyne</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YRP Ubiquitous Networking Lab</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yubico</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>YumaWorks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yunqi Academy</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yuzo Taenaka</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Yves T'Joens</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. Lei</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. Li</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. M. Cheng</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. Wang</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. Xie</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. Zhang</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z. Zhuang</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Z2 Sagl</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zaffire</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zalando SE</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zambeel</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zarlink</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zarlink Semiconductor</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zayed University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zcash Foundation</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZDNS</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zebra Technologies</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zededa</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zelestra</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zensys</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zephyr Development</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>zev.net</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZF Friedrichshafen AG</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zfone Project</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhejiang Gongshang Univ.</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhejiang Gongshang University</td>
-          <td className='percent text-end'>0.08%</td>
-          <td className='count text-end'>11</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhejiang University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhejiang University of Technology</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhengzhou Institute of Information</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhengzhou University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhi-Wei Yan</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhone Technologies</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhongguancun Laboratory</td>
-          <td className='percent text-end'>0.06%</td>
-          <td className='count text-end'>8</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zhongshan University</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zimbra</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zink Magical Contraptions</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>zkSecurity</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZmartZone IAM</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Znyx</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZNYX Networks</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zocalo</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zolera</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zolera Systems</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZST University</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE</td>
-          <td className='percent text-end'>0.56%</td>
-          <td className='count text-end'>73</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corporation</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>2</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Company</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corp</td>
-          <td className='percent text-end'>0.03%</td>
-          <td className='count text-end'>4</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corp.</td>
-          <td className='percent text-end'>0.11%</td>
-          <td className='count text-end'>14</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corpoporation</td>
-          <td className='percent text-end'>0.10%</td>
-          <td className='count text-end'>13</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corporation</td>
-          <td className='percent text-end'>1.24%</td>
-          <td className='count text-end'>163</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corporation P.R.China</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Corporation.</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE Inc., ZTE Plaza</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE TX</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE USA</td>
-          <td className='percent text-end'>0.05%</td>
-          <td className='count text-end'>6</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>ZTE/ENST Paris</td>
-          <td className='percent text-end'>0.01%</td>
-          <td className='count text-end'>1</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zyfer</td>
-          <td className='percent text-end'>0.04%</td>
-          <td className='count text-end'>5</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>Zynga</td>
-          <td className='percent text-end'>0.02%</td>
-          <td className='count text-end'>3</td>
-        </tr>
-        <tr>
-          <td className='affiliation'>École nationale des Chartes</td>
           <td className='percent text-end'>0.01%</td>
           <td className='count text-end'>1</td>
         </tr>

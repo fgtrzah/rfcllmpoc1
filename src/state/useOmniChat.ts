@@ -30,7 +30,9 @@ const useOmniChat = () => {
     }
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
 
-    let res = await (await fetch(`${RFCLLMEP}/qa/single/contigious`, requestOptions)).json()
+    let res = await (
+      await fetch(`${RFCLLMEP}/qa/single/contigious`, requestOptions)
+    ).json()
 
     if (!import.meta.env.PROD) {
       res = {
@@ -95,7 +97,8 @@ const useOmniChat = () => {
           email: 'johndoe@example.com',
           full_name: 'John Doe',
           disabled: false,
-          hashed_password: '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW',
+          hashed_password:
+            '$2b$12$EixZaYVK1fsbw1ZfbX3OXePaWxn96p36WQoeG6Lruj3vjPGga31lW',
         },
       }
     }

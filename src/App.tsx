@@ -1,12 +1,20 @@
 import {
   BodyContainer,
+  HomeIcon,
   Navigation,
   OmniSearch,
   ProfileIcon,
   SearchIcon,
   SettingsIcon,
 } from './components'
-import { NoMatch, Overview, Profile, Search, SearchResultDetail, Settings } from './pages'
+import {
+  NoMatch,
+  Overview,
+  Profile,
+  Search,
+  SearchResultDetail,
+  Settings,
+} from './pages'
 import { Route, Routes } from 'react-router'
 import './App.css'
 import { useAuth } from './api/rfcllmapiComponents'
@@ -16,13 +24,34 @@ function App() {
   const navProps = {
     links: {
       top: [
-        { to: '#', text: 'Data Tracker', onClick: (e: any) => console.log(e.target.value) },
-        { to: 'about', text: 'About', onClick: (e: any) => console.log(e.target.value) },
-        { to: '#', text: 'Docs', onClick: (e: any) => console.log(e.target.value) },
-        { to: '#', text: 'GitHub', onClick: (e: any) => console.log(e.target.value) },
+        {
+          to: '#',
+          text: 'Data Tracker',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: 'about',
+          text: 'About',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: '#',
+          text: 'Docs',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: '#',
+          text: 'GitHub',
+          onClick: (e: any) => console.log(e.target.value),
+        },
         { to: '#', flush: true, text: 'Logout', onClick: () => logout() },
       ],
       left: [
+        {
+          to: '/',
+          children: <HomeIcon />,
+          onClick: (e: any) => console.log(e.target.value),
+        },
         {
           to: 'profile',
           children: <ProfileIcon />,

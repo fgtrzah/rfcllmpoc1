@@ -2,10 +2,10 @@ const SidebarIcon = () => {
   return (
     <svg
       viewBox='0 0 22 22'
-      width={17}
-      height={17}
+      width={16}
+      height={16}
       stroke='currentColor'
-      strokeWidth='1.4'
+      strokeWidth={2}
       fill='none'
       strokeLinecap='round'
       strokeLinejoin='round'

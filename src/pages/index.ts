@@ -7,4 +7,13 @@ import NoMatch from './NoMatch'
 import Settings from './Settings'
 import Profile from './Profile'
 
-export { Overview, About, AuthProvider, NoMatch, Search, SearchResultDetail, Settings, Profile }
+export {
+  Overview,
+  About,
+  AuthProvider,
+  NoMatch,
+  Search,
+  SearchResultDetail,
+  Settings,
+  Profile,
+}

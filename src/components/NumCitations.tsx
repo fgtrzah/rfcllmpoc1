@@ -1,6 +1,10 @@
 export default function NumCitations() {
   return (
-    <table tabIndex={-1} summary='Table representation of chart.' id='highcharts-data-table-0'>
+    <table
+      tabIndex={-1}
+      summary='Table representation of chart.'
+      id='highcharts-data-table-0'
+    >
       <caption className='highcharts-table-caption'>
         Number of citations of documents written by author
       </caption>

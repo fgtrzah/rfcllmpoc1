@@ -9,20 +9,25 @@ import type * as Fetcher from './rfcllmapiFetcher'
 import { rfcllmapiFetch } from './rfcllmapiFetcher'
 import type * as Schemas from './rfcllmapiSchemas'
 import { useState } from 'react'
-import { RFCAPIEP } from '../config'
+import { RFCLLMEP } from '../config'
 
 export type LoginForAccessTokenTokenPostError = Fetcher.ErrorWrapper<{
   status: 422
   payload: Schemas.HTTPValidationError
 }>
 
-export type LoginForAccessTokenTokenPostVariables = RfcllmapiContext['fetcherOptions']
+export type LoginForAccessTokenTokenPostVariables =
+  RfcllmapiContext['fetcherOptions']
 
 export const useAuth = () => {
-  const [user, setState] = useState<{ [x: string]: any } | string | undefined>(undefined)
-  const [error, setError] = useState<{ [x: string]: any } | string | undefined>(undefined)
-  const login = async (username: string, password: string) => {
-    const res = await fetch(`${RFCAPIEP}token`, {
+  const [user, setState] = useState<{ [x: string]: any } | string | undefined>(
+    undefined,
+  )
+  const [error, setError] = useState<{ [x: string]: any } | string | undefined>(
+    undefined,
+  )
+  const login = async (username: string, password: string): Promise<any> => {
+    const res = await fetch(`http://127.0.0.1:8000/oauth/login`, {
       headers: {
         accept: 'application/json',
         'content-type': 'application/x-www-form-urlencoded',
@@ -63,7 +68,14 @@ export const fetchReadUsersMeUsersMeGet = (
   variables: ReadUsersMeUsersMeGetVariables,
   signal?: AbortSignal,
 ) =>
-  rfcllmapiFetch<Schemas.User, ReadUsersMeUsersMeGetError, undefined, {}, {}, {}>({
+  rfcllmapiFetch<
+    Schemas.User,
+    ReadUsersMeUsersMeGetError,
+    undefined,
+    {},
+    {},
+    {}
+  >({
     url: '/users/me/',
     method: 'get',
     ...variables,
@@ -77,7 +89,8 @@ export const useReadUsersMeUsersMeGet = <TData = Schemas.User>(
     'queryKey' | 'queryFn' | 'initialData'
   >,
 ) => {
-  const { fetcherOptions, queryOptions, queryKeyFn } = useRfcllmapiContext(options)
+  const { fetcherOptions, queryOptions, queryKeyFn } =
+    useRfcllmapiContext(options)
   return reactQuery.useQuery<Schemas.User, ReadUsersMeUsersMeGetError, TData>({
     queryKey: queryKeyFn({
       path: '/users/me/',
@@ -93,18 +106,21 @@ export const useReadUsersMeUsersMeGet = <TData = Schemas.User>(
 
 export type ReadOwnItemsUsersMeItemsGetError = Fetcher.ErrorWrapper<undefined>
 
-export type ReadOwnItemsUsersMeItemsGetVariables = RfcllmapiContext['fetcherOptions']
+export type ReadOwnItemsUsersMeItemsGetVariables =
+  RfcllmapiContext['fetcherOptions']
 
 export const fetchReadOwnItemsUsersMeItemsGet = (
   variables: ReadOwnItemsUsersMeItemsGetVariables,
   signal?: AbortSignal,
 ) =>
-  rfcllmapiFetch<void, ReadOwnItemsUsersMeItemsGetError, undefined, {}, {}, {}>({
-    url: '/users/me/items/',
-    method: 'get',
-    ...variables,
-    signal,
-  })
+  rfcllmapiFetch<void, ReadOwnItemsUsersMeItemsGetError, undefined, {}, {}, {}>(
+    {
+      url: '/users/me/items/',
+      method: 'get',
+      ...variables,
+      signal,
+    },
+  )
 
 export const useReadOwnItemsUsersMeItemsGet = <TData = void>(
   variables: ReadOwnItemsUsersMeItemsGetVariables,
@@ -113,7 +129,8 @@ export const useReadOwnItemsUsersMeItemsGet = <TData = void>(
     'queryKey' | 'queryFn' | 'initialData'
   >,
 ) => {
-  const { fetcherOptions, queryOptions, queryKeyFn } = useRfcllmapiContext(options)
+  const { fetcherOptions, queryOptions, queryKeyFn } =
+    useRfcllmapiContext(options)
   return reactQuery.useQuery<void, ReadOwnItemsUsersMeItemsGetError, TData>({
     queryKey: queryKeyFn({
       path: '/users/me/items/',
@@ -121,7 +138,10 @@ export const useReadOwnItemsUsersMeItemsGet = <TData = void>(
       variables,
     }),
     queryFn: ({ signal }) =>
-      fetchReadOwnItemsUsersMeItemsGet({ ...fetcherOptions, ...variables }, signal),
+      fetchReadOwnItemsUsersMeItemsGet(
+        { ...fetcherOptions, ...variables },
+        signal,
+      ),
     ...options,
     ...queryOptions,
   })
@@ -140,7 +160,14 @@ export const fetchSearchIetfSearchQueryIetfPost = (
   variables: SearchIetfSearchQueryIetfPostVariables,
   signal?: AbortSignal,
 ) =>
-  rfcllmapiFetch<void, SearchIetfSearchQueryIetfPostError, Schemas.SearchRequestDTO, {}, {}, {}>({
+  rfcllmapiFetch<
+    void,
+    SearchIetfSearchQueryIetfPostError,
+    Schemas.SearchRequestDTO,
+    {},
+    {},
+    {}
+  >({
     url: '/search/query/ietf',
     method: 'post',
     ...variables,
@@ -182,7 +209,14 @@ export const fetchSearchRfcSearchRfcPost = (
   variables: SearchRfcSearchRfcPostVariables,
   signal?: AbortSignal,
 ) =>
-  rfcllmapiFetch<void, SearchRfcSearchRfcPostError, Schemas.SearchRequestDTO, {}, {}, {}>({
+  rfcllmapiFetch<
+    void,
+    SearchRfcSearchRfcPostError,
+    Schemas.SearchRequestDTO,
+    {},
+    {},
+    {}
+  >({
     url: '/search/rfc',
     method: 'post',
     ...variables,
@@ -200,19 +234,22 @@ export const useSearchRfcSearchRfcPost = (
   >,
 ) => {
   const { fetcherOptions } = useRfcllmapiContext()
-  return reactQuery.useMutation<void, SearchRfcSearchRfcPostError, SearchRfcSearchRfcPostVariables>(
-    {
-      mutationFn: (variables: SearchRfcSearchRfcPostVariables) =>
-        fetchSearchRfcSearchRfcPost({ ...fetcherOptions, ...variables }),
-      ...options,
-    },
-  )
+  return reactQuery.useMutation<
+    void,
+    SearchRfcSearchRfcPostError,
+    SearchRfcSearchRfcPostVariables
+  >({
+    mutationFn: (variables: SearchRfcSearchRfcPostVariables) =>
+      fetchSearchRfcSearchRfcPost({ ...fetcherOptions, ...variables }),
+    ...options,
+  })
 }
 
-export type QaSingleContigiousQaSingleContigiousPostError = Fetcher.ErrorWrapper<{
-  status: 422
-  payload: Schemas.HTTPValidationError
-}>
+export type QaSingleContigiousQaSingleContigiousPostError =
+  Fetcher.ErrorWrapper<{
+    status: 422
+    payload: Schemas.HTTPValidationError
+  }>
 
 export type QaSingleContigiousQaSingleContigiousPostVariables = {
   body: Schemas.InquiryDTO
@@ -247,7 +284,9 @@ export const useQaSingleContigiousQaSingleContigiousPost = (
     QaSingleContigiousQaSingleContigiousPostError,
     QaSingleContigiousQaSingleContigiousPostVariables
   >({
-    mutationFn: (variables: QaSingleContigiousQaSingleContigiousPostVariables) =>
+    mutationFn: (
+      variables: QaSingleContigiousQaSingleContigiousPostVariables,
+    ) =>
       fetchQaSingleContigiousQaSingleContigiousPost({
         ...fetcherOptions,
         ...variables,

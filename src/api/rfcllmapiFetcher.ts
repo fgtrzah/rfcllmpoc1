@@ -1,11 +1,18 @@
-import { RFCAPIEP } from '../config'
+import { RFCLLMEP } from '../config'
 import { RfcllmapiContext } from './rfcllmapiContext'
 
-const baseUrl = RFCAPIEP // TODO add your baseUrl
+const baseUrl = RFCLLMEP // TODO add your baseUrl
 console.log(import.meta.env)
-export type ErrorWrapper<TError> = TError | { status: 'unknown'; payload: string }
+export type ErrorWrapper<TError> =
+  | TError
+  | { status: 'unknown'; payload: string }
 
-export type RfcllmapiFetcherOptions<TBody, THeaders, TQueryParams, TPathParams> = {
+export type RfcllmapiFetcherOptions<
+  TBody,
+  THeaders,
+  TQueryParams,
+  TPathParams,
+> = {
   url: string
   method: string
   body?: TBody
@@ -30,7 +37,12 @@ export async function rfcllmapiFetch<
   pathParams,
   queryParams,
   signal,
-}: RfcllmapiFetcherOptions<TBody, THeaders, TQueryParams, TPathParams>): Promise<TData> {
+}: RfcllmapiFetcherOptions<
+  TBody,
+  THeaders,
+  TQueryParams,
+  TPathParams
+>): Promise<TData> {
   try {
     const requestHeaders: HeadersInit = {
       'Content-Type': 'application/json',
@@ -43,16 +55,27 @@ export async function rfcllmapiFetch<
      * the correct boundary.
      * https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects#sending_files_using_a_formdata_object
      */
-    if (requestHeaders['Content-Type'].toLowerCase().includes('multipart/form-data')) {
+    if (
+      requestHeaders['Content-Type']
+        .toLowerCase()
+        .includes('multipart/form-data')
+    ) {
       delete requestHeaders['Content-Type']
     }
 
-    const response = await window.fetch(`${baseUrl}${resolveUrl(url, queryParams, pathParams)}`, {
-      signal,
-      method: method.toUpperCase(),
-      body: body ? (body instanceof FormData ? body : JSON.stringify(body)) : undefined,
-      headers: requestHeaders,
-    })
+    const response = await window.fetch(
+      `${baseUrl}${resolveUrl(url, queryParams, pathParams)}`,
+      {
+        signal,
+        method: method.toUpperCase(),
+        body: body
+          ? body instanceof FormData
+            ? body
+            : JSON.stringify(body)
+          : undefined,
+        headers: requestHeaders,
+      },
+    )
     if (!response.ok) {
       let error: ErrorWrapper<TError>
       try {
@@ -60,7 +83,10 @@ export async function rfcllmapiFetch<
       } catch (e) {
         error = {
           status: 'unknown' as const,
-          payload: e instanceof Error ? `Unexpected error (${e.message})` : 'Unexpected error',
+          payload:
+            e instanceof Error
+              ? `Unexpected error (${e.message})`
+              : 'Unexpected error',
         }
       }
 
@@ -76,7 +102,8 @@ export async function rfcllmapiFetch<
   } catch (e) {
     const errorObject: Error = {
       name: 'unknown' as const,
-      message: e instanceof Error ? `Network error (${e.message})` : 'Network error',
+      message:
+        e instanceof Error ? `Network error (${e.message})` : 'Network error',
       stack: e as string,
     }
     throw errorObject

@@ -12,6 +12,8 @@ import AffiliationsContinent from './AffiliationsContinent'
 import SettingsIcon from './SettingsIcon'
 import BodyContainer from './BodyContainer'
 import OmniSearch from './OmniSearch'
+import OmniSearchResults from './OmniSearchResults'
+import HomeIcon from './HomeIcon'
 
 export {
   SidebarIcon,
@@ -25,7 +27,9 @@ export {
   AuthorDems,
   NumDocAuths,
   NumCitations,
+  HomeIcon,
   NumAPCitations,
   AffiliationsContinent,
   OmniSearch,
+  OmniSearchResults,
 }

@@ -33,7 +33,7 @@ function Navigation(props: NavigationProps) {
       <header
         style={{
           position: 'fixed',
-          top: 8,
+          top: 20,
           left: 20,
           right: 20,
         }}
@@ -41,7 +41,7 @@ function Navigation(props: NavigationProps) {
         <nav
           style={{
             padding: 8,
-            borderRadius: 6,
+            borderRadius: 8,
             backgroundColor: '#444',
           }}
         >
@@ -68,7 +68,7 @@ function Navigation(props: NavigationProps) {
         <nav
           style={{
             padding: 4,
-            borderRadius: 6,
+            borderRadius: 8,
             backgroundColor: '#444',
             position: 'fixed',
             top: 100,

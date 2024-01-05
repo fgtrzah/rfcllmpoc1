@@ -1,5 +1,5 @@
 /*
-// https://github.com/jaredgorski/SpaceCamp
+https://github.com/jaredgorski/SpaceCamp
 colors:
   background: '#121212'
   foreground: '#D0D0D0'
@@ -50,9 +50,8 @@ export const colors = {
   14: '#A9C1DE',
   15: '#EEEEEE',
 }
-export const RFCAPIEP = 'http://localhost:8000/'
-
 export const RFCLLMEP = import.meta.env.REACT_APP_RFCLLMEP
+export const RFCAPIEP = import.meta.env.REACT_APP_RFCAPIEP
 export const RFCLLMOPENAPIEP = import.meta.env.REACT_APP_RFCLLMOPENAPIEP
 export const RFCEDITOREP = `${RFCLLMEP}/search/rfc`
 export const RFCDOCTREE = [
