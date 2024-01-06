@@ -2,3 +2,16 @@ body {
   background-color: #333;
   color: #b7cbf4 !important;
 }
+table {
+  border: 1px dotted #b7cbf4;
+  text-wrap: nowrap;
+  z-index: 10;
+}
+th {
+  position: sticky;
+  top: 0;
+  padding: 4px 0px;
+  border-top: 1px dotted #b7cbf4;
+  border: 1px dotted #b7cbf4;
+  z-index: 11;
+}

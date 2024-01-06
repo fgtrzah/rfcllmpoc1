@@ -1,3 +1,7 @@
+th {
+  background-color: #444;
+}
+
 .border-box {
   box-sizing: border-box;
 }

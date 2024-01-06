@@ -1,4 +1,22 @@
-* {
-  -ms-overflow-style: none !important; /* IE and Edge */
-  scrollbar-width: none !important; /* Firefox */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 6px;
+  margin: 8px;
+  width: 8px;
+  height: 5px;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #444;
+  background-clip: unset;
+  padding: 6px;
 }

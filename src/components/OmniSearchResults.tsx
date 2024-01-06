@@ -15,6 +15,13 @@ const normalizeResults = (search: any) => {
   return output
 }
 
+const composeRFCLink = (delimitedID: string, format: string) => {
+  const sp = delimitedID.replace(" ", "")
+  console.log(delimitedID.toLowerCase().replace(" ", ""))
+  const reformattedRFCNumber: string = sp.length ? `${sp}.${format.toLowerCase()}`.replace(" ", "") : '#'
+  return reformattedRFCNumber
+}
+
 function OmniSearchResults() {
   const search = normalizeResults(useSearch().search)
   const ids = Object.keys(search)?.slice(25)
@@ -24,44 +31,42 @@ function OmniSearchResults() {
   }, [search])
 
   return (
-    <Command.List className='os-results' style={{ 
-      maxHeight: '70vh', 
-      overflowY: 'scroll', 
-      padding: 20, 
-      scrollPadding: 'unset', 
-      scrollbarWidth: 'none', 
-      maskBorder: 'round', 
-      textWrap: 'nowrap' 
+    <Command.List className='os-results' style={{
+      maxHeight: '70vh',
+      overflow: 'scroll',
+      padding: 20,
+      scrollbarWidth: 'none',
+      maskBorder: 'round',
+      msScrollbarTrackColor: 'rgba(0,0,0,0)',
+      textWrap: 'nowrap',
+      maxWidth: '100%'
     }}>
       {ids.length ? null : <Command.Empty>No results found.</Command.Empty>}
       <table>
+        <caption style={{ textAlign: 'left' }}>RFCS:</caption>
         <thead>
           <tr>
             <th>ID</th>
             <th>Formats</th>
             <th>Title</th>
-            <th>Authors</th>
-            <th>Date</th>
-            <th>Updates</th>
-            <th>Status</th>
-            <th>Abstract</th>
-            <th>Keywords</th>
           </tr>
         </thead>
         <tbody>
           {ids?.map?.((r: any, ir: number) => {
+            const uri = composeRFCLink(search[r][8], 'txt')
+
             return (
               <tr key={ir}>
-                {search[r]?.map?.((rc: any, i: number) => (
-                  <td key={i} title={rc}>
-                    {rc}
-                  </td>
-                ))}
+                <td title={search[r][0]}>{search[r][0].split("")}</td>
+                {/* <td title={search[r][1]}>{search[r][8]}</td> */}
+                <td title={search[r][1]}>{search[r][8]}</td>
+                <td title={search[r][2]}>{search[r][2]}</td>
               </tr>
             )
           })}
         </tbody>
       </table>
+      <Command.Separator style={{ height: 2, backgroundColor: '#555', margin: '5px 0px' }} hidden={false} />
     </Command.List >
   )
 }
