@@ -11,6 +11,10 @@ export type RfcllmapiContext = {
      * Query params to inject in the fetcher
      */
     queryParams?: {}
+    /**
+     * Path params
+     */
+    pathParams?: {}
   }
   queryOptions: {
     /**
@@ -36,14 +40,14 @@ export function useRfcllmapiContext<
   TData = TQueryFnData,
   TQueryKey extends QueryKey = QueryKey,
 >(
-  _queryOptions?: Omit<
+  queryOptions?: Omit<
     UseQueryOptions<TQueryFnData, TError, TData, TQueryKey>,
     'queryKey' | 'queryFn'
   >,
 ): RfcllmapiContext {
   return {
     fetcherOptions: {},
-    queryOptions: {},
+    queryOptions,
     queryKeyFn,
   }
 }
@@ -62,6 +66,10 @@ export const queryKeyFn = (operation: QueryOperation) => {
 
   if (hasBody(operation)) {
     queryKey.push(operation.variables.body)
+  }
+
+  if (hasPathParams(operation)) {
+    queryKey.push(operation.variables.pathParams)
   }
 
   return queryKey

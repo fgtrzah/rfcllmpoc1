@@ -61,7 +61,6 @@ export const useAuth = () => {
 }
 
 export type ReadUsersMeUsersMeGetError = Fetcher.ErrorWrapper<undefined>
-
 export type ReadUsersMeUsersMeGetVariables = RfcllmapiContext['fetcherOptions']
 
 export const fetchReadUsersMeUsersMeGet = (
@@ -105,7 +104,6 @@ export const useReadUsersMeUsersMeGet = <TData = Schemas.User>(
 }
 
 export type ReadOwnItemsUsersMeItemsGetError = Fetcher.ErrorWrapper<undefined>
-
 export type ReadOwnItemsUsersMeItemsGetVariables =
   RfcllmapiContext['fetcherOptions']
 
@@ -223,7 +221,7 @@ export const fetchSearchRfcSearchRfcPost = (
     signal,
   })
 
-export const useSearchRfcSearchRfcPost = (
+export const useSearchRfcSearchRfcPost = async (
   options?: Omit<
     reactQuery.UseMutationOptions<
       void,
@@ -233,14 +231,19 @@ export const useSearchRfcSearchRfcPost = (
     'mutationFn'
   >,
 ) => {
-  const { fetcherOptions } = useRfcllmapiContext()
+  const { fetcherOptions } = useRfcllmapiContext({ enabled: true })
   return reactQuery.useMutation<
     void,
     SearchRfcSearchRfcPostError,
     SearchRfcSearchRfcPostVariables
   >({
-    mutationFn: (variables: SearchRfcSearchRfcPostVariables) =>
-      fetchSearchRfcSearchRfcPost({ ...fetcherOptions, ...variables }),
+    mutationFn: async (variables: SearchRfcSearchRfcPostVariables) => {
+      console.log(variables, options)
+      return await fetchSearchRfcSearchRfcPost({
+        ...fetcherOptions,
+        ...variables,
+      })
+    },
     ...options,
   })
 }

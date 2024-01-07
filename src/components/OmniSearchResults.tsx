@@ -61,8 +61,6 @@ function OmniSearchResults() {
         </thead>
         <tbody>
           {ids?.map?.((r: any, ir: number) => {
-            const uri = composeRFCLink(search[r][8], 'txt')
-
             return (
               <tr tabIndex={0} key={ir}>
                 <td title={search[r][0]}>
@@ -70,8 +68,9 @@ function OmniSearchResults() {
                     {search[r][0].split('')}
                   </Link>
                 </td>
-                {/* <td title={search[r][1]}>{search[r][8]}</td> */}
-                <td title={search[r][2]}>{search[r][2].slice(0, 60)}</td>
+                <td title={search[r][2]}>
+                  {search[r][2].slice(0, 60) + '...'}
+                </td>
               </tr>
             )
           })}

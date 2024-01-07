@@ -1,8 +1,8 @@
 import { RFCLLMEP } from '../config'
 import { RfcllmapiContext } from './rfcllmapiContext'
 
-const baseUrl = RFCLLMEP // TODO add your baseUrl
-console.log(import.meta.env)
+const baseUrl = 'http://127.0.0.1:8000/' // TODO add your baseUrl
+
 export type ErrorWrapper<TError> =
   | TError
   | { status: 'unknown'; payload: string }
