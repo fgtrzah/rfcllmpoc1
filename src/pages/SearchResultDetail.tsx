@@ -19,8 +19,10 @@ const SearchResultDetail = (props: React.PropsWithChildren & any) => {
       'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzA0NjA2MDkzfQ.bYdoxLNyIdJCjmC3T8Ndz8HrkqNVx0KHH2gE4eVPUUM',
     )
 
+    let cleansedID = rfcid.slice(3)
+
     let raw = JSON.stringify({
-      query: rfcid?.toLowerCase(),
+      query: (rfcid.slice(0, 3) + cleansedID.trimStart())?.toLowerCase(),
     })
 
     let requestOptions: any = {
@@ -43,6 +45,7 @@ const SearchResultDetail = (props: React.PropsWithChildren & any) => {
   useEffect(() => {
     console.log(doc)
   }, [doc])
+
   return (
     <div style={{ display: 'flex', paddingTop: 20 }}>
       <pre style={{ fontSize: 8, lineHeight: 1.2, paddingRight: 20 }}>
