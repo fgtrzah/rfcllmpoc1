@@ -1,11 +1,11 @@
-import React from 'react'
+import { RFCLLMEP } from 'src/config'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 
-interface SearchResultDetailProps extends React.PropsWithChildren {
-  [x: string]: any
-}
+const SearchResultDetail = (props: React.PropsWithChildren & any) => {
+  const { rfcid } = useParams()
 
-const SearchResultDetail = (_: SearchResultDetailProps) => {
-  return <div>Search Result Detail</div>
+  return <div style={{ display: 'flex', paddingTop: 20 }}>{rfcid}</div>
 }
 
 export default SearchResultDetail

@@ -73,20 +73,22 @@ function App() {
   }
 
   return (
-    <BodyContainer>
+    <>
       <Navigation {...navProps} />
-      <OmniSearch />
-      <Routes>
-        <Route path='/'>
-          <Route path='search/:rfcid' element={<SearchResultDetail />} />
-          <Route path='search' element={<Search />} />
-          <Route path='settings' element={<Settings />} />
-          <Route path='profile' element={<Profile />} />
-          <Route path='/' element={<Overview />} />
-          <Route path='*' element={<NoMatch />} />
-        </Route>
-      </Routes>
-    </BodyContainer>
+      <BodyContainer>
+        <OmniSearch />
+        <Routes>
+          <Route path='/'>
+            <Route path='search/:rfcid' element={<SearchResultDetail />} />
+            <Route path='search' element={<Search />} />
+            <Route path='settings' element={<Settings />} />
+            <Route path='profile' element={<Profile />} />
+            <Route path='/' element={<Overview />} />
+            <Route path='*' element={<NoMatch />} />
+          </Route>
+        </Routes>
+      </BodyContainer>
+    </>
   )
 }
 

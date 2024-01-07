@@ -15,3 +15,7 @@ th {
   border: 1px dotted #b7cbf4;
   z-index: 11;
 }
+a {
+  text-decoration: none;
+  color: #b77ee0;
+}
