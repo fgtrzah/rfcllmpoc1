@@ -41,7 +41,7 @@ function OmniSearchResults() {
       className='os-results'
       style={{
         maxHeight: '70vh',
-        overflow: 'hidden',
+        overflow: 'scroll',
         padding: 20,
         scrollbarWidth: 'none',
         maskBorder: 'round',

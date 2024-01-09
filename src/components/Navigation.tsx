@@ -1,6 +1,8 @@
 import React, { ReactChild } from 'react'
 import { colors } from '../config'
 import SidebarIcon from './SidebarIcon'
+import { useAuth } from 'src/api/rfcllmapiComponents'
+import { ChatIcon, HomeIcon, ProfileIcon, SearchIcon, SettingsIcon } from '.'
 
 type LinkObj = {
   text?: string | any
@@ -10,7 +12,7 @@ type LinkObj = {
   [x: string]: any
 }
 
-interface NavigationProps extends React.PropsWithChildren {
+interface Navigationnavconfig extends React.PropsWithChildren {
   links?: {
     top?: LinkObj[]
     left?: LinkObj[]
@@ -27,7 +29,58 @@ interface NavigationProps extends React.PropsWithChildren {
   }
 }
 
-function Navigation(props: NavigationProps) {
+function Navigation(props: Navigationnavconfig) {
+  const { logout } = useAuth()
+  const navconfig: Navigationnavconfig = {
+    links: {
+      top: [
+        {
+          to: '#',
+          text: 'Data Tracker',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: 'about',
+          text: 'About',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: '#',
+          text: 'Docs',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: '#',
+          text: 'GitHub',
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        { to: '#', flush: true, text: 'Logout', onClick: () => logout() },
+      ],
+      left: [
+        {
+          to: '/',
+          children: <HomeIcon />,
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: 'profile',
+          children: <ProfileIcon />,
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: 'search',
+          children: <SearchIcon />,
+          onClick: (e: any) => console.log(e.target.value),
+        },
+        {
+          to: 'settings',
+          children: <SettingsIcon />,
+          onClick: (e: any) => console.log(e.target.value),
+        },
+      ],
+    },
+    slots: {},
+  }
   return (
     <>
       <header
@@ -36,6 +89,7 @@ function Navigation(props: NavigationProps) {
           top: 20,
           left: 20,
           right: 20,
+          zIndex: 9999,
         }}
       >
         <nav
@@ -45,7 +99,7 @@ function Navigation(props: NavigationProps) {
             backgroundColor: '#444',
           }}
         >
-          {props?.links?.top?.map?.((l: LinkObj, lk: number) => {
+          {navconfig?.links?.top?.map?.((l: LinkObj, lk: number) => {
             return (
               <a
                 onClick={(e: React.MouseEvent<HTMLElement>) => l?.onClick?.(e)}
@@ -64,7 +118,11 @@ function Navigation(props: NavigationProps) {
           })}
         </nav>
       </header>
-      <aside>
+      <aside
+        style={{
+          zIndex: 9999,
+        }}
+      >
         <nav
           style={{
             padding: 4,
@@ -89,7 +147,7 @@ function Navigation(props: NavigationProps) {
           >
             <SidebarIcon />
           </a>
-          {props?.links?.left?.map?.((l: LinkObj, lk: number) => {
+          {navconfig?.links?.left?.map?.((l: LinkObj, lk: number) => {
             return (
               <a
                 onClick={(e: React.MouseEvent<HTMLElement>) => l?.onClick?.(e)}
@@ -107,6 +165,7 @@ function Navigation(props: NavigationProps) {
               </a>
             )
           })}
+          {props.children}
         </nav>
       </aside>
     </>

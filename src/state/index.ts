@@ -5,6 +5,7 @@ import useOmniChat from './useOmniChat'
 import useForm from './useForm'
 import useDebounce from './useDebounce'
 import useSearch from './useSearch'
+import useAbortableStreamFetch from './useAbortableStreamFetch'
 import { RFCDOCTREE } from 'src/config'
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
@@ -76,5 +77,6 @@ export {
   useOmniSearch,
   useRFCTree,
   useStore,
+  useAbortableStreamFetch,
   SharedStoreProvider,
 }

@@ -1,11 +1,6 @@
 import React from 'react'
 import './Overview.css'
-import {
-  AuthorDems,
-  NumAPCitations,
-  NumCitations,
-  NumDocAuths,
-} from '../components'
+import { NumAPCitations, NumCitations, NumDocAuths } from 'src/components'
 
 const Overview = (_props: React.PropsWithChildren) => {
   return (
@@ -52,7 +47,7 @@ const Overview = (_props: React.PropsWithChildren) => {
             padding: 9,
           }}
         >
-          <AuthorDems />
+          <NumCitations />
         </div>
         <div
           style={{

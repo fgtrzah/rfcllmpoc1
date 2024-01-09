@@ -1,4 +1,4 @@
-import { OAIAUTHSECRET, RFCLLMEP } from 'src/config'
+import { OAIAUTHSECRET } from 'src/config'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -16,7 +16,7 @@ const SearchResultDetail = (props: React.PropsWithChildren & any) => {
     headers.append('x-access-token', OAIAUTHSECRET || '')
     headers.append(
       'Authorization',
-      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzA0NjA2MDkzfQ.bYdoxLNyIdJCjmC3T8Ndz8HrkqNVx0KHH2gE4eVPUUM',
+      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzA0NzUzMDExfQ.7FNAJV4XK9454UoSb0GhoMQ_J4h9DHEPHfQOyoUO73M',
     )
 
     let cleansedID = rfcid.slice(3)

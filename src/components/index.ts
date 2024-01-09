@@ -4,7 +4,6 @@ import ProfileIcon from './ProfileIcon'
 import ReadIcon from '../assets/react.svg'
 import Navigation from './Navigation'
 import Button from './Button'
-import AuthorDems from './AuthorDems'
 import NumDocAuths from './NumDocAuths'
 import NumCitations from './NumCitations'
 import NumAPCitations from './NumAPCitations'
@@ -14,6 +13,9 @@ import BodyContainer from './BodyContainer'
 import OmniSearch from './OmniSearch'
 import OmniSearchResults from './OmniSearchResults'
 import HomeIcon from './HomeIcon'
+import ChatIcon from './ChatIcon'
+import FooterContainer from './FooterContainer'
+import OmniChat from './OmniChat'
 
 export {
   SidebarIcon,
@@ -24,12 +26,14 @@ export {
   Navigation,
   Button,
   ReadIcon,
-  AuthorDems,
   NumDocAuths,
   NumCitations,
   HomeIcon,
   NumAPCitations,
   AffiliationsContinent,
   OmniSearch,
+  OmniChat,
   OmniSearchResults,
+  ChatIcon,
+  FooterContainer,
 }
