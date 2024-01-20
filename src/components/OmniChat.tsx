@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import './OmniChat.css'
 import useQAVisibility from 'src/state/useQAVisibility'
-import { useChat } from 'ai/react'
 import { OpenAI } from 'openai'
 import { OpenAIStream, StreamingTextResponse } from 'ai'
 import { OAIAUTHSECRET } from 'src/config'
@@ -62,18 +61,15 @@ const OmniChat = (props: OmniChatProps) => {
     <div className='oc-container'>
       <header className='oc-header'>QA Context: {scopes}</header>
       <main className='oc-content'>
-        {omniChatStore.completions[0]?.completion?.choices?.map(
-          (m: any, mi: number) => {
-            return (
-              <>
-                <span key={mi}>
-                  <strong>{m.message.role.toUpperCase()}:</strong>
-                  {m.message.content}
-                </span>
-              </>
-            )
-          },
-        )}
+        {omniChatStore.completions[0]?.completion?.choices?.map((m: any, mi: number) => {
+            return <>
+              <span key={mi}>
+                <strong>{m.message.role.toUpperCase()}:</strong> 
+                {m.message.content}
+              </span>
+            </>
+          })
+        }
       </main>
       <section>{props?.children}</section>
       <footer className='oc-footer'>
