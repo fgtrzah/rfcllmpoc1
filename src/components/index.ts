@@ -16,6 +16,7 @@ import HomeIcon from './HomeIcon'
 import ChatIcon from './ChatIcon'
 import FooterContainer from './FooterContainer'
 import OmniChat from './OmniChat'
+import CloseIcon from './CloseIcon'
 
 export {
   SidebarIcon,
@@ -36,4 +37,5 @@ export {
   OmniSearchResults,
   ChatIcon,
   FooterContainer,
+  CloseIcon,
 }

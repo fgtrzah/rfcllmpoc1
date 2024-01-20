@@ -20,6 +20,7 @@
 
 .oc-header,
 .oc-footer {
+  display: flex;
   flex: 0 0 auto;
   border-radius: 8px;
   padding: 8px;
@@ -27,8 +28,12 @@
   border: none;
   outline: none !important;
   color: inherit;
-
+  align-items: center;
   font-size: 10px;
+}
+
+.oc-header {
+  justify-content: space-between;
 }
 
 .oc-content {

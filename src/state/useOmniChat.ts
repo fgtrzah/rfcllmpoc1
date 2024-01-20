@@ -1,12 +1,18 @@
 import { OAIAUTHSECRET, RFCLLMEP } from 'src/config'
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 import { useStore } from 'src/state'
 import { hashCode } from 'src/utils'
+import { useSocket } from './useSocket'
 
 const useOmniChat = () => {
   const [store, dispatch] = useStore()
   const { omniChat, auth } = store
   const [loading, setLoading] = useState(false)
+  const socket = useSocket()
+
+  const handleMessage = useCallback((m) => {
+    console.log(m)
+  }, [])
 
   const handleSend = async (e: any) => {
     e.preventDefault()
@@ -34,7 +40,7 @@ const useOmniChat = () => {
       redirect: 'follow',
     }
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
-
+    socket.send(JSON.stringify(requestOptions))
     let res = await (
       await fetch(`http://localhost:8000/qa/single/contigious`, requestOptions)
     ).json()
@@ -49,7 +55,12 @@ const useOmniChat = () => {
     setLoading(false)
   }
 
-  useEffect(() => {}, [omniChat])
+  useEffect(() => {
+    socket.addEventListener('message', handleMessage)
+    return () => {
+      socket.removeEventListener('message', handleMessage)
+    }
+  }, [socket, handleMessage])
 
   return {
     omniChat,

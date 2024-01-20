@@ -19,9 +19,11 @@ import {
 } from './components'
 import { useAuth } from './state'
 import { useEffect } from 'react'
+import useQAVisibility from './state/useQAVisibility'
 
 function App() {
   const { auth, handleAuthReq } = useAuth({})
+  const { active, toggleQA } = useQAVisibility({} as any)
 
   useEffect(() => {
     handleAuthReq({})
@@ -37,6 +39,7 @@ function App() {
             textDecoration: 'none',
             padding: 5,
           }}
+          onClick={toggleQA}
         >
           <ChatIcon />
         </a>

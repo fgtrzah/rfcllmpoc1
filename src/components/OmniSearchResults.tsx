@@ -60,11 +60,11 @@ function OmniSearchResults() {
           </tr>
         </thead>
         <tbody>
-          {ids?.map?.((r: unknown, ir: number) => {
+          {ids?.map?.((r: unknown[], ir: number) => {
             return (
               <tr tabIndex={0} key={ir}>
                 <td title={search[r][0]}>
-                  <Link tabIndex={-1} to={`/search/${search[r][0]}`}>
+                  <Link tabIndex={ir - 1} to={`/search/${search[r][0]}`}>
                     {search[r][0].split('')}
                   </Link>
                 </td>

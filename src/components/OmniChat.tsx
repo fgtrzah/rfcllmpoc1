@@ -5,6 +5,7 @@ import { OpenAI } from 'openai'
 import { OpenAIStream, StreamingTextResponse } from 'ai'
 import { OAIAUTHSECRET } from 'src/config'
 import { useForm, useOmniChat } from 'src/state'
+import { CloseIcon } from '.'
 
 export interface OmniChatProps extends React.PropsWithChildren {
   [x: string]: unknown
@@ -35,7 +36,7 @@ export async function POST(req: Request) {
 }
 
 const OmniChat = (props: OmniChatProps) => {
-  const { active, scopes } = useQAVisibility({
+  const { active, scopes, toggleQA } = useQAVisibility({
     active: true,
     scopes: window.location.pathname,
   })
@@ -59,24 +60,42 @@ const OmniChat = (props: OmniChatProps) => {
 
   return (
     <div className='oc-container'>
-      <header className='oc-header'>QA Context: {scopes}</header>
+      <header className='oc-header'>
+        <span>QA Context: {scopes}</span>
+        <button
+          onClick={(e: React.MouseEvent<HTMLElement>) => toggleQA()}
+          style={{
+            background: 'none',
+            border: 'none',
+            appearance: 'none',
+            color: '#b7cbf4',
+            cursor: 'pointer',
+          }}
+        >
+          <CloseIcon />
+        </button>
+      </header>
       <main className='oc-content'>
-        {omniChatStore.completions[0]?.completion?.choices?.map((m: any, mi: number) => {
-            return <>
-              <span key={mi}>
-                <strong>{m.message.role.toUpperCase()}:</strong> 
-                {m.message.content}
-              </span>
-            </>
-          })
-        }
+        {loading && 'Processing response...'}
+        {omniChatStore.completions[0]?.completion?.choices?.map(
+          (m: any, mi: number) => {
+            return (
+              <>
+                <span key={mi}>
+                  <strong>{m.message.role.toUpperCase()}:</strong>
+                  {m.message.content}
+                </span>
+              </>
+            )
+          },
+        )}
       </main>
       <section>{props?.children}</section>
       <footer className='oc-footer'>
         <form onSubmit={handleSubmit}>
           <input
             disabled={loading}
-            style={{ width: 400, background: 'none' }}
+            style={{ width: 380, background: 'none' }}
             value={omniChatStore.search}
             name='query'
             placeholder='Describe your business...'
