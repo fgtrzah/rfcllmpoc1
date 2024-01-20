@@ -19,15 +19,6 @@ const normalizeResults = (search: any) => {
   return output
 }
 
-const composeRFCLink = (delimitedID: string, format: string) => {
-  const sp = delimitedID.replace(' ', '')
-  console.log(delimitedID.toLowerCase().replace(' ', ''))
-  const reformattedRFCNumber: string = sp.length
-    ? `${sp}.${format.toLowerCase()}`.replace(' ', '')
-    : '#'
-  return reformattedRFCNumber
-}
-
 function OmniSearchResults() {
   const search = normalizeResults(useSearch().search)
   const ids = Object.keys(search)?.slice(25)
@@ -42,7 +33,7 @@ function OmniSearchResults() {
       style={{
         maxHeight: '70vh',
         overflow: 'scroll',
-        padding: 20,
+        padding: 10,
         scrollbarWidth: 'none',
         maskBorder: 'round',
         msScrollbarTrackColor: 'rgba(0,0,0,0)',
@@ -52,7 +43,6 @@ function OmniSearchResults() {
     >
       {ids.length ? null : <Command.Empty>No results found.</Command.Empty>}
       <table style={{ overflow: 'scroll' }}>
-        <caption style={{ textAlign: 'left' }}>RFCS:</caption>
         <thead>
           <tr>
             <th>ID</th>
@@ -60,7 +50,7 @@ function OmniSearchResults() {
           </tr>
         </thead>
         <tbody>
-          {ids?.map?.((r: unknown[], ir: number) => {
+          {ids?.map?.((r, ir) => {
             return (
               <tr tabIndex={0} key={ir}>
                 <td title={search[r][0]}>
@@ -69,7 +59,7 @@ function OmniSearchResults() {
                   </Link>
                 </td>
                 <td title={search[r][2]}>
-                  {search[r][2].slice(0, 60) + '...'}
+                  {search[r][2].slice(0, 64) + '...'}
                 </td>
               </tr>
             )
