@@ -60,7 +60,7 @@ function OmniSearchResults() {
           </tr>
         </thead>
         <tbody>
-          {ids?.map?.((r: any, ir: number) => {
+          {ids?.map?.((r: unknown, ir: number) => {
             return (
               <tr tabIndex={0} key={ir}>
                 <td title={search[r][0]}>

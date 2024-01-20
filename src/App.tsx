@@ -17,8 +17,16 @@ import {
   OmniChat,
   Navigation,
 } from './components'
+import { useAuth } from './state'
+import { useEffect } from 'react'
 
 function App() {
+  const { auth, handleAuthReq } = useAuth({})
+
+  useEffect(() => {
+    handleAuthReq({})
+  }, [])
+
   return (
     <>
       <Navigation>

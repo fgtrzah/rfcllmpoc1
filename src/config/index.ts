@@ -119,4 +119,5 @@ export const RFCDOCTREE = [
     content: `RFC ${index + 6000 + 1}`,
   })),
 ]
-export const OAIAUTHSECRET = import.meta.env.REACT_APP_OAIAUTHSECRET
+export const OAIAUTHSECRET =
+  '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'

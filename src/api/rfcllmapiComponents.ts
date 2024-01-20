@@ -298,6 +298,34 @@ export const useQaSingleContigiousQaSingleContigiousPost = (
   })
 }
 
+export const useQaSingleContigiousQaSingleStreamPost = (
+  options?: Omit<
+    reactQuery.UseMutationOptions<
+      void,
+      QaSingleContigiousQaSingleContigiousPostError,
+      QaSingleContigiousQaSingleContigiousPostVariables
+    >,
+    'mutationFn'
+  >,
+) => {
+  const { fetcherOptions } = useRfcllmapiContext()
+  return reactQuery.useMutation<
+    void,
+    QaSingleContigiousQaSingleContigiousPostError,
+    QaSingleContigiousQaSingleContigiousPostVariables
+  >({
+    mutationFn: (
+      variables: QaSingleContigiousQaSingleContigiousPostVariables,
+    ) =>
+      fetchQaSingleContigiousQaSingleContigiousPost({
+        ...fetcherOptions,
+        ...variables,
+        stream: true,
+      }),
+    ...options,
+  })
+}
+
 export type QueryOperation =
   | {
       path: '/users/me/'

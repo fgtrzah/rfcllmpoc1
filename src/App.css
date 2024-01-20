@@ -19,3 +19,12 @@ a {
   text-decoration: none;
   color: #b77ee0;
 }
+
+input {
+  appearance: none;
+  background: none;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: inherit;
+}
