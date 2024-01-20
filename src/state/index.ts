@@ -8,6 +8,7 @@ import useSearch from './useSearch'
 import useAbortableStreamFetch from './useAbortableStreamFetch'
 import { RFCDOCTREE } from 'src/config'
 import useAuth from './useAuth'
+import useQAVisibility from './useQAVisibility'
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
@@ -85,4 +86,5 @@ export {
   useStore,
   useAbortableStreamFetch,
   SharedStoreProvider,
+  useQAVisibility,
 }

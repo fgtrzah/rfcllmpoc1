@@ -1,10 +1,6 @@
 import React, { createContext, useContext, useEffect } from 'react'
 import './AuthProvider.css'
-import {
-  useAuth,
-  useLoginForAccessTokenTokenPost,
-  useReadUsersMeUsersMeGet,
-} from '../api/rfcllmapiComponents'
+import { useAuth } from '../api/rfcllmapiComponents'
 import { Token } from '../api/rfcllmapiSchemas'
 import { MutationCache, QueryCache, QueryClient } from '@tanstack/react-query'
 
@@ -15,7 +11,7 @@ const queryClient = new QueryClient({
 })
 
 const authContext = createContext<{
-  token?: Token | string | null
+  token?: Token | unknown
   client?: any
 }>({
   token: undefined,
@@ -23,26 +19,28 @@ const authContext = createContext<{
 })
 export default function AuthProvider({
   children,
+  ...props
 }: {
   children: React.ReactNode
 }) {
-  const key = import.meta.env.APICLIENTACCESSTOKEN
-  const { token, error, login } = useAuth<any>()
-
-  useEffect(() => console.log(token, error), [token, error])
+  const { token, error, login } = useAuth()
 
   return (
-    <authContext.Provider value={{ token }}>
-      {error && <strong style={{ color: 'red' }}>{error?.message}</strong>}
+    <authContext.Provider value={{ token: { access_token: token } }}>
+      {error && (
+        <strong style={{ color: 'red' }}>
+          {JSON.stringify(error, null, 2)}
+        </strong>
+      )}
       {true ? (
         children
       ) : (
         <main className='pa4 bla ck-80'>
           <form
             className='measu  re center'
-            onSubmit={async (e: any) => {
+            onSubmit={async (e) => {
               e.preventDefault()
-              const data = new FormData(e.target)
+              const data: any = new FormData(e.currentTarget)
               await login(data.get('username'), data.get('password'))
             }}
           >

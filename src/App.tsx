@@ -17,9 +17,8 @@ import {
   OmniChat,
   Navigation,
 } from './components'
-import { useAuth } from './state'
 import { useEffect } from 'react'
-import useQAVisibility from './state/useQAVisibility'
+import { useAuth, useQAVisibility } from './state'
 
 function App() {
   const { auth, handleAuthReq } = useAuth({})

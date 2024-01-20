@@ -1,3 +1,4 @@
+import { RFCAPIEP, TEST_USERNAME, TEST_USERPW } from 'src/config'
 import { useStore } from '.'
 
 type UseAuthProps = {
@@ -9,14 +10,14 @@ const useAuth = (_opts: UseAuthProps) => {
   const auth = store.auth
   const handleAuthReq = async (opts: any) => {
     const res = await (
-      await fetch('http://127.0.0.1:8000/token', {
+      await fetch(`${RFCAPIEP}/token`, {
         method: 'POST',
         headers: {
           accept: 'application/json',
         },
         body: new URLSearchParams({
-          username: 'johndoe',
-          password: 'secret',
+          username: TEST_USERNAME,
+          password: atob(TEST_USERPW),
         }),
       })
     ).json()

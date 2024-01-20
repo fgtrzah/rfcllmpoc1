@@ -50,9 +50,11 @@ export const colors = {
   14: '#A9C1DE',
   15: '#EEEEEE',
 }
-export const RFCLLMEP = import.meta.env.REACT_APP_RFCLLMEP
-export const RFCAPIEP = import.meta.env.REACT_APP_RFCAPIEP
-export const RFCLLMOPENAPIEP = import.meta.env.REACT_APP_RFCLLMOPENAPIEP
+export const RFCLLMEP = import.meta.env.VITE_REACT_APP_RFCLLMEP
+export const RFCAPIEP = import.meta.env.VITE_REACT_APP_RFCAPIEP
+export const RFCLLMOPENAPIEP = import.meta.env.VITE_REACT_APP_RFCLLMOPENAPIEP
+export const TEST_USERNAME = import.meta.env.VITE_REACT_TEST_USERNAME
+export const TEST_USERPW = import.meta.env.VITE_REACT_TEST_USERPW
 export const RFCEDITOREP = `${RFCLLMEP}/search/rfc`
 export const RFCDOCTREE = [
   {

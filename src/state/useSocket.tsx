@@ -1,12 +1,6 @@
-import {
-  useContext,
-  useEffect,
-  useState,
-  createContext,
-  ReactChild,
-} from 'react'
+import { useContext, createContext, ReactChild } from 'react'
 
-const ws = new WebSocket('ws://localhost:8000/qa/single/ws')
+const ws = new WebSocket('ws://127.0.0.1:8000/qa/single/ws')
 
 export const SocketContext = createContext(ws)
 

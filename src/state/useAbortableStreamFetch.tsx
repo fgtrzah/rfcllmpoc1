@@ -32,7 +32,7 @@ const useAbortableStreamFetch = (
   })
 
   useEffect(() => {
-    ;(async () => {
+    const run = async () => {
       try {
         const resp = await fetch(url, {
           ...options,
@@ -63,7 +63,9 @@ const useAbortableStreamFetch = (
         const error = err.name !== 'AbortError' ? err : null
         setState((prevState) => ({ ...prevState, ...{ error } }))
       }
-    })()
+    }
+
+    run()
 
     return () => state.controller.abort()
   }, [url])

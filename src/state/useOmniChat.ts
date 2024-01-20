@@ -1,4 +1,4 @@
-import { OAIAUTHSECRET, RFCLLMEP } from 'src/config'
+import { OAIAUTHSECRET, RFCLLMEP, RFCAPIEP } from 'src/config'
 import { useCallback, useEffect, useState } from 'react'
 import { useStore } from 'src/state'
 import { hashCode } from 'src/utils'
@@ -42,7 +42,7 @@ const useOmniChat = () => {
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
     socket.send(JSON.stringify(requestOptions))
     let res = await (
-      await fetch(`http://localhost:8000/qa/single/contigious`, requestOptions)
+      await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
     ).json()
 
     dispatch({
