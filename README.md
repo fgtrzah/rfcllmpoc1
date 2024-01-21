@@ -2,6 +2,10 @@
 
 - depends on backend counterpart which isn't finished clearing vulnerability scans
 
+#### Example of QA
+
+![alt text](https://github.com/fgtrzah/rfcllmpoc1/blob/main/demo.gif?raw=true)
+
 #### Usual setup and local development
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
