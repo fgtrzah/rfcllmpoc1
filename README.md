@@ -4,7 +4,11 @@
 
 #### Example of QA
 
-![alt text](https://github.com/fgtrzah/rfcllmpoc1/blob/main/demo.gif?raw=true)
+![qa](https://github.com/fgtrzah/rfcllmpoc1/blob/main/demo.gif?raw=true)
+
+#### Example of proxy datatracker search
+
+![search](https://github.com/fgtrzah/rfcllmpoc1/blob/main/demo-search.gif?raw=true)
 
 #### Usual setup and local development
 
