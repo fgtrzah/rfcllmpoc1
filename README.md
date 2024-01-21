@@ -1,3 +1,8 @@
+#### Overview
+
+This is the front end for 1) browsing RFC documents with a context menu and a ietf datatracker api proxy
+2) a baseline llm driven QA platform that uses basic prompt engineering.
+
 #### Development
 
 - depends on backend counterpart which isn't finished clearing vulnerability scans
