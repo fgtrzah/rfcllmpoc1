@@ -18,9 +18,7 @@ const openai = new OpenAI({
 })
 
 export async function POST(req: Request) {
-  // Extract the `messages` from the body of the request
   const { messages } = await req.json()
-  // Request the OpenAI API for the response based on the prompt
   const response = await openai.chat.completions.create({
     model: 'gpt-4-1106-preview',
     stream: true,
@@ -29,18 +27,12 @@ export async function POST(req: Request) {
     temperature: 0.1,
     top_p: 1,
   })
-  // Convert the response into a friendly text-stream
   const stream = OpenAIStream(response)
-  // Respond with the stream
   return new StreamingTextResponse(stream)
 }
 
 const OmniChat = (props: OmniChatProps) => {
-  const { active, scopes, toggleQA } = useQAVisibility({
-    active: true,
-    scopes: window.location.pathname,
-  })
-  const { omniChat: omniChatStore, loading, handleSend } = useOmniChat()
+  const { omniChat: omniChatStore, loading, handleSend, toggleQA } = useOmniChat()
   const { data, handleChange, handleSubmit, errors } = useForm<any>({
     validations: {
       name: {
@@ -56,12 +48,10 @@ const OmniChat = (props: OmniChatProps) => {
     console.log(omniChatStore)
   }, [omniChatStore])
 
-  if (!active) return null
-
   return (
     <div className='oc-container'>
       <header className='oc-header'>
-        <span>QA Context: {scopes}</span>
+        <span>QA Context: {omniChatStore.scopes as any}</span>
         <button
           onClick={(e: React.MouseEvent<HTMLElement>) => toggleQA()}
           style={{

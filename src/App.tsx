@@ -18,11 +18,11 @@ import {
   Navigation,
 } from './components'
 import { useEffect } from 'react'
-import { useAuth, useQAVisibility } from './state'
+import { useAuth, useOmniChat, useQAVisibility } from './state'
+import { useObservable } from 'react-use'
 
 function App() {
-  const { auth, handleAuthReq } = useAuth({})
-  const { active, toggleQA } = useQAVisibility({} as any)
+  const { handleAuthReq } = useAuth({})
 
   useEffect(() => {
     handleAuthReq({})
@@ -31,17 +31,26 @@ function App() {
   return (
     <>
       <Navigation>
-        <a
-          href='#qa'
+        <button
           style={{
             color: colors['12'],
             textDecoration: 'none',
             padding: 5,
+            background: 'none',
+            appearance: 'none',
+            border: 'none',
+            cursor: 'pointer'
           }}
-          onClick={toggleQA}
+          onClick={() => {
+            if (window.location.hash.includes('qa')) {
+              window.location.hash = ''
+            } else {
+              window.location.hash = 'qa'
+            }
+          }}
         >
           <ChatIcon />
-        </a>
+        </button>
       </Navigation>
       <BodyContainer>
         <OmniSearch />

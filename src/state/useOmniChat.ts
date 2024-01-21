@@ -14,6 +14,16 @@ const useOmniChat = () => {
     console.log(m)
   }, [])
 
+  const toggleQA = () => {
+    dispatch({
+      ...store,
+      omniChat: {
+        ...store.omniChat,
+        active: !store.omniChat.active,
+      },
+    })
+  }
+
   const handleSend = async (e: any) => {
     e.preventDefault()
     setLoading(true)
@@ -62,10 +72,23 @@ const useOmniChat = () => {
     }
   }, [socket, handleMessage])
 
+  useEffect(() => {
+    if (window.location.hash.includes('qa')) {
+      dispatch({
+        ...store,
+        omniChat: {
+          ...store.omniChat,
+          active: window.location.hash.includes('qa') 
+        },
+      })
+    }
+  }, [window.location.hash])
+
   return {
     omniChat,
     handleSend,
     loading,
+    toggleQA
   }
 }
 

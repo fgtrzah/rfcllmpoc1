@@ -34,6 +34,8 @@ export type Store = {
     [x: string]: any
   }
   omniChat: {
+    active?: boolean,
+    scopes?: string[] | unknown,
     [x: string]: any
   }
   rfcDocumentTree: {
