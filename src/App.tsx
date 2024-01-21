@@ -39,7 +39,7 @@ function App() {
             background: 'none',
             appearance: 'none',
             border: 'none',
-            cursor: 'pointer'
+            cursor: 'pointer',
           }}
           onClick={() => {
             if (window.location.hash.includes('qa')) {

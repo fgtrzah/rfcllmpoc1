@@ -32,7 +32,12 @@ export async function POST(req: Request) {
 }
 
 const OmniChat = (props: OmniChatProps) => {
-  const { omniChat: omniChatStore, loading, handleSend, toggleQA } = useOmniChat()
+  const {
+    omniChat: omniChatStore,
+    loading,
+    handleSend,
+    toggleQA,
+  } = useOmniChat()
   const { data, handleChange, handleSubmit, errors } = useForm<any>({
     validations: {
       name: {

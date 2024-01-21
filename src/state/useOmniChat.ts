@@ -78,7 +78,7 @@ const useOmniChat = () => {
         ...store,
         omniChat: {
           ...store.omniChat,
-          active: window.location.hash.includes('qa') 
+          active: window.location.hash.includes('qa'),
         },
       })
     }
@@ -88,7 +88,7 @@ const useOmniChat = () => {
     omniChat,
     handleSend,
     loading,
-    toggleQA
+    toggleQA,
   }
 }
 
