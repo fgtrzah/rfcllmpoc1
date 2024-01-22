@@ -1,6 +1,11 @@
 import React from 'react'
 import './Overview.css'
-import { AffiliationsContinent, NumAPCitations, NumCitations, NumDocAuths } from 'src/components'
+import {
+  AffiliationsContinent,
+  NumAPCitations,
+  NumCitations,
+  NumDocAuths,
+} from 'src/components'
 
 const Overview = (_props: React.PropsWithChildren) => {
   return (
@@ -71,7 +76,7 @@ const Overview = (_props: React.PropsWithChildren) => {
             overflowY: 'scroll',
             scrollbarWidth: 'none',
             padding: 9,
-            width: '100%'
+            width: '100%',
           }}
           className='last9 fl w-100 h-50 border-box ba '
           title=''
