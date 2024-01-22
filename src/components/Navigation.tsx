@@ -38,7 +38,8 @@ function Navigation(props: Navigationnavconfig) {
         {
           to: '#',
           text: 'Data Tracker',
-          onClick: (e: any) => window.location.href = 'https://datatracker.ietf.org',
+          onClick: (e: any) =>
+            (window.location.href = 'https://datatracker.ietf.org'),
         },
         {
           to: 'about',
