@@ -121,4 +121,5 @@ export const RFCDOCTREE = [
     content: `RFC ${index + 6000 + 1}`,
   })),
 ]
-export const OAIAUTHSECRET = atob(atob(import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET))
+
+export const OAIAUTHSECRET = import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET

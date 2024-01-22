@@ -63,6 +63,8 @@ export const defaultState: Store = {
     channels: ['RFC', 'Group'],
   },
   omniChat: {
+    active: false,
+    scopes: window.location.pathname,
     byCompletionId: {},
     completions: [],
     rfcThreadLinks: {},

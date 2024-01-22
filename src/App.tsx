@@ -23,6 +23,7 @@ import { useObservable } from 'react-use'
 
 function App() {
   const { handleAuthReq } = useAuth({})
+  const { omniChat, toggleQA } = useOmniChat()
 
   useEffect(() => {
     handleAuthReq({})
@@ -47,6 +48,8 @@ function App() {
             } else {
               window.location.hash = 'qa'
             }
+
+            toggleQA()
           }}
         >
           <ChatIcon />

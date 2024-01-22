@@ -7,6 +7,7 @@ import { ChatIcon, HomeIcon, ProfileIcon, SearchIcon, SettingsIcon } from '.'
 type LinkObj = {
   text?: string | any
   children?: ReactChild
+  title?: string
   to?: string
   onClick?: (e: React.MouseEvent<HTMLElement>) => void
   [x: string]: any
@@ -37,7 +38,7 @@ function Navigation(props: Navigationnavconfig) {
         {
           to: '#',
           text: 'Data Tracker',
-          onClick: (e: any) => console.log(e.target.value),
+          onClick: (e: any) => window.location.href = 'https://datatracker.ietf.org',
         },
         {
           to: 'about',
@@ -46,11 +47,15 @@ function Navigation(props: Navigationnavconfig) {
         },
         {
           to: '#',
+          title: 'Under construction',
+          disabled: true,
           text: 'Docs',
           onClick: (e: any) => console.log(e.target.value),
         },
         {
           to: '#',
+          title: 'Under construction',
+          disabled: true,
           text: 'GitHub',
           onClick: (e: any) => console.log(e.target.value),
         },
@@ -64,6 +69,7 @@ function Navigation(props: Navigationnavconfig) {
         },
         {
           to: 'profile',
+          title: 'Under construction',
           children: <ProfileIcon />,
           onClick: (e: any) => console.log(e.target.value),
         },
@@ -74,6 +80,7 @@ function Navigation(props: Navigationnavconfig) {
         },
         {
           to: 'settings',
+          title: 'Under construction',
           children: <SettingsIcon />,
           onClick: (e: any) => console.log(e.target.value),
         },
@@ -107,10 +114,11 @@ function Navigation(props: Navigationnavconfig) {
                 style={{
                   color: colors['12'],
                   textDecoration: 'none',
+                  cursor: l.disabled ? 'not-allowed' : 'pointer',
                   padding: 5,
                 }}
                 href={`${l.to}`}
-                title='#'
+                title={l.title}
               >
                 {l.text}
               </a>

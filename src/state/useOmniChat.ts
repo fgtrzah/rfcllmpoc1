@@ -18,8 +18,8 @@ const useOmniChat = () => {
     dispatch({
       ...store,
       omniChat: {
-        ...store.omniChat,
-        active: !store.omniChat.active,
+        ...omniChat,
+        active: !omniChat.active,
       },
     })
   }
