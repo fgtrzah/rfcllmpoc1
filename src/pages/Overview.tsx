@@ -1,11 +1,11 @@
 import React from 'react'
 import './Overview.css'
-import { NumAPCitations, NumCitations, NumDocAuths } from 'src/components'
+import { AffiliationsContinent, NumAPCitations, NumCitations, NumDocAuths } from 'src/components'
 
 const Overview = (_props: React.PropsWithChildren) => {
   return (
     <main style={{ fontSize: 8 }}>
-      <section className='cf mt5 pv5 bt b--black-05 ph6-l'>
+      <section className='cf mt5 bt b--black-05'>
         <h1 className='f5 ttu fw6 mb4'>Overview</h1>
 
         <div
@@ -47,7 +47,7 @@ const Overview = (_props: React.PropsWithChildren) => {
             padding: 9,
           }}
         >
-          <NumCitations />
+          <NumDocAuths />
         </div>
         <div
           style={{
@@ -61,7 +61,7 @@ const Overview = (_props: React.PropsWithChildren) => {
           className='last9 fl w-50 h-50 border-box ba '
           title=''
         >
-          <NumDocAuths />
+          <AffiliationsContinent />
         </div>
         <div
           style={{
@@ -71,6 +71,7 @@ const Overview = (_props: React.PropsWithChildren) => {
             overflowY: 'scroll',
             scrollbarWidth: 'none',
             padding: 9,
+            width: '100%'
           }}
           className='last9 fl w-100 h-50 border-box ba '
           title=''

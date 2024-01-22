@@ -1,6 +1,7 @@
 export default function NumDocAuths() {
   return (
     <table
+      style={{width: '100%'}}
       tabIndex={-1}
       summary='Table representation of chart.'
       id='highcharts-data-table-0'
