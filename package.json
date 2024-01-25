@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fingerprintjs/fingerprintjs-pro": "^3.8.7",
     "@tanstack/react-query": "^5.15.0",
     "ai": "^2.2.31",
     "cmdk": "^0.2.0",

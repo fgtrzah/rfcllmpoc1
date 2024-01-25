@@ -1,8 +1,9 @@
 interface SearchProps extends React.PropsWithChildren {
-  [x: string]: any
+  [x: string]: unknown 
 }
 
-const Search = (_: SearchProps) => {
+const Search = (_:SearchProps) => {
+  console.log(_)
   return <div>Search</div>
 }
 

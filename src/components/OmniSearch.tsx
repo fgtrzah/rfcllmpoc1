@@ -8,7 +8,7 @@ import { OmniSearchResults } from '.'
 const OmniSearch = () => {
   const [open, setOpen] = useState(false)
   const { omniSearch, handleSubmit, handleSearch } = useOmniSearch({})
-  const omniSearchAnchor = useRef<any>(undefined)
+  const omniSearchAnchor = useRef(undefined)
 
   // Toggle the menu when ⌘K is pressed
   useEffect(() => {

@@ -18,12 +18,11 @@ import {
   Navigation,
 } from './components'
 import { useEffect } from 'react'
-import { useAuth, useOmniChat, useQAVisibility } from './state'
-import { useObservable } from 'react-use'
+import { useAuth, useOmniChat } from './state'
 
 function App() {
   const { handleAuthReq } = useAuth({})
-  const { omniChat, toggleQA } = useOmniChat()
+  const { toggleQA } = useOmniChat()
 
   useEffect(() => {
     handleAuthReq({})
@@ -43,11 +42,7 @@ function App() {
             cursor: 'pointer',
           }}
           onClick={() => {
-            if (window.location.hash.includes('qa')) {
-              window.location.hash = ''
-            } else {
-              window.location.hash = 'qa'
-            }
+            window.location.hash = window.location.hash.includes('qa') ? '' : 'qa'
 
             toggleQA()
           }}

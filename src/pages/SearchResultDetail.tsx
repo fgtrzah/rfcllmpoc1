@@ -1,38 +1,30 @@
-import { OAIAUTHSECRET } from 'src/config'
+import { OAIAUTHSECRET, RFCAPIEP, RFCAPIEPTOKEN } from 'src/config'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
-const SearchResultDetail = (props: React.PropsWithChildren & any) => {
+const SearchResultDetail = (props: React.PropsWithChildren) => {
   const { rfcid } = useParams()
-  const [doc, setDocument] = useState<any>('')
+  const [doc, setDocument] = useState<string>('')
 
   useEffect(() => {
     let mounted = true
 
     if (!mounted) return
 
-    let headers = new Headers()
+    const headers = new Headers()
     headers.append('Content-Type', 'application/json')
     headers.append('x-access-token', OAIAUTHSECRET || '')
-    headers.append(
-      'Authorization',
-      'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJqb2huZG9lIiwiZXhwIjoxNzA0NzUzMDExfQ.7FNAJV4XK9454UoSb0GhoMQ_J4h9DHEPHfQOyoUO73M',
-    )
+    headers.append('Authorization', `Bearer ${RFCAPIEPTOKEN}`)
+    const cleansedID = rfcid.slice(3)
 
-    let cleansedID = rfcid.slice(3)
-
-    let raw = JSON.stringify({
-      query: (rfcid.slice(0, 3) + cleansedID.trimStart())?.toLowerCase(),
-    })
-
-    let requestOptions: any = {
+    fetch(`${RFCAPIEP}/search/rfc`, {
       method: 'POST',
       headers,
-      body: raw,
+      body: JSON.stringify({
+        query: (rfcid.slice(0, 3) + cleansedID.trimStart())?.toLowerCase(),
+      }),
       redirect: 'follow',
-    }
-
-    fetch(`http://127.0.0.1:8000/search/rfc`, requestOptions)
+    })
       .then((response) => response.json())
       .then((result) => setDocument(result.result))
       .catch((error) => console.log('error', error))
@@ -42,14 +34,10 @@ const SearchResultDetail = (props: React.PropsWithChildren & any) => {
     }
   }, [rfcid])
 
-  useEffect(() => {
-    console.log(doc)
-  }, [doc])
-
   return (
     <div style={{ display: 'flex', paddingTop: 20 }}>
       <pre style={{ fontSize: 8, lineHeight: 1.2, paddingRight: 20 }}>
-        {doc || null}
+        {doc}
       </pre>
       <div style={{ overflow: 'auto', flexBasis: '50%' }}>{props.children}</div>
     </div>
