@@ -46,3 +46,12 @@ export default {
 - Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 
+
+
+Tentative roadmap
+- sqlite ec2 for warehousing all QA that
+  - link github issued uid and all questions and responses asked
+    by the user
+  - emphasis on stowing and doing so in journaled fashion for
+    future use (will cross that bridge later)
+
