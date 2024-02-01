@@ -20,7 +20,7 @@
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
     "react-router": "^6.21.1",
-    "react-router-dom": "^6.20.1",
+    "react-router-dom": "^6.21.2",
     "react-use": "^17.4.2"
   },
   "devDependencies": {
