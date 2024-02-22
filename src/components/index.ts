@@ -17,6 +17,8 @@ import ChatIcon from './ChatIcon'
 import FooterContainer from './FooterContainer'
 import OmniChat from './OmniChat'
 import CloseIcon from './CloseIcon'
+import LoginIcon from './LoginIcon'
+import LogoutIcon from './LogoutIcon'
 
 export {
   SidebarIcon,
@@ -38,4 +40,6 @@ export {
   ChatIcon,
   FooterContainer,
   CloseIcon,
+  LoginIcon,
+  LogoutIcon
 }

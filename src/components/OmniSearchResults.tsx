@@ -22,6 +22,9 @@ const normalizeResults = (search: any) => {
 function OmniSearchResults() {
   const search = normalizeResults(useSearch().search)
   const ids = Object.keys(search)?.slice(25)
+  const handleSelect = () => {
+    
+  }
 
   useEffect(() => {
     console.log(search)

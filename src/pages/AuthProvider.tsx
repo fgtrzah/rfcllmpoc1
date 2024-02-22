@@ -1,6 +1,5 @@
-import React, { createContext, useContext, useEffect } from 'react'
+import React, { createContext, useContext } from 'react'
 import './AuthProvider.css'
-import { useAuth } from '../api/rfcllmapiComponents'
 import { Token } from '../api/rfcllmapiSchemas'
 import { MutationCache, QueryCache, QueryClient } from '@tanstack/react-query'
 
@@ -12,18 +11,21 @@ const queryClient = new QueryClient({
 
 const authContext = createContext<{
   token?: Token | unknown
-  client?: any
+  client?: unknown
 }>({
   token: undefined,
   client: queryClient,
 })
 export default function AuthProvider({
   children,
-  ...props
 }: {
   children: React.ReactNode
 }) {
-  const { token, error, login } = useAuth()
+  // const { token, error, login } = useAuth()
+  const { token, error } = {
+    token: '',
+    error: '',
+  }
 
   return (
     <authContext.Provider value={{ token: { access_token: token } }}>
@@ -32,7 +34,7 @@ export default function AuthProvider({
           {JSON.stringify(error, null, 2)}
         </strong>
       )}
-      {true ? (
+      {!token ? (
         children
       ) : (
         <main className='pa4 bla ck-80'>
@@ -40,8 +42,8 @@ export default function AuthProvider({
             className='measu  re center'
             onSubmit={async (e) => {
               e.preventDefault()
-              const data: any = new FormData(e.currentTarget)
-              await login(data.get('username'), data.get('password'))
+              // const data: any = new FormData(e.currentTarget)
+              // await login(data.get('username'), data.get('password'))
             }}
           >
             <fieldset id='sign_up' className='ba b--transparent ph0 mh0 white'>

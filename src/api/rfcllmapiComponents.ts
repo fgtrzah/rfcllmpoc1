@@ -1,3 +1,9 @@
+/*
+ * I'm still flirting with the idea of using this module, it sounds 
+ * much better in theory and at this stage of development its not 
+ * quite clear which areas of the system benefit from its use. Can
+ * consider it in evaluation phase.
+ */
 /* eslint-disable @typescript-eslint/ban-types */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /**
@@ -10,8 +16,6 @@ import { useRfcllmapiContext, RfcllmapiContext } from './rfcllmapiContext'
 import type * as Fetcher from './rfcllmapiFetcher'
 import { rfcllmapiFetch } from './rfcllmapiFetcher'
 import type * as Schemas from './rfcllmapiSchemas'
-import { useState } from 'react'
-import { RFCLLMEP } from '../config'
 
 export type LoginForAccessTokenTokenPostError = Fetcher.ErrorWrapper<{
   status: 422
@@ -20,48 +24,6 @@ export type LoginForAccessTokenTokenPostError = Fetcher.ErrorWrapper<{
 
 export type LoginForAccessTokenTokenPostVariables =
   RfcllmapiContext['fetcherOptions']
-
-export const useAuth = () => {
-  const [user, setState] = useState<{ [x: string]: any } | string | undefined>(
-    undefined,
-  )
-  const [error, setError] = useState<{ [x: string]: any } | string | undefined>(
-    undefined,
-  )
-  const login = async (username: string, password: string): Promise<any> => {
-    const res = await fetch(`${RFCLLMEP}/oauth/login`, {
-      headers: {
-        accept: 'application/json',
-        'content-type': 'application/x-www-form-urlencoded',
-      },
-      body: `grant_type=password&username=${username}&password=${password}`,
-      method: 'POST',
-      mode: 'cors',
-    })
-
-    if (res.status !== 200) {
-      setError(res.json())
-      setState(undefined)
-      localStorage.removeItem('rfcllmapitoken')
-    } else {
-      setState(res)
-      localStorage.setItem('rfcllmapitoken', JSON.stringify(res))
-    }
-  }
-  const logout = () => {
-    localStorage.removeItem('rfcllmapitoken')
-    setState(undefined)
-    setError(undefined)
-  }
-
-  return {
-    token: user,
-    error,
-    login,
-    logout,
-  }
-}
-
 export type ReadUsersMeUsersMeGetError = Fetcher.ErrorWrapper<undefined>
 export type ReadUsersMeUsersMeGetVariables = RfcllmapiContext['fetcherOptions']
 

@@ -17,21 +17,16 @@ import {
   OmniChat,
   Navigation,
 } from './components'
-import { useEffect } from 'react'
-import { useAuth, useOmniChat } from './state'
+import { useOctokitService, useOmniChat } from './state'
 
 function App() {
-  const { handleAuthReq } = useAuth({})
+  const { user, login } = useOctokitService()
   const { toggleQA } = useOmniChat()
-
-  useEffect(() => {
-    handleAuthReq({})
-  }, [])
 
   return (
     <>
-      <Navigation>
-        <button
+      <Navigation user={user} login={login}>
+        {user ? <button
           style={{
             color: colors['12'],
             textDecoration: 'none',
@@ -48,7 +43,7 @@ function App() {
           }}
         >
           <ChatIcon />
-        </button>
+        </button> : null}
       </Navigation>
       <BodyContainer>
         <OmniSearch />
@@ -64,7 +59,7 @@ function App() {
         </Routes>
       </BodyContainer>
       <FooterContainer>
-        <OmniChat />
+        {user ? <OmniChat /> : null}
       </FooterContainer>
     </>
   )

@@ -1,14 +1,13 @@
-import { OAIAUTHSECRET, RFCLLMEP, RFCAPIEP } from 'src/config'
+import { OAIAUTHSECRET, RFCAPIEP } from 'src/config'
 import { useCallback, useEffect, useState } from 'react'
-import { useStore } from 'src/state'
+import { useStore, useOctokitService } from 'src/state'
 import { hashCode } from 'src/utils'
-import { useSocket } from './useSocket'
 
 const useOmniChat = () => {
   const [store, dispatch] = useStore()
-  const { omniChat, auth } = store
+  const { omniChat } = store
+  const auth = useOctokitService() as any
   const [loading, setLoading] = useState(false)
-  const socket = useSocket()
 
   const handleMessage = useCallback((m) => {
     console.log(m)
@@ -50,7 +49,6 @@ const useOmniChat = () => {
       redirect: 'follow',
     }
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
-    socket.send(JSON.stringify(requestOptions))
     let res = await (
       await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
     ).json()
@@ -64,13 +62,6 @@ const useOmniChat = () => {
     })
     setLoading(false)
   }
-
-  useEffect(() => {
-    socket.addEventListener('message', handleMessage)
-    return () => {
-      socket.removeEventListener('message', handleMessage)
-    }
-  }, [socket, handleMessage])
 
   useEffect(() => {
     if (window.location.hash.includes('qa')) {

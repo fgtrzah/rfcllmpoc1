@@ -7,15 +7,12 @@ import useDebounce from './useDebounce'
 import useSearch from './useSearch'
 import useAbortableStreamFetch from './useAbortableStreamFetch'
 import { RFCDOCTREE } from 'src/config'
-import useAuth from './useAuth'
 import useQAVisibility from './useQAVisibility'
+import { OctokitProvider, useOctokit, useGithub, useOctokitService } from './useOctokit'
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
 export type Store = {
-  auth: {
-    [x: string]: any
-  }
   omniSearch: {
     scopes?: string[]
     search?: string
@@ -75,13 +72,13 @@ export const defaultState: Store = {
   },
   rfcDocumentDetail: {},
   settings: {},
-  auth: {},
 }
 
 const [useStore, SharedStoreProvider] = createStateContext<Store>(defaultState)
 
 export {
-  useAuth,
+  useOctokit,
+  useOctokitService,
   useSearch,
   useDebounce,
   useForm,
@@ -91,5 +88,6 @@ export {
   useStore,
   useAbortableStreamFetch,
   SharedStoreProvider,
+  OctokitProvider,
   useQAVisibility,
 }

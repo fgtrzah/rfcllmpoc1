@@ -5,3 +5,6 @@ export function hashCode(str: string): number {
   }
   return h & 0xffffffff
 }
+
+export const onion = (s: string = "") => btoa(btoa(s))
+export const deOnion = (s: string = "") => atob(atob(s))

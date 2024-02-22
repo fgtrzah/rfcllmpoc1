@@ -1,8 +1,11 @@
-import React, { ReactChild } from 'react'
-import { colors } from '../config'
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import React, { ReactChild, useEffect } from 'react'
+import { VITE_REACT_APP_GHOKPAT, colors } from '../config'
 import SidebarIcon from './SidebarIcon'
-import { useAuth } from 'src/api/rfcllmapiComponents'
-import { ChatIcon, HomeIcon, ProfileIcon, SearchIcon, SettingsIcon } from '.'
+import { HomeIcon, LoginIcon, LogoutIcon, ProfileIcon, SearchIcon, SettingsIcon } from '.'
+import { useOctokit } from 'src/state'
+import { deOnion } from 'src/utils'
 
 type LinkObj = {
   text?: string | any
@@ -27,11 +30,25 @@ interface Navigationnavconfig extends React.PropsWithChildren {
     bottom?: React.ReactNode[]
     right?: React.ReactNode[]
     [x: string]: any
-  }
+  },
+  user?: {
+    [x: string]: any
+  },
+  login?: () => void 
+}
+
+const linkAsBtnStyles: React.CSSProperties = {
+  appearance: 'none',
+  background: 'none',
+  textDecoration: 'none',
+  border: 'none',
+  padding: 5,
+  cursor: 'pointer',
+  color: colors['12']
 }
 
 function Navigation(props: Navigationnavconfig) {
-  const { logout } = useAuth()
+  const { user, login } = props
   const navconfig: Navigationnavconfig = {
     links: {
       top: [
@@ -59,8 +76,7 @@ function Navigation(props: Navigationnavconfig) {
           disabled: true,
           text: 'GitHub',
           onClick: (e: any) => console.log(e.target.value),
-        },
-        { to: '#', flush: true, text: 'Logout', onClick: () => logout() },
+        }
       ],
       left: [
         {
@@ -68,27 +84,29 @@ function Navigation(props: Navigationnavconfig) {
           children: <HomeIcon />,
           onClick: (e: any) => console.log(e.target.value),
         },
-        {
+        user ? {
           to: 'profile',
           title: 'Under construction',
           children: <ProfileIcon />,
           onClick: (e: any) => console.log(e.target.value),
-        },
-        {
+        } : null,
+        user ? {
           to: 'search',
           children: <SearchIcon />,
           onClick: (e: any) => console.log(e.target.value),
-        },
-        {
+        } : null,
+        user ? {
           to: 'settings',
           title: 'Under construction',
           children: <SettingsIcon />,
           onClick: (e: any) => console.log(e.target.value),
-        },
+        } : null,
       ],
     },
     slots: {},
   }
+
+
   return (
     <>
       <header
@@ -108,6 +126,7 @@ function Navigation(props: Navigationnavconfig) {
           }}
         >
           {navconfig?.links?.top?.map?.((l: LinkObj, lk: number) => {
+            if (l === null) return
             return (
               <a
                 onClick={(e: React.MouseEvent<HTMLElement>) => l?.onClick?.(e)}
@@ -139,7 +158,6 @@ function Navigation(props: Navigationnavconfig) {
             backgroundColor: '#444',
             position: 'fixed',
             top: 100,
-            // bottom: 100,
             left: 20,
             display: 'flex',
             flexDirection: 'column',
@@ -157,6 +175,7 @@ function Navigation(props: Navigationnavconfig) {
             <SidebarIcon />
           </a>
           {navconfig?.links?.left?.map?.((l: LinkObj, lk: number) => {
+            if (l === null) return
             return (
               <a
                 onClick={(e: React.MouseEvent<HTMLElement>) => l?.onClick?.(e)}
@@ -175,6 +194,17 @@ function Navigation(props: Navigationnavconfig) {
             )
           })}
           {props.children}
+          {user.data ? <button 
+            onClick={() => window.location.href = 'https://github.com/logout'} 
+            style={linkAsBtnStyles}
+          >
+            <LogoutIcon />
+          </button> : <button 
+            style={linkAsBtnStyles}
+            onClick={() => login()}
+          >
+            <LoginIcon />
+          </button>}
         </nav>
       </aside>
     </>
