@@ -18,7 +18,7 @@ const Evals = (props : {}) => {
 
         <form onSubmit={handleSubmit}>
           <label>
-            Say something...
+            Enter question:
             <input value={input} onChange={handleInputChange} />
           </label>
           <button type="submit">Send</button>
