@@ -12,6 +12,11 @@ import { OctokitProvider, useOctokit, useGithub, useOctokitService } from './use
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
+export type Message = {
+  role?: 'system' | 'user',
+  message?: string,
+  [x: string]: any
+}
 export type Store = {
   omniSearch: {
     scopes?: string[]
@@ -33,6 +38,8 @@ export type Store = {
   omniChat: {
     active?: boolean
     scopes?: string[] | unknown
+    messages?: (Message | unknown)[]
+    input?: string | unknown
     [x: string]: any
   }
   rfcDocumentTree: {

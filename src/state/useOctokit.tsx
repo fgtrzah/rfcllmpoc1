@@ -44,11 +44,13 @@
       OpenAPI spec for GitHub REST API
 */
 import { Octokit as OctokitClient } from '@octokit/rest'
-import React, { useEffect, useMemo } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import useSWR from 'swr'
 import { RestEndpointMethodTypes } from '@octokit/plugin-rest-endpoint-methods'
 import { deOnion } from 'src/utils'
-import { VITE_REACT_APP_GHOKPAT, VITE_REACT_APP_AUTH_EP, VITE_REACT_APP_AUTH_CID } from 'src/config'
+import { VITE_REACT_APP_GHOKPAT, VITE_REACT_APP_AUTH_EP, VITE_REACT_APP_AUTH_CID, VITE_REACT_APP_RFCAPIEP } from 'src/config'
+import { useLocation } from 'react-router'
+import { useStore } from '.'
 
 type OctokitContextInterface = {
   auth: any
@@ -142,20 +144,39 @@ export const OctokitProvider = (props: OctokitProps) => {
   )
 }
 
-const useOctokitService = () => {
+const useOctokitService = <T extends any>() => {
+  const location = useLocation();
   const user = useOctokit('users', 'getAuthenticated', undefined, {})
+  const [access_token, setAT] = useState<any>(new URLSearchParams(location.search || '')?.get?.('code'))
   const login = () => {
-    console.log('login request')
-    window.location.href = `${VITE_REACT_APP_AUTH_EP}?client_id=${VITE_REACT_APP_AUTH_CID}&redirect_uri=${window.location.href}`
+    window.location.href = `https://github.com/login/oauth/authorize?client_id=Iv1.732c40d755888833&redirect_uri=https://127.0.0.1:8080/auth/callback`
   }
 
   useEffect(() => {
     if (!user && login && typeof login === 'function') login()
+    if (user) console.log(user)
   }, [user])
+
+  useEffect(() => {
+    if (location.search.includes('code')) {
+      const getUserProfile = () => {
+        window.location.href = `https://127.0.0.1:8080/auth/callback?${location.search}`
+      }
+
+      setAT(new URLSearchParams(location.search).get('code'))
+
+      getUserProfile()
+    }
+  }, [location.search])
+
+  useEffect(() => {
+    console.log(location.state)
+  }, [location.state])
 
   return {
     user,
-    login
+    login,
+    access_token
   }
 }
 

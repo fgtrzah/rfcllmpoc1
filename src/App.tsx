@@ -23,6 +23,10 @@ function App() {
   const { user, login } = useOctokitService()
   const { toggleQA } = useOmniChat()
 
+  useEffect(() => {
+    console.log(user)
+  }, [user])
+
   return (
     <>
       <Navigation user={user} login={login}>
