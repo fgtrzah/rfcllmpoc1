@@ -54,6 +54,7 @@ export const defaultState: Store = {
   omniSearch: {
     scopes: ['recents', 'bookmarked', 'global', 'tags'],
     search: '',
+    active: false,
     filter: {},
   },
   search: {

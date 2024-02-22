@@ -15,8 +15,12 @@
     "@tanstack/react-query": "^5.15.0",
     "ai": "^2.2.31",
     "cmdk": "^0.2.0",
+<<<<<<< HEAD
     "openai": "^4.24.7",
     "react": "^18.2.0",
+=======
+    "openai": "^4.24.2",
+>>>>>>> 5ddaa08 (chore: find stable point)
     "react-dom": "^18.2.0",
     "react-query": "^3.39.3",
     "react-router": "^6.21.1",
@@ -35,6 +39,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
     "path": "^0.12.7",
+    "react": "^18.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.12"
   }

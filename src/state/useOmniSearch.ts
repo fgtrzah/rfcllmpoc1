@@ -8,6 +8,16 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
   const [store, dispatch] = useStore()
   const omniSearch = store.omniSearch
 
+  const handleSearchSelect = () => {
+    dispatch({
+      ...store,
+      omniSearch: {
+        ...store.omniSearch,
+        active: false
+      }
+    })
+  }
+
   const handleSearch = (v: any) => {
     dispatch({
       ...store,
@@ -38,6 +48,7 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
         search: formData.get('search'),
       },
     })
+    handleSearchSelect()
   }
 
   return {
@@ -45,6 +56,7 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
     handleFilter,
     handleSearch,
     handleSubmit,
+    handleSearchSelect
   }
 }
 

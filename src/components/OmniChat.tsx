@@ -25,8 +25,20 @@ const OmniChat = (props: OmniChatProps) => {
     },
     onSubmit: handleSend,
   })
+  useEffect(() => {
 
-  return omniChatStore.active ? (
+    const down = (e: KeyboardEvent) => {
+      if (e.key === 'b' && (e.metaKey || e.ctrlKey)) {
+        e.preventDefault()
+        window.location.hash = window.location.hash.includes('qa') ? '' : 'qa'
+        toggleQA()
+      }
+    }
+    document.addEventListener('keydown', down)
+    return () => document.removeEventListener('keydown', down)
+  }, [])
+
+  return window.location.hash.includes('qa') ? (
     <div className='oc-container'>
       <header className='oc-header'>
         <span>QA Context: {omniChatStore.scopes as any}</span>

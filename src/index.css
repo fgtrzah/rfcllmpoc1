@@ -1,3 +1,7 @@
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 5px;

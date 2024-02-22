@@ -10,7 +10,7 @@ const useAuth = (_opts: UseAuthProps) => {
   const auth = store.auth
   const handleAuthReq = async (opts: any) => {
     const res = await (
-      await fetch(`${RFCAPIEP}/token`, {
+      await fetch(`${RFCAPIEP}/auth/token`, {
         method: 'POST',
         headers: {
           accept: 'application/json',

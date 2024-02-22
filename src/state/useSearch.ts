@@ -8,6 +8,7 @@ const useSearch = () => {
   const loading = search.loading
   const { omniSearch } = useOmniSearch({})
   const debounced = useDebounce(omniSearch.search, 1000)
+
   async function searchRFCService() {
     let results = []
 
