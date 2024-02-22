@@ -18,6 +18,7 @@ import {
   Navigation,
 } from './components'
 import { useOctokitService, useOmniChat } from './state'
+import { useEffect } from 'react'
 
 function App() {
   const { user, login } = useOctokitService()
