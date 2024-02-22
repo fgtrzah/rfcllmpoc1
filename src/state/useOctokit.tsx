@@ -48,7 +48,12 @@ import React, { useEffect, useMemo, useState } from 'react'
 import useSWR from 'swr'
 import { RestEndpointMethodTypes } from '@octokit/plugin-rest-endpoint-methods'
 import { deOnion } from 'src/utils'
-import { VITE_REACT_APP_GHOKPAT, VITE_REACT_APP_AUTH_EP, VITE_REACT_APP_AUTH_CID, VITE_REACT_APP_RFCAPIEP } from 'src/config'
+import {
+  VITE_REACT_APP_GHOKPAT,
+  VITE_REACT_APP_AUTH_EP,
+  VITE_REACT_APP_AUTH_CID,
+  VITE_REACT_APP_RFCAPIEP,
+} from 'src/config'
 import { useLocation } from 'react-router'
 import { useStore } from '.'
 
@@ -145,9 +150,11 @@ export const OctokitProvider = (props: OctokitProps) => {
 }
 
 const useOctokitService = <T extends any>() => {
-  const location = useLocation();
+  const location = useLocation()
   const user = useOctokit('users', 'getAuthenticated', undefined, {})
-  const [access_token, setAT] = useState<any>(new URLSearchParams(location.search || '')?.get?.('code'))
+  const [access_token, setAT] = useState<any>(
+    new URLSearchParams(location.search || '')?.get?.('code'),
+  )
   const login = () => {
     window.location.href = `https://github.com/login/oauth/authorize?client_id=Iv1.732c40d755888833&redirect_uri=https://127.0.0.1:8080/auth/callback`
   }
@@ -176,7 +183,7 @@ const useOctokitService = <T extends any>() => {
   return {
     user,
     login,
-    access_token
+    access_token,
   }
 }
 

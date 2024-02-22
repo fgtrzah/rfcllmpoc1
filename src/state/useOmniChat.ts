@@ -17,8 +17,8 @@ const useOmniChat = () => {
       ...store,
       omniChat: {
         ...store.omniChat,
-        input: e.target.value
-      }
+        input: e.target.value,
+      },
     })
   }
   const handleSubmit = async (e) => {
@@ -39,10 +39,10 @@ const useOmniChat = () => {
           ...messages,
           {
             role: 'user',
-            message: q
-          }
-        ]
-      }
+            message: q,
+          },
+        ],
+      },
     })
     console.log(q)
   }
@@ -112,7 +112,7 @@ const useOmniChat = () => {
     messages,
     input,
     handleInputChange,
-    handleSubmit
+    handleSubmit,
   }
 }
 

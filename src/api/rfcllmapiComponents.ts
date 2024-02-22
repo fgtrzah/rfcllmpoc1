@@ -1,6 +1,6 @@
 /*
- * I'm still flirting with the idea of using this module, it sounds 
- * much better in theory and at this stage of development its not 
+ * I'm still flirting with the idea of using this module, it sounds
+ * much better in theory and at this stage of development its not
  * quite clear which areas of the system benefit from its use. Can
  * consider it in evaluation phase.
  */

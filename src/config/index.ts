@@ -124,6 +124,7 @@ export const RFCDOCTREE = [
 export const RFCAPIEPTOKEN = import.meta.env.VITE_REACT_RFCAPIEPTOKEN
 export const OAIAUTHSECRET = import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET
 export const VITE_REACT_APP_AUTH_EP = import.meta.env.VITE_REACT_APP_AUTH_EP
-export const VITE_REACT_APP_AUTH_REDIRECTURL = import.meta.env.VITE_REACT_APP_AUTH_REDIRECTURL
+export const VITE_REACT_APP_AUTH_REDIRECTURL = import.meta.env
+  .VITE_REACT_APP_AUTH_REDIRECTURL
 export const VITE_REACT_APP_AUTH_CID = import.meta.env.VITE_REACT_APP_AUTH_CID
 export const VITE_REACT_APP_GHOKPAT = import.meta.env.VITE_REACT_APP_GHOKPAT

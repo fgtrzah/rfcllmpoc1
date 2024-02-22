@@ -30,24 +30,28 @@ function App() {
   return (
     <>
       <Navigation user={user} login={login}>
-        {user ? <button
-          style={{
-            color: colors['12'],
-            textDecoration: 'none',
-            padding: 5,
-            background: 'none',
-            appearance: 'none',
-            border: 'none',
-            cursor: 'pointer',
-          }}
-          onClick={() => {
-            window.location.hash = window.location.hash.includes('qa') ? '' : 'qa'
+        {user ? (
+          <button
+            style={{
+              color: colors['12'],
+              textDecoration: 'none',
+              padding: 5,
+              background: 'none',
+              appearance: 'none',
+              border: 'none',
+              cursor: 'pointer',
+            }}
+            onClick={() => {
+              window.location.hash = window.location.hash.includes('qa')
+                ? ''
+                : 'qa'
 
-            toggleQA()
-          }}
-        >
-          <ChatIcon />
-        </button> : null}
+              toggleQA()
+            }}
+          >
+            <ChatIcon />
+          </button>
+        ) : null}
       </Navigation>
       <BodyContainer>
         <OmniSearch />
@@ -62,9 +66,7 @@ function App() {
           </Route>
         </Routes>
       </BodyContainer>
-      <FooterContainer>
-        {user ? <OmniChat /> : null}
-      </FooterContainer>
+      <FooterContainer>{user ? <OmniChat /> : null}</FooterContainer>
     </>
   )
 }

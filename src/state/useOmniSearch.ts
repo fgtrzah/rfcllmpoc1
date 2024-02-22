@@ -13,8 +13,8 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
       ...store,
       omniSearch: {
         ...store.omniSearch,
-        active: false
-      }
+        active: false,
+      },
     })
   }
 
@@ -56,7 +56,7 @@ const useOmniSearch = (_: UseOmniSearchOptions) => {
     handleFilter,
     handleSearch,
     handleSubmit,
-    handleSearchSelect
+    handleSearchSelect,
   }
 }
 

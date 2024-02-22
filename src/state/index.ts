@@ -8,13 +8,18 @@ import useSearch from './useSearch'
 import useAbortableStreamFetch from './useAbortableStreamFetch'
 import { RFCDOCTREE } from 'src/config'
 import useQAVisibility from './useQAVisibility'
-import { OctokitProvider, useOctokit, useGithub, useOctokitService } from './useOctokit'
+import {
+  OctokitProvider,
+  useOctokit,
+  useGithub,
+  useOctokitService,
+} from './useOctokit'
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
 export type Message = {
-  role?: 'system' | 'user',
-  message?: string,
+  role?: 'system' | 'user'
+  message?: string
   [x: string]: any
 }
 export type Store = {

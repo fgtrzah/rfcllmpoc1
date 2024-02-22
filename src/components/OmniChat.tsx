@@ -26,7 +26,6 @@ const OmniChat = (props: OmniChatProps) => {
     onSubmit: handleSend,
   })
   useEffect(() => {
-
     const down = (e: KeyboardEvent) => {
       if (e.key === 'b' && (e.metaKey || e.ctrlKey)) {
         e.preventDefault()

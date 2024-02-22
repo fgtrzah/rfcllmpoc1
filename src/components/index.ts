@@ -41,5 +41,5 @@ export {
   FooterContainer,
   CloseIcon,
   LoginIcon,
-  LogoutIcon
+  LogoutIcon,
 }
