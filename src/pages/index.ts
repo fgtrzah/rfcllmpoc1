@@ -6,6 +6,7 @@ import SearchResultDetail from './SearchResultDetail'
 import NoMatch from './NoMatch'
 import Settings from './Settings'
 import Profile from './Profile'
+import Evals from './Evals'
 
 export {
   Overview,
@@ -16,4 +17,5 @@ export {
   SearchResultDetail,
   Settings,
   Profile,
+  Evals
 }

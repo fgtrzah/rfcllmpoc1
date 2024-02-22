@@ -1,4 +1,5 @@
 import {
+    Evals,
   NoMatch,
   Overview,
   Profile,
@@ -63,6 +64,7 @@ function App() {
             <Route path='settings' element={<Settings />} />
             <Route path='profile' element={<Profile />} />
             <Route path='/' element={<Overview />} />
+            <Route path='/evals' element={<Evals />} />
             <Route path='*' element={<NoMatch />} />
           </Route>
         </Routes>
