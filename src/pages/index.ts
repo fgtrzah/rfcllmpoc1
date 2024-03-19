@@ -17,5 +17,5 @@ export {
   SearchResultDetail,
   Settings,
   Profile,
-  Evals
+  Evals,
 }

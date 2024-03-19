@@ -56,6 +56,13 @@ export const RFCLLMOPENAPIEP = import.meta.env.VITE_REACT_APP_RFCLLMOPENAPIEP
 export const TEST_USERNAME = import.meta.env.VITE_REACT_TEST_USERNAME
 export const TEST_USERPW = import.meta.env.VITE_REACT_TEST_USERPW
 export const RFCEDITOREP = `${RFCLLMEP}/search/rfc`
+export const RFCAPIEPTOKEN = import.meta.env.VITE_REACT_RFCAPIEPTOKEN
+export const OAIAUTHSECRET = atob(import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET)
+export const VITE_REACT_APP_AUTH_EP = import.meta.env.VITE_REACT_APP_AUTH_EP
+export const VITE_REACT_APP_AUTH_REDIRECTURL = import.meta.env
+  .VITE_REACT_APP_AUTH_REDIRECTURL
+export const VITE_REACT_APP_AUTH_CID = import.meta.env.VITE_REACT_APP_AUTH_CID
+export const VITE_REACT_APP_GHOKPAT = import.meta.env.VITE_REACT_APP_GHOKPAT
 export const RFCDOCTREE = [
   {
     value: 'flatTreeItem_lvl-1_item-1',
@@ -121,10 +128,3 @@ export const RFCDOCTREE = [
     content: `RFC ${index + 6000 + 1}`,
   })),
 ]
-export const RFCAPIEPTOKEN = import.meta.env.VITE_REACT_RFCAPIEPTOKEN
-export const OAIAUTHSECRET = import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET
-export const VITE_REACT_APP_AUTH_EP = import.meta.env.VITE_REACT_APP_AUTH_EP
-export const VITE_REACT_APP_AUTH_REDIRECTURL = import.meta.env
-  .VITE_REACT_APP_AUTH_REDIRECTURL
-export const VITE_REACT_APP_AUTH_CID = import.meta.env.VITE_REACT_APP_AUTH_CID
-export const VITE_REACT_APP_GHOKPAT = import.meta.env.VITE_REACT_APP_GHOKPAT
