@@ -2,8 +2,10 @@ import React, { useEffect } from 'react'
 import './OmniChat.css'
 import { useForm, useOmniChat } from 'src/state'
 import {
+  BackwardIcon,
   CloseIcon,
   ExpandIcon,
+  ForwardIcon,
   FuseLLMIcon,
   LLMSymbolIcon,
   RestartIcon,
@@ -45,7 +47,7 @@ const OmniChat = (props: OmniChatProps) => {
     document.addEventListener('keydown', down)
     return () => document.removeEventListener('keydown', down)
   }, [])
-  useEffect(() => {}, [omniChatStore.completions])
+  useEffect(() => { }, [omniChatStore.completions])
 
   return window.location.hash.includes('qa') ? (
     <div className='oc-container'>
@@ -103,11 +105,33 @@ const OmniChat = (props: OmniChatProps) => {
           </button>
         </div>
       </header>
-      <div>
-        <pre>{JSON.stringify(omniChatStore.messages, null, 2)}</pre>
-      </div>
-      <main className='oc-content'>
+
+      <main className='oc-content' style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}>
         {loading && 'Processing response...'}
+        <div style={{ top: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <button
+            style={{
+              background: 'none',
+              border: 'none',
+              appearance: 'none',
+              color: '#b7cbf4',
+              cursor: 'pointer',
+            }}
+          >
+            <BackwardIcon />
+          </button>
+          <button
+            style={{
+              background: 'none',
+              border: 'none',
+              appearance: 'none',
+              color: '#b7cbf4',
+              cursor: 'pointer',
+            }}
+          >
+            <ForwardIcon />
+          </button>
+        </div>
         <br />
         {omniChatStore.completions[0]?.completion?.choices?.map(
           (m: any, mi: number) => {
@@ -123,6 +147,8 @@ const OmniChat = (props: OmniChatProps) => {
             )
           },
         )}
+        <br />
+
       </main>
       <section>{props?.children}</section>
       <footer className='oc-footer'>

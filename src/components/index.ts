@@ -27,6 +27,8 @@ import LLMFuseIcon from './LLMFuseIcon'
 import RestartIcon from './RestartIcon'
 import SendMessageIcon from './SendMessageIcon'
 import FuseLLMIcon from './FuseLLMIcon'
+import ForwardIcon from './ForwardIcon'
+import BackwardIcon from './BackwardIcon'
 
 export {
   SidebarIcon,
@@ -43,6 +45,7 @@ export {
   NumCitations,
   HomeIcon,
   RestartIcon,
+  BackwardIcon,
   NumAPCitations,
   AffiliationsContinent,
   OmniSearch,
@@ -55,6 +58,7 @@ export {
   LoginIcon,
   SendMessageIcon,
   FuseLLMIcon,
+  ForwardIcon,
   LogoutIcon,
   Drawer,
   QAPaneContainer,

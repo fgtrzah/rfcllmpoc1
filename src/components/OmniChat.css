@@ -1,8 +1,9 @@
 .oc-container {
-  height: 400px;
+  height: 600px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  border-radius: 8px;
   box-sizing: border-box;
   position: fixed;
   bottom: 20px;
@@ -38,11 +39,11 @@
 
 .oc-content {
   flex: 1 1 auto;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   padding: 8px;
   margin: 8px 0px;
   background-color: #444;
-  border: none;
+  /* border: none; */
   outline: none !important;
   color: inherit;
   font-size: 10px;
@@ -56,5 +57,5 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   color: #b7cbf4 !important;
   /* transition: background-color 600s ease-in-out 0s; */
-  background-color: transparent !important;
+  background: none !important;
 }
