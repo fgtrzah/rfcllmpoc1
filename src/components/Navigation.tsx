@@ -11,8 +11,6 @@ import {
   SearchIcon,
   SettingsIcon,
 } from '.'
-import { useOctokit } from 'src/state'
-import { deOnion } from 'src/utils'
 
 type LinkObj = {
   text?: string | any
@@ -38,10 +36,11 @@ interface Navigationnavconfig extends React.PropsWithChildren {
     right?: React.ReactNode[]
     [x: string]: any
   }
-  user?: {
+  data?: {
     [x: string]: any
   }
   login?: () => void
+  logout?: () => void
 }
 
 const linkAsBtnStyles: React.CSSProperties = {
@@ -55,13 +54,14 @@ const linkAsBtnStyles: React.CSSProperties = {
 }
 
 function Navigation(props: Navigationnavconfig) {
-  const { user, login } = props
+  const { data, login } = props
+  const user = data
   const navconfig: Navigationnavconfig = {
     links: {
       top: [
         {
           to: 'https://datatracker.ietf.org/',
-          text: 'Data Tracker',
+          text: 'Data-Tracker',
           onClick: (e: any) =>
             (window.location.href = 'https://datatracker.ietf.org'),
         },
@@ -75,13 +75,6 @@ function Navigation(props: Navigationnavconfig) {
           title: 'Under construction',
           disabled: true,
           text: 'Docs',
-          onClick: (e: any) => console.log(e.target.value),
-        },
-        {
-          to: '#',
-          title: 'Under construction',
-          disabled: true,
-          text: 'GitHub',
           onClick: (e: any) => console.log(e.target.value),
         },
       ],
@@ -206,17 +199,20 @@ function Navigation(props: Navigationnavconfig) {
             )
           })}
           {props.children}
-          {user.data ? (
+          {props?.data?.access_token ? (
             <button
-              onClick={() =>
-                (window.location.href = 'https://github.com/logout')
-              }
+              title='log out'
+              onClick={props.logout}
               style={linkAsBtnStyles}
             >
               <LogoutIcon />
             </button>
           ) : (
-            <button style={linkAsBtnStyles} onClick={() => login()}>
+            <button
+              title='log in'
+              style={linkAsBtnStyles}
+              onClick={() => login()}
+            >
               <LoginIcon />
             </button>
           )}

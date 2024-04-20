@@ -19,6 +19,14 @@ import OmniChat from './OmniChat'
 import CloseIcon from './CloseIcon'
 import LoginIcon from './LoginIcon'
 import LogoutIcon from './LogoutIcon'
+import Drawer from './Drawer'
+import QAPaneContainer from './QAPaneContainer'
+import ExpandIcon from './ExpandIcon'
+import LLMSymbolIcon from './LLMSymbolIcon'
+import LLMFuseIcon from './LLMFuseIcon'
+import RestartIcon from './RestartIcon'
+import SendMessageIcon from './SendMessageIcon'
+import FuseLLMIcon from './FuseLLMIcon'
 
 export {
   SidebarIcon,
@@ -29,17 +37,25 @@ export {
   Navigation,
   Button,
   ReadIcon,
+  LLMFuseIcon,
   NumDocAuths,
+  LLMSymbolIcon,
   NumCitations,
   HomeIcon,
+  RestartIcon,
   NumAPCitations,
   AffiliationsContinent,
   OmniSearch,
   OmniChat,
   OmniSearchResults,
   ChatIcon,
+  ExpandIcon,
   FooterContainer,
   CloseIcon,
   LoginIcon,
+  SendMessageIcon,
+  FuseLLMIcon,
   LogoutIcon,
+  Drawer,
+  QAPaneContainer,
 }

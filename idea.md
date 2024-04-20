@@ -165,3 +165,6 @@ const App: React.FC = () => {
 
 export default App;
 ```
+
+Chat widget new controls:
+![cw](https://github.com/fgtrzah/rfcllmpoc1/blob/main/chatwidget.png?raw=true)

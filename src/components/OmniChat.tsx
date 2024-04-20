@@ -1,7 +1,15 @@
 import React, { useEffect } from 'react'
 import './OmniChat.css'
 import { useForm, useOmniChat } from 'src/state'
-import { CloseIcon } from '.'
+import {
+  CloseIcon,
+  ExpandIcon,
+  FuseLLMIcon,
+  LLMSymbolIcon,
+  RestartIcon,
+  SendMessageIcon,
+} from '.'
+import { colors } from 'src/config'
 
 export interface OmniChatProps extends React.PropsWithChildren {
   [x: string]: unknown
@@ -13,6 +21,7 @@ const OmniChat = (props: OmniChatProps) => {
     loading,
     handleSend,
     toggleQA,
+    toggleQAPanel,
   } = useOmniChat()
   const { data, handleChange, handleSubmit, errors } = useForm<any>({
     validations: {
@@ -36,52 +45,133 @@ const OmniChat = (props: OmniChatProps) => {
     document.addEventListener('keydown', down)
     return () => document.removeEventListener('keydown', down)
   }, [])
+  useEffect(() => {}, [omniChatStore.completions])
 
   return window.location.hash.includes('qa') ? (
     <div className='oc-container'>
       <header className='oc-header'>
         <span>QA Context: {omniChatStore.scopes as any}</span>
-        <button
-          onClick={toggleQA}
-          style={{
-            background: 'none',
-            border: 'none',
-            appearance: 'none',
-            color: '#b7cbf4',
-            cursor: 'pointer',
-          }}
-        >
-          <CloseIcon />
-        </button>
+        <div>
+          <button
+            onClick={() => console.log('launch llm selector')}
+            style={{
+              background: 'none',
+              border: 'none',
+              appearance: 'none',
+              color: '#b7cbf4',
+              cursor: 'pointer',
+            }}
+          >
+            <FuseLLMIcon />
+          </button>
+          <button
+            onClick={() => console.log('launch llm selector')}
+            style={{
+              background: 'none',
+              border: 'none',
+              appearance: 'none',
+              color: '#b7cbf4',
+              cursor: 'pointer',
+            }}
+          >
+            <LLMSymbolIcon />
+          </button>
+          <button
+            onClick={toggleQAPanel}
+            style={{
+              background: 'none',
+              border: 'none',
+              appearance: 'none',
+              color: '#b7cbf4',
+              cursor: 'pointer',
+            }}
+          >
+            <ExpandIcon />
+          </button>
+
+          <button
+            onClick={toggleQA}
+            style={{
+              background: 'none',
+              border: 'none',
+              appearance: 'none',
+              color: '#b7cbf4',
+              cursor: 'pointer',
+            }}
+          >
+            <CloseIcon />
+          </button>
+        </div>
       </header>
+      <div>
+        <pre>{JSON.stringify(omniChatStore.messages, null, 2)}</pre>
+      </div>
       <main className='oc-content'>
         {loading && 'Processing response...'}
+        <br />
         {omniChatStore.completions[0]?.completion?.choices?.map(
           (m: any, mi: number) => {
             return (
-              <>
-                <span key={mi}>
-                  <strong>{m.message.role.toUpperCase()}:</strong>
-                  {m.message.content}
-                </span>
-              </>
+              <span key={mi}>
+                <dt style={{ marginBottom: 4 }}>
+                  <strong style={{ color: colors[5] }}>
+                    {m.message.role.toUpperCase()}:
+                  </strong>
+                </dt>
+                <dd>{m.message.content}</dd>
+              </span>
             )
           },
         )}
       </main>
       <section>{props?.children}</section>
       <footer className='oc-footer'>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            width: '100%',
+          }}
+        >
           <input
             disabled={loading}
-            style={{ width: 380, background: 'none' }}
+            style={{ flexGrow: 1, backgroundColor: 'rgba(0,0,0,0) !important' }}
             value={omniChatStore.search}
             name='query'
-            placeholder='Describe your business...'
+            placeholder='Ask a question about this RFC'
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               handleChange(e.target.value)
             }
           />
+          <div style={{ display: 'flex' }}>
+            <button
+              onClick={() => console.log('restart')}
+              style={{
+                background: 'none',
+                border: 'none',
+                appearance: 'none',
+                color: '#b7cbf4',
+                cursor: 'pointer',
+              }}
+              title='Regenerate response'
+            >
+              <RestartIcon />
+            </button>
+            <button
+              type='submit'
+              style={{
+                background: 'none',
+                border: 'none',
+                appearance: 'none',
+                color: '#b7cbf4',
+                cursor: 'pointer',
+              }}
+            >
+              <SendMessageIcon />
+            </button>
+          </div>
         </form>
       </footer>
     </div>

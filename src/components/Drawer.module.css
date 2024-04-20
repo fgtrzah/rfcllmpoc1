@@ -1,0 +1,46 @@
+.Drawer {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  width: 30%;
+  height: 100%;
+  background: #444;
+  transition: transform 0.5s ease-out;
+  padding: 20px;
+}
+
+.Drawer.Left {
+  left: 0;
+  transform: translateX(-100%);
+  box-shadow: -0.5rem 0 1.5rem #000;
+}
+
+.Drawer.Left .Close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.Drawer.Right {
+  right: 0;
+  transform: translateX(100%);
+  box-shadow: 0.5rem 0 1.5rem #000;
+}
+
+.Drawer.Right .Close {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  cursor: pointer;
+}
+
+.Drawer .Content {
+  margin: 4rem 1rem 1rem;
+}
+
+.Drawer.Open {
+  transform: translateX(0%);
+}

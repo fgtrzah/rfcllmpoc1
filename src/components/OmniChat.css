@@ -50,3 +50,11 @@
   line-height: 1em;
   box-sizing: border-box;
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  color: #b7cbf4 !important;
+  /* transition: background-color 600s ease-in-out 0s; */
+  background-color: transparent !important;
+}

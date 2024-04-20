@@ -1,12 +1,15 @@
 import { OAIAUTHSECRET, RFCAPIEP } from 'src/config'
 import { FormEvent, useCallback, useEffect, useState } from 'react'
-import { useStore, useOctokitService } from 'src/state'
+import { useStore, useAuthService } from 'src/state'
 import { hashCode } from 'src/utils'
 
 const useOmniChat = () => {
   const [store, dispatch] = useStore()
   const { omniChat } = store
-  const auth = useOctokitService() as any
+  const { data } = useAuthService({
+    onSuccess: (d) => console.log(d),
+    onError: (d) => console.log(d),
+  }) as any
   const [loading, setLoading] = useState(false)
 
   // future state
@@ -47,6 +50,16 @@ const useOmniChat = () => {
     console.log(q)
   }
 
+  const toggleQAPanel = () => {
+    dispatch({
+      ...store,
+      omniChat: {
+        ...store.omniChat,
+        active: !store.omniChat.active,
+      },
+    })
+  }
+
   // current state
   const toggleQA = () => {
     dispatch({
@@ -65,7 +78,7 @@ const useOmniChat = () => {
     let headers = new Headers()
     headers.append('Content-Type', 'application/json')
     headers.append('x-access-token', OAIAUTHSECRET || '')
-    headers.append('Authorization', `Bearer ${auth.access_token}`)
+    headers.append('Authorization', `Bearer ${data.access_token}`)
 
     let requestOptions: any = {
       method: 'POST',
@@ -107,6 +120,7 @@ const useOmniChat = () => {
     handleSend,
     loading,
     toggleQA,
+    toggleQAPanel,
 
     // future state
     messages,

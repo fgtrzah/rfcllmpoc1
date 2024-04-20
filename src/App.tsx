@@ -9,7 +9,7 @@ import {
 } from './pages'
 import { Route, Routes } from 'react-router'
 import './App.css'
-import { colors } from './config'
+import { RFCDOCTREE, colors } from './config'
 import {
   ChatIcon,
   BodyContainer,
@@ -17,48 +17,65 @@ import {
   FooterContainer,
   OmniChat,
   Navigation,
+  LogoutIcon,
+  QAPaneContainer,
 } from './components'
-import { useOctokitService, useOmniChat } from './state'
+import { useOmniChat, useAuthService, useOctokit } from './state'
 import { useEffect } from 'react'
+import { OAuthPopup } from '@tasoskakour/react-use-oauth2'
+import { useOctokitService } from './state/useOctokit'
 
 function App() {
-  const { user, login } = useOctokitService()
+  const { data, loading, error, getAuth, logout } = useAuthService({
+    onSuccess: (opts: any) => console.log(opts),
+    onError: (opts: any) => console.log(opts),
+  })
+  const { user, login, access_token } = useOctokitService()
   const { toggleQA } = useOmniChat()
+  const isLoggedIn = Boolean(data)
 
   useEffect(() => {
-    console.log(user)
-  }, [user])
+    console.log(RFCDOCTREE)
+  }, [])
+
+  useEffect(() => {
+    console.log(data, loading, error)
+  }, [data, loading, error])
 
   return (
     <>
-      <Navigation user={user} login={login}>
-        {user ? (
-          <button
-            style={{
-              color: colors['12'],
-              textDecoration: 'none',
-              padding: 5,
-              background: 'none',
-              appearance: 'none',
-              border: 'none',
-              cursor: 'pointer',
-            }}
-            onClick={() => {
-              window.location.hash = window.location.hash.includes('qa')
-                ? ''
-                : 'qa'
+      <Navigation data={data} login={getAuth} logout={logout}>
+        {isLoggedIn
+          ? [
+              <button
+                title='qa'
+                style={{
+                  color: colors['12'],
+                  textDecoration: 'none',
+                  padding: 5,
+                  background: 'none',
+                  appearance: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                }}
+                onClick={() => {
+                  window.location.hash = window.location.hash.includes('qa')
+                    ? ''
+                    : 'qa'
 
-              toggleQA()
-            }}
-          >
-            <ChatIcon />
-          </button>
-        ) : null}
+                  toggleQA()
+                }}
+              >
+                <ChatIcon />
+              </button>,
+            ]
+          : null}
       </Navigation>
       <BodyContainer>
         <OmniSearch />
         <Routes>
           <Route path='/'>
+            <Route element={<OAuthPopup />} path='/auth/callback' />
             <Route path='search/:rfcid' element={<SearchResultDetail />} />
             <Route path='search' element={<Search />} />
             <Route path='settings' element={<Settings />} />
@@ -69,7 +86,8 @@ function App() {
           </Route>
         </Routes>
       </BodyContainer>
-      <FooterContainer>{user ? <OmniChat /> : null}</FooterContainer>
+      <QAPaneContainer />
+      <FooterContainer>{data ? <OmniChat /> : null}</FooterContainer>
     </>
   )
 }

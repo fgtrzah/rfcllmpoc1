@@ -1,30 +1,3 @@
-/*
-https://github.com/jaredgorski/SpaceCamp
-colors:
-  background: '#121212'
-  foreground: '#D0D0D0'
-
-  text:       '#0D0D0D'
-  cursor:     '#D0D0D0'
-
-  0:          '#282828'   # black
-  1:          '#D71A1A'   # red
-  2:          '#57BA37'   # green
-  3:          '#F0D50C'   # yellow
-  4:          '#91AADF'   # blue
-  5:          '#CF73E6'   # magenta
-  6:          '#B7CBF4'   # cyan
-  7:          '#DEDEDE'   # white
-
-  8:          '#666666'   # bright black
-  9:          '#FF0000'   # bright red
-  10:         '#D8FA3B'   # bright green
-  11:         '#E7C547'   # bright yellow
-  12:         '#B7CBF4'   # bright blue
-  13:         '#B77EE0'   # bright magenta
-  14:         '#A9C1DE'   # bright cyan
-  15:         '#EEEEEE'   # bright white
- */
 export const colors = {
   background: '#121212',
   foreground: '#D0D0D0',
@@ -50,6 +23,18 @@ export const colors = {
   14: '#A9C1DE',
   15: '#EEEEEE',
 }
+
+export const VITE_REACT_APP_GHOAUTHAPPHOMEPAGE = import.meta.env
+  .VITE_REACT_APP_GHOAUTHAPPHOMEPAGE
+export const VITE_REACT_APP_GHOAUTHAPPAUTHURL = import.meta.env
+  .VITE_REACT_APP_GHOAUTHAPPAUTHURL
+export const VITE_REACT_APP_GHOAUTHAPPCBURL = import.meta.env
+  .VITE_REACT_APP_GHOAUTHAPPCBURL
+export const VITE_REACT_APP_GHOAUTHAPPCID = import.meta.env
+  .VITE_REACT_APP_GHOAUTHAPPCID
+export const VITE_REACT_APP_GHOAUTHAPPCS = import.meta.env
+  .VITE_REACT_APP_GHOAUTHAPPCS
+
 export const RFCLLMEP = import.meta.env.VITE_REACT_APP_RFCLLMEP
 export const RFCAPIEP = import.meta.env.VITE_REACT_APP_RFCAPIEP
 export const RFCLLMOPENAPIEP = import.meta.env.VITE_REACT_APP_RFCLLMOPENAPIEP
@@ -57,7 +42,7 @@ export const TEST_USERNAME = import.meta.env.VITE_REACT_TEST_USERNAME
 export const TEST_USERPW = import.meta.env.VITE_REACT_TEST_USERPW
 export const RFCEDITOREP = `${RFCLLMEP}/search/rfc`
 export const RFCAPIEPTOKEN = import.meta.env.VITE_REACT_RFCAPIEPTOKEN
-export const OAIAUTHSECRET = atob(import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET)
+export const OAIAUTHSECRET = import.meta.env.VITE_REACT_TEST_OAIAUTHSECRET
 export const VITE_REACT_APP_AUTH_EP = import.meta.env.VITE_REACT_APP_AUTH_EP
 export const VITE_REACT_APP_AUTH_REDIRECTURL = import.meta.env
   .VITE_REACT_APP_AUTH_REDIRECTURL

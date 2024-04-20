@@ -47,15 +47,14 @@ import { Octokit as OctokitClient } from '@octokit/rest'
 import React, { useEffect, useMemo, useState } from 'react'
 import useSWR from 'swr'
 import { RestEndpointMethodTypes } from '@octokit/plugin-rest-endpoint-methods'
-import { deOnion } from 'src/utils'
+import { useOAuth2 } from '@tasoskakour/react-use-oauth2'
 import {
-  VITE_REACT_APP_GHOKPAT,
-  VITE_REACT_APP_AUTH_EP,
-  VITE_REACT_APP_AUTH_CID,
-  VITE_REACT_APP_RFCAPIEP,
+  VITE_REACT_APP_GHOAUTHAPPAUTHURL,
+  VITE_REACT_APP_GHOAUTHAPPCBURL,
+  VITE_REACT_APP_GHOAUTHAPPCID,
 } from 'src/config'
-import { useLocation } from 'react-router'
-import { useStore } from '.'
+import { useLocation } from 'react-use'
+import { act } from 'react-dom/test-utils'
 
 type OctokitContextInterface = {
   auth: any
@@ -149,6 +148,48 @@ export const OctokitProvider = (props: OctokitProps) => {
   )
 }
 
+/*
+ * GH Auth App Variant A:
+ *
+  const useOctokitService = <T extends any>() => {
+    const location = useLocation()
+    const user = useOctokit('users', 'getAuthenticated', undefined, {})
+    const [access_token, setAT] = useState<any>(
+      new URLSearchParams(location.search || '')?.get?.('code'),
+    )
+    const login = () => {
+      window.location.href = `https://github.com/login/oauth/authorize?client_id=Iv1.732c40d755888833&redirect_uri=https://127.0.0.1:8080/auth/callback`
+    }
+
+    useEffect(() => {
+      if (!user && login && typeof login === 'function') login()
+      if (user) console.log(user)
+    }, [user])
+
+    useEffect(() => {
+      if (location.search.includes('code')) {
+        const getUserProfile = () => {
+          window.location.href = `https://127.0.0.1:8080/auth/callback?${location.search}`
+        }
+
+        setAT(new URLSearchParams(location.search).get('code'))
+
+        getUserProfile()
+      }
+    }, [location.search])
+
+    useEffect(() => {
+      console.log(location.state)
+    }, [location.state])
+
+    return {
+      user,
+      login,
+      access_token,
+    }
+  }
+*/
+
 const useOctokitService = <T extends any>() => {
   const location = useLocation()
   const user = useOctokit('users', 'getAuthenticated', undefined, {})
@@ -156,12 +197,12 @@ const useOctokitService = <T extends any>() => {
     new URLSearchParams(location.search || '')?.get?.('code'),
   )
   const login = () => {
-    window.location.href = `https://github.com/login/oauth/authorize?client_id=Iv1.732c40d755888833&redirect_uri=https://127.0.0.1:8080/auth/callback`
+    window.location.href = `https://github.com/login/oauth/authorize?client_id=Iv1.732c40d755888833&redirect_uri=https://127.0.0.1:5173/auth/callback`
   }
 
   useEffect(() => {
     if (!user && login && typeof login === 'function') login()
-    if (user) console.log(user)
+    if (user) console.log(user, access_token)
   }, [user])
 
   useEffect(() => {
@@ -187,8 +228,35 @@ const useOctokitService = <T extends any>() => {
   }
 }
 
+const useAuthService = <T extends any>({ onSuccess, onError }) => {
+  const { data, loading, error, getAuth, logout } = useOAuth2({
+    authorizeUrl: VITE_REACT_APP_GHOAUTHAPPAUTHURL,
+    clientId: VITE_REACT_APP_GHOAUTHAPPCID,
+    // clientSecret: VITE_REACT_APP_GHOAUTHAPPCS,
+    redirectUri: VITE_REACT_APP_GHOAUTHAPPCBURL,
+
+    scope: 'user',
+    responseType: 'code',
+    exchangeCodeForTokenQuery: {
+      url: 'https://api.github.com/user',
+      method: 'POST',
+    },
+    onSuccess: (payload) => console.log('Success', payload),
+    onError: (error_) => console.log('Error', error_),
+  })
+
+  return {
+    data,
+    loading,
+    error,
+    getAuth,
+    logout,
+  }
+}
+
 export {
-  useOctokitService,
   OctokitProvider as GithubProvider,
   useOctokit as useGithub,
+  useAuthService,
+  useOctokitService,
 }

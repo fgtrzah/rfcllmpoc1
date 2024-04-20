@@ -8,12 +8,7 @@ import useSearch from './useSearch'
 import useAbortableStreamFetch from './useAbortableStreamFetch'
 import { RFCDOCTREE } from 'src/config'
 import useQAVisibility from './useQAVisibility'
-import {
-  OctokitProvider,
-  useOctokit,
-  useGithub,
-  useOctokitService,
-} from './useOctokit'
+import { OctokitProvider, useOctokit, useAuthService } from './useOctokit'
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
@@ -45,6 +40,10 @@ export type Store = {
     scopes?: string[] | unknown
     messages?: (Message | unknown)[]
     input?: string | unknown
+    [x: string]: any
+  }
+  omniChatPanel: {
+    active?: boolean
     [x: string]: any
   }
   rfcDocumentTree: {
@@ -90,7 +89,7 @@ const [useStore, SharedStoreProvider] = createStateContext<Store>(defaultState)
 
 export {
   useOctokit,
-  useOctokitService,
+  useAuthService,
   useSearch,
   useDebounce,
   useForm,
