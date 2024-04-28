@@ -1,3 +1,3 @@
 #!/bin/bash
 
-(cd .. && ls && npm run dev &)
+(source .env && ls && npm run dev &)

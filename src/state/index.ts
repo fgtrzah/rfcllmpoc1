@@ -17,6 +17,10 @@ export type Message = {
   message?: string
   [x: string]: any
 }
+export type LLMChannel = {
+  channels?: string[] | unknown
+  selected?: 'oai'
+}
 export type Store = {
   omniSearch: {
     scopes?: string[]
@@ -39,6 +43,7 @@ export type Store = {
     active?: boolean
     scopes?: string[] | unknown
     messages?: (Message | unknown)[]
+    llmChannel?: LLMChannel
     input?: string | unknown
     [x: string]: any
   }
@@ -76,6 +81,10 @@ export const defaultState: Store = {
     scopes: window.location.pathname,
     byCompletionId: {},
     completions: [],
+    llmChannel: {
+      channels: ['oai', 'llama2', 'mistral'],
+      selected: 'oai'
+    },
     rfcThreadLinks: {},
   },
   rfcDocumentTree: {
@@ -83,6 +92,9 @@ export const defaultState: Store = {
   },
   rfcDocumentDetail: {},
   settings: {},
+  omniChatPanel: {
+    active: false
+  }
 }
 
 const [useStore, SharedStoreProvider] = createStateContext<Store>(defaultState)

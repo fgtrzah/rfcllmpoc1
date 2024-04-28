@@ -13,8 +13,9 @@ const useOmniChat = () => {
   const [loading, setLoading] = useState(false)
 
   // future state
-  const { messages, input } = omniChat
+  const { messages, input, llmChannel } = omniChat
 
+  const handleLLMChannelChange = (e) => console.log((llmChannel.channels[e.target.value]))
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({
       ...store,
@@ -93,6 +94,8 @@ const useOmniChat = () => {
           .pop()
           ?.toLowerCase()
           ?.replace(' ', '')}.txt`,
+        "invocation_style": "single",
+        "invocation_filter": "mistral"
       }),
       redirect: 'follow',
     }
@@ -100,6 +103,14 @@ const useOmniChat = () => {
     let res = await (
       await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
     ).json()
+
+    console.log('completions: \n', {
+      ...store,
+      omniChat: {
+        ...store.omniChat,
+        completions: [res],
+      },
+    })
 
     dispatch({
       ...store,

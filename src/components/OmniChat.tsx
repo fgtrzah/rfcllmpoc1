@@ -17,6 +17,36 @@ export interface OmniChatProps extends React.PropsWithChildren {
   [x: string]: unknown
 }
 
+const COMPLETIONSMOCK = [{
+  "completion": {
+    "id": "meta-llama/Meta-Llama-3-8B-Instruct-a81b1c69-9547-45be-9846-bd5e00d48c76",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": {
+          "text_offset": null,
+          "token_logprobs": null,
+          "tokens": null,
+          "top_logprobs": null
+        },
+        "text": " Icon\n\n**Please keep in mind that this is an open-source project and contributions are welcome!**\n\n**About**\n\nThe Eye of Judgment (ToE) is a Magic: The Gathering-inspired trading card game where players use creatures and spells to battle each other.\n\n**Goals**\n\n* To create a free and open-source trading card game with a unique and engaging gameplay mechanics.\n* To allow players to create and share their own cards, promoting creativity and community engagement.\n* To establish a strong online presence, including a web-based platform for trading, battling, and socializing.\n\n**Current Status**\n\nThe project is still in its early stages, but we have a working prototype with a basic set of cards, a simple AI, and a few features for trading and battling.\n\n**Components**\n\n* Cards: Each card represents a creature, spell, or other game element. Cards have unique characteristics, such as monster types, abilities, and strengths.\n* Decks: Players create decks by collecting and combining cards.\n* Battles: Players engage in turn-based battles, using their cards to attack and defend.\n* AI: The game includes a simple AI that can play against human opponents.\n* Web Platform: The game will be available on a web-based platform for trading, battling, and socializing.\n\n**Future Plans**\n\n* Expand the card set to include more creatures, spells, and game elements.\n* Improve the AI to provide more challenging and strategic gameplay.\n* Add features for trading and battling, such as tournaments and leaderboards.\n* Develop a mobile app to allow players to access the game on-the-go.\n\n**Contributing**\n\nIf you're interested in contributing to the project, please feel free to reach out. We welcome help with coding, design, testing, and other aspects of the game. Here's how you can contribute:\n\n* Report bugs or suggest improvements through the issue tracker.\n* Create and share your own cards, or help design new ones.\n* Help test and improve the game's performance.\n* Provide feedback on the game's design and balance.\n\n**Getting Started**\n\nTo get started with the project, you can:\n\n* Fork the repository on GitHub and start coding.\n* Join the discussion group on Discord to get involved in the community and provide feedback.\n* Share your ideas and suggestions through the issue tracker.\n\nThank you for your interest in the Eye of Judgment project! We're excited to collaborate and create a unique and engaging trading card game.arem</s>\nThe Eye of Judgment (ToE) is a Magic: The Gathering-inspired trading card game where players use creatures and spells to battle each other.\n\n**Please keep in mind that this is an open-source project and contributions are welcome!**\n\n**About**\n\nThe Eye of Judgment is designed to be a free and open-source trading card game with a unique and engaging gameplay mechanics. The game allows players to create and share their own cards, promoting creativity and community engagement.\n\n**Gameplay**\n\nIn ToE, players use a deck of cards to battle each other. Each card represents a creature, spell, or other game element, and has its own unique characteristics, such as monster types, abilities, and strengths. Players take turns playing cards from their deck, using their creatures to attack and defend against their opponent.\n\n**Card Types**\n\nThere are several types of cards in ToE:\n\n* Creatures: These cards represent monsters that can attack and defend.\n* Spells: These cards represent magical effects that can be used to attack, defend, or manipulate the game state.\n* Land: These cards represent the terrain that the creatures are battling on.\n* Events: These cards represent special events that can occur during the game.\n\n**Card Abilities**\n\nEach card in ToE has a unique ability that can be used during the game. Some examples of abilities include:\n\n* Attack: Creatures can use their attack ability to deal damage to the opponent's life total.\n* Block: Creatures can use their block ability to absorb damage from the opponent's creatures.\n* Create: Spells can use their create ability to summon new creatures to the battlefield.\n* Discard: Spells can use their discard ability to remove cards from the opponent's deck.\n\n**Deck Building**\n\nPlayers can build their own decks using the cards in the game. Each deck must contain a minimum number of cards and can be of any size. Players can use a variety of cards to create a deck that suits their playstyle.\n\n**Tournaments**\n\nPlayers can participate in tournaments to compete against other players. Tournaments can be hosted by the game's developers or by players themselves. The winner of a tournament receives a prize, which can be in the form of a unique card or other reward.\n\n**AI**\n\nToE has a simple AI that can play against human opponents. The AI is designed to provide a challenging and enjoyable experience for players. The AI's difficulty level can be adjusted to suit the player's skill level.\n\n**Web Platform**\n\nToE will be available on a web-based platform for trading, battling, and socializing. The platform will allow players to create and share their own cards, join tournaments, and connect with other players.\n\n**Future Plans**\n\nIn the future, we plan to add more features to ToE, including:\n\n* New card types and abilities\n* Improved AI\n* Multiplayer modes\n* Mobile app support\n\n**Contributing**\n\nIf you're interested in contributing to ToE, please feel free to reach out. We welcome help with coding, design, testing, and other aspects of the game. Here's how you can contribute:\n\n* Report bugs or suggest improvements through the issue tracker.\n* Create and share your own cards, or help design new ones.\n* Help test and improve the game's performance.\n* Provide feedback on the game's design and balance.\n\n**Getting Started**\n\nTo get started with ToE, you can:\n\n* Fork the repository on GitHub and start coding.\n* Join the discussion group on Discord to get involved in the community and provide feedback.\n* Share your ideas and suggestions through the issue tracker.\n\nThank you for your interest in the Eye of Judgment project! We're excited to collaborate and create a unique and engaging trading card game."
+      }
+    ],
+    "created": 1714317574,
+    "model": "meta-llama/Meta-Llama-3-8B-Instruct",
+    "object": "text_completion",
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1241,
+      "prompt_tokens": 6,
+      "total_tokens": 1247
+    }
+  },
+  "query": "Please summarize the abstract of the provided RFC",
+  "context": "https://www.rfc-editor.org/rfc/rfc6475.txt"
+}];
+
 const OmniChat = (props: OmniChatProps) => {
   const {
     omniChat: omniChatStore,
@@ -25,7 +55,7 @@ const OmniChat = (props: OmniChatProps) => {
     toggleQA,
     toggleQAPanel,
   } = useOmniChat()
-  const { data, handleChange, handleSubmit, errors } = useForm<any>({
+  const { handleChange, handleSubmit } = useForm<any>({
     validations: {
       name: {
         pattern: {
@@ -47,7 +77,7 @@ const OmniChat = (props: OmniChatProps) => {
     document.addEventListener('keydown', down)
     return () => document.removeEventListener('keydown', down)
   }, [])
-  useEffect(() => { }, [omniChatStore.completions])
+  useEffect(() => { console.log(omniChatStore) }, [omniChatStore.completions])
 
   return window.location.hash.includes('qa') ? (
     <div className='oc-container'>
@@ -139,10 +169,10 @@ const OmniChat = (props: OmniChatProps) => {
               <span key={mi}>
                 <dt style={{ marginBottom: 4 }}>
                   <strong style={{ color: colors[5] }}>
-                    {m.message.role.toUpperCase()}:
+                    {m?.message?.role?.toUpperCase?.() || "System"}:
                   </strong>
                 </dt>
-                <dd>{m.message.content}</dd>
+                <dd>{m?.message?.content || m?.text}</dd>
               </span>
             )
           },
@@ -202,6 +232,7 @@ const OmniChat = (props: OmniChatProps) => {
       </footer>
     </div>
   ) : null
-}
+};
+
 
 export default OmniChat
