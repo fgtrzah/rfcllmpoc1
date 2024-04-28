@@ -15,7 +15,8 @@ const useOmniChat = () => {
   // future state
   const { messages, input, llmChannel } = omniChat
 
-  const handleLLMChannelChange = (e) => console.log((llmChannel.channels[e.target.value]))
+  const handleLLMChannelChange = (e) =>
+    console.log(llmChannel.channels[e.target.value])
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({
       ...store,
@@ -94,8 +95,8 @@ const useOmniChat = () => {
           .pop()
           ?.toLowerCase()
           ?.replace(' ', '')}.txt`,
-        "invocation_style": "single",
-        "invocation_filter": "mistral"
+        invocation_style: 'single',
+        invocation_filter: 'mistral',
       }),
       redirect: 'follow',
     }

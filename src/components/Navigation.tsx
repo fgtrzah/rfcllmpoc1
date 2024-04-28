@@ -87,26 +87,26 @@ function Navigation(props: Navigationnavconfig) {
         },
         user
           ? {
-            to: 'profile',
-            title: 'Under construction',
-            children: <ProfileIcon />,
-            onClick: (e: any) => console.log(e.target.value),
-          }
+              to: 'profile',
+              title: 'Under construction',
+              children: <ProfileIcon />,
+              onClick: (e: any) => console.log(e.target.value),
+            }
           : null,
         user
           ? {
-            to: 'search',
-            children: <SearchIcon />,
-            onClick: (e: any) => console.log(e.target.value),
-          }
+              to: 'search',
+              children: <SearchIcon />,
+              onClick: (e: any) => console.log(e.target.value),
+            }
           : null,
         user
           ? {
-            to: 'settings',
-            title: 'Under construction',
-            children: <SettingsIcon />,
-            onClick: (e: any) => console.log(e.target.value),
-          }
+              to: 'settings',
+              title: 'Under construction',
+              children: <SettingsIcon />,
+              onClick: (e: any) => console.log(e.target.value),
+            }
           : null,
       ],
     },
@@ -116,7 +116,6 @@ function Navigation(props: Navigationnavconfig) {
   const { access_token } = useOctokitService()
 
   useEffect(() => {
-
     console.log(access_token)
   }, [access_token])
 

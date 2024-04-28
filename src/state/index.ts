@@ -83,7 +83,7 @@ export const defaultState: Store = {
     completions: [],
     llmChannel: {
       channels: ['oai', 'llama2', 'mistral'],
-      selected: 'oai'
+      selected: 'oai',
     },
     rfcThreadLinks: {},
   },
@@ -93,8 +93,8 @@ export const defaultState: Store = {
   rfcDocumentDetail: {},
   settings: {},
   omniChatPanel: {
-    active: false
-  }
+    active: false,
+  },
 }
 
 const [useStore, SharedStoreProvider] = createStateContext<Store>(defaultState)
