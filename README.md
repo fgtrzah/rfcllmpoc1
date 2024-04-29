@@ -23,7 +23,6 @@ lint
 npm run format
 ```
 
-
 #### Dependencies
 
 - depends on backend counterpart which will be published once the repo is cleansed and the supply chain security is ready for production
