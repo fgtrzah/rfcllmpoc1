@@ -35,10 +35,6 @@ function App() {
   const isLoggedIn = Boolean(data)
 
   useEffect(() => {
-    console.log(RFCDOCTREE)
-  }, [])
-
-  useEffect(() => {
     console.log(data, loading, error)
   }, [data, loading, error])
 
