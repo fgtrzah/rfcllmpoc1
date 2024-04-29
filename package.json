@@ -16,7 +16,7 @@
     "@octokit/rest": "^20.0.2",
     "@tanstack/react-query": "^5.15.0",
     "@tasoskakour/react-use-oauth2": "^2.0.0",
-    "ai": "^2.2.31",
+    "ai": "^2.2.37",
     "cmdk": "^0.2.0",
     "openai": "^4.28.0",
     "react": "^18.2.0",
