@@ -1,6 +1,6 @@
 .Drawer {
   position: fixed;
-  z-index: 9999;
+  z-index: 99999;
   top: 0;
   width: 30%;
   height: 100%;

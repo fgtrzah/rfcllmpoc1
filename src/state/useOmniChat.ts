@@ -55,6 +55,10 @@ const useOmniChat = () => {
   const toggleQAPanel = () => {
     dispatch({
       ...store,
+      omniChatPanel: {
+        ...store.omniChatPanel,
+        active: !store.omniChatPanel.active,
+      },
       omniChat: {
         ...store.omniChat,
         active: !store.omniChat.active,
