@@ -3,6 +3,26 @@
 This is the front end for 1) browsing RFC documents with a context menu and a ietf datatracker api proxy
 2) a baseline llm driven QA platform that uses basic prompt engineering.
 
+#### Quick start
+
+run locally
+```bash
+chmod +x ./scripts/*
+./scripts/start.sh
+```
+
+generating repetitive components
+
+```bash
+./scripts/genicon.sh iconname
+```
+
+lint
+```bash
+npm run format
+```
+
+
 #### Dependencies
 
 - depends on backend counterpart which will be published once the repo is cleansed and the supply chain security is ready for production
