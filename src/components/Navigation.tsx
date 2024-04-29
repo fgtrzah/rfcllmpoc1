@@ -116,10 +116,6 @@ function Navigation(props: Navigationnavconfig) {
   const { access_token } = useOctokitService()
 
   useEffect(() => {
-<<<<<<< HEAD
-=======
-
->>>>>>> 08885bc (Ah/cw (#18))
     console.log(access_token)
   }, [access_token])
 
