@@ -79,9 +79,13 @@ const OmniChat = (props: OmniChatProps) => {
     document.addEventListener('keydown', down)
     return () => document.removeEventListener('keydown', down)
   }, [])
+<<<<<<< HEAD
   useEffect(() => {
     console.log(omniChatStore)
   }, [omniChatStore.completions])
+=======
+  useEffect(() => { }, [omniChatStore.completions])
+>>>>>>> 08885bc (Ah/cw (#18))
 
   return window.location.hash.includes('qa') ? (
     <div className='oc-container'>
@@ -140,6 +144,7 @@ const OmniChat = (props: OmniChatProps) => {
         </div>
       </header>
 
+<<<<<<< HEAD
       <main
         className='oc-content'
         style={{
@@ -157,6 +162,11 @@ const OmniChat = (props: OmniChatProps) => {
             justifyContent: 'space-between',
           }}
         >
+=======
+      <main className='oc-content' style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}>
+        {loading && 'Processing response...'}
+        <div style={{ top: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+>>>>>>> 08885bc (Ah/cw (#18))
           <button
             style={{
               background: 'none',
@@ -196,6 +206,10 @@ const OmniChat = (props: OmniChatProps) => {
           },
         )}
         <br />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 08885bc (Ah/cw (#18))
       </main>
       <section>{props?.children}</section>
       <footer className='oc-footer'>
