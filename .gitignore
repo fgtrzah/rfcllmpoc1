@@ -24,3 +24,9 @@ dist-ssr
 *.sw?
 .env
 .cql/*
+*.pem
+*.der
+*.crt
+*.pfx
+*.p12
+.cert/*
