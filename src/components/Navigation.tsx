@@ -116,7 +116,6 @@ function Navigation(props: Navigationnavconfig) {
   const { access_token } = useOctokitService()
 
   useEffect(() => {
-
     console.log(access_token)
   }, [access_token])
 
