@@ -5,7 +5,6 @@ This is the front end for 1) browsing RFC documents with a context menu and a ie
 
 #### Quick start
 
-
 run locally
 ```bash
 chmod +x ./scripts/*

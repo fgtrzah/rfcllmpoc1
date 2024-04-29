@@ -18,6 +18,7 @@ const Index = ({ children }: any) => (
     </SharedStoreProvider>
   </SocketProvider>
 )
+
 const router = createBrowserRouter([
   {
     path: '*',
