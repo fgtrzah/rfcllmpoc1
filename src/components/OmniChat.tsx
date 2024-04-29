@@ -139,9 +139,23 @@ const OmniChat = (props: OmniChatProps) => {
           </button>
         </div>
       </header>
-      <main className='oc-content' style={{ display: 'flex', flexDirection: 'column', position: 'relative' }}>
+      <main
+        className='oc-content'
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          position: 'relative',
+        }}
+      >
         {loading && 'Processing response...'}
-        <div style={{ top: 10, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div
+          style={{
+            top: 10,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
           <button
             style={{
               background: 'none',

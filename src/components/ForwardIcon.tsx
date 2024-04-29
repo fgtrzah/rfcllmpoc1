@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 import './ForwardIcon.module.css'
 
 const ForwardIcon = () => {

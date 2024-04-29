@@ -19,10 +19,10 @@ const normalizeResults = (search: any) => {
   return output
 }
 
-function OmniSearchResults() {
+function OmniSearchResults(props: any) {
   const search = normalizeResults(useSearch().search)
   const ids = Object.keys(search)?.slice(25)
-  const handleSelect = () => {}
+  const handleSelect = () => props?.onClick()
 
   useEffect(() => {
     console.log(search)
@@ -55,7 +55,11 @@ function OmniSearchResults() {
             return (
               <tr tabIndex={0} key={ir}>
                 <td title={search[r][0]}>
-                  <Link tabIndex={ir - 1} to={`/search/${search[r][0]}`}>
+                  <Link
+                    onClick={handleSelect}
+                    tabIndex={ir - 1}
+                    to={`/search/${search[r][0]}`}
+                  >
                     {search[r][0].split('')}
                   </Link>
                 </td>

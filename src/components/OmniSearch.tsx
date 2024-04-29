@@ -7,7 +7,8 @@ import { OmniSearchResults } from '.'
 
 const OmniSearch = () => {
   const [open, setOpen] = useState(false)
-  const { omniSearch, handleSubmit, handleSearch } = useOmniSearch({})
+  const { omniSearch, handleSubmit, handleSearch, handleSearchSelect } =
+    useOmniSearch({})
   const omniSearchAnchor = useRef(undefined)
 
   // Toggle the menu when ⌘K is pressed
@@ -49,7 +50,7 @@ const OmniSearch = () => {
             />
           </form>
         </div>
-        <OmniSearchResults />
+        <OmniSearchResults onClick={() => setOpen(!open)} />
       </Command.Dialog>
       <div ref={omniSearchAnchor} />
     </>
