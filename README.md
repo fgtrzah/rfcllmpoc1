@@ -77,3 +77,9 @@ topics and research
 - this repo scratches the itch to build a front-end system with a plethora of opportunities for egress and entry, cross-pollinated responses from current gen ai api offerings, and some alternative rfc exploration and discovery methods that ultimately accomplish the same thing as the original rfc editor/data-tracker tooling
 - in a production / industry context its better to use something like vercel ai sdk or similar frameworks (nothing against rolling your own) but the benefits of safety and moderation aware options for something as trivial or common as chat ui workflows is a thing to consider
 - *please* ensure you've trusted *and* verified via using the authoritative applications / sources that are meant to be used when reading rfcs - this isn't a redesign exercise or replacement by any means
+
+#### Notes:
+
+- it pains me to do this but, I'm gonna have to be a little conservative around the planning and
+work in progress, the botnet is seasoned at "go-to-market" so if its gonna intercept my ideas
+I'd prefer it expunge some calories and really forage for the ideas - sweat you filthy mic
