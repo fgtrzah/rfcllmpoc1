@@ -49,7 +49,12 @@ const OmniChat = (props: OmniChatProps) => {
   }, [])
 
   useEffect(() => {
-    setmsgpool([...msgpool, ...omniChatStore.completions])
+    setmsgpool(
+      [...msgpool, ...omniChatStore.completions].filter(
+        (v, i, a) =>
+          a.findIndex((v2) => JSON.stringify(v2) === JSON.stringify(v)) === i,
+      ),
+    )
   }, [omniChatStore.completions])
 
   return window.location.hash.includes('qa') ? (
@@ -104,14 +109,15 @@ const OmniChat = (props: OmniChatProps) => {
         </div>
         <br />
         {msgpool.map((c: any, ci: number) => {
+          console.log(c)
           const role = c?.choices?.[0]?.message?.role
           const content =
             c?.choices?.[0]?.message?.content || c?.choices?.[0]?.text
           return (
-            <span key={ci}>
+            <span key={ci} style={{ marginBottom: 4 }}>
               <dt style={{ marginBottom: 4, display: 'flex' }}>
                 <strong
-                  style={{ color: role === 'user' ? colors[5] : colors[8] }}
+                  style={{ color: role === 'user' ? colors[5] : colors[10] }}
                 >
                   {role?.toUpperCase?.() || 'unknown sender'}:
                 </strong>
