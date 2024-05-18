@@ -13,8 +13,9 @@ import { OctokitProvider, useOctokit, useAuthService } from './useOctokit'
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
 export type Message = {
-  role?: 'system' | 'user'
+  role?: 'system' | 'user' | 'assistant' | string
   message?: string
+  content?: string
   [x: string]: any
 }
 export type LLMChannel = {
@@ -45,6 +46,7 @@ export type Store = {
     messages?: (Message | unknown)[]
     llmChannel?: LLMChannel
     input?: string | unknown
+    completions?: any
     [x: string]: any
   }
   omniChatPanel: {

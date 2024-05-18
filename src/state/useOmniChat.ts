@@ -1,5 +1,6 @@
 import { OAIAUTHSECRET, RFCAPIEP } from 'src/config'
-import { FormEvent, useCallback, useEffect, useState } from 'react'
+import { v4 as uuid } from 'uuid'
+import { useState } from 'react'
 import { useStore, useAuthService } from 'src/state'
 import { hashCode } from 'src/utils'
 
@@ -17,7 +18,8 @@ const useOmniChat = () => {
 
   const handleLLMChannelChange = (e) =>
     console.log(llmChannel.channels[e.target.value])
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     dispatch({
       ...store,
       omniChat: {
@@ -25,31 +27,6 @@ const useOmniChat = () => {
         input: e.target.value,
       },
     })
-  }
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-
-    /*
-     * - extract query
-     * - append query to messages
-     * - copy remainder of api call
-     *   delegation
-     */
-    let q = e?.target?.query?.value
-    dispatch({
-      ...store,
-      omniChat: {
-        ...store.omniChat,
-        messages: [
-          ...messages,
-          {
-            role: 'user',
-            message: q,
-          },
-        ],
-      },
-    })
-    console.log(q)
   }
 
   const toggleQAPanel = () => {
@@ -77,16 +54,39 @@ const useOmniChat = () => {
     })
   }
 
-  const handleSend = async (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
     setLoading(true)
 
-    let headers = new Headers()
+    const q = e.target.query.value
+
+    // sync user message
+    const um = {
+      choices: [
+        {
+          message: {
+            content: q,
+            role: 'user',
+          },
+        },
+      ],
+    }
+
+    dispatch({
+      ...store,
+      omniChat: {
+        ...store.omniChat,
+        completions: [...store?.omniChat?.completions, um],
+      },
+    })
+
+    // retrieve + sync system message
+    const headers = new Headers()
     headers.append('Content-Type', 'application/json')
     headers.append('x-access-token', OAIAUTHSECRET || '')
     headers.append('Authorization', `Bearer ${data.access_token}`)
 
-    let requestOptions: any = {
+    const requestOptions: any = {
       method: 'POST',
       headers,
       body: JSON.stringify({
@@ -105,43 +105,34 @@ const useOmniChat = () => {
       redirect: 'follow',
     }
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
-    let res = await (
+    let sm = await (
       await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
     ).json()
 
-    console.log('completions: \n', {
-      ...store,
-      omniChat: {
-        ...store.omniChat,
-        completions: [res],
-      },
-    })
+    sm.completions.choices[0].message = {}
+    sm.completions.choices[0].message.role = 'assistant'
+    sm.completions.choices[0].message.content =
+      sm.completions.choices[0].message.content ||
+      sm.completions.choices[0].text
 
     dispatch({
       ...store,
       omniChat: {
         ...store.omniChat,
-        completions: [res],
+        completions: [...store.omniChat.completions, sm?.completions],
       },
     })
     setLoading(false)
   }
 
-  useEffect(() => {
-    console.log(messages)
-  }, [messages])
-
   return {
     omniChat,
-    handleSend,
     loading,
     toggleQA,
     toggleQAPanel,
-
-    // future state
     messages,
     input,
-    handleInputChange,
+    handleChange,
     handleSubmit,
   }
 }

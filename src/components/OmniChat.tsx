@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './OmniChat.css'
 import { useForm, useOmniChat } from 'src/state'
 import {
@@ -17,25 +17,25 @@ export interface OmniChatProps extends React.PropsWithChildren {
   [x: string]: unknown
 }
 
+const btnstyles: React.CSSProperties = {
+  background: 'none',
+  border: 'none',
+  appearance: 'none',
+  color: '#b7cbf4',
+  cursor: 'pointer',
+}
+
 const OmniChat = (props: OmniChatProps) => {
   const {
     omniChat: omniChatStore,
     loading,
-    handleSend,
+    handleSubmit,
     toggleQA,
+    handleChange,
     toggleQAPanel,
   } = useOmniChat()
-  const { handleChange, handleSubmit } = useForm<any>({
-    validations: {
-      name: {
-        pattern: {
-          value: '^[A-Za-z]*$',
-          message: 'Error...',
-        },
-      },
-    },
-    onSubmit: handleSend,
-  })
+  const [msgpool, setmsgpool] = useState(omniChatStore.completions)
+
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === 'b' && (e.metaKey || e.ctrlKey)) {
@@ -47,8 +47,9 @@ const OmniChat = (props: OmniChatProps) => {
     document.addEventListener('keydown', down)
     return () => document.removeEventListener('keydown', down)
   }, [])
+
   useEffect(() => {
-    console.log(omniChatStore)
+    setmsgpool([...msgpool, ...omniChatStore.completions])
   }, [omniChatStore.completions])
 
   return window.location.hash.includes('qa') ? (
@@ -58,51 +59,21 @@ const OmniChat = (props: OmniChatProps) => {
         <div>
           <button
             onClick={() => console.log('launch llm selector')}
-            style={{
-              background: 'none',
-              border: 'none',
-              appearance: 'none',
-              color: '#b7cbf4',
-              cursor: 'pointer',
-            }}
+            style={btnstyles}
           >
             <FuseLLMIcon />
           </button>
           <button
             onClick={() => console.log('launch llm selector')}
-            style={{
-              background: 'none',
-              border: 'none',
-              appearance: 'none',
-              color: '#b7cbf4',
-              cursor: 'pointer',
-            }}
+            style={btnstyles}
           >
             <LLMSymbolIcon />
           </button>
-          <button
-            onClick={toggleQAPanel}
-            style={{
-              background: 'none',
-              border: 'none',
-              appearance: 'none',
-              color: '#b7cbf4',
-              cursor: 'pointer',
-            }}
-          >
+          <button onClick={toggleQAPanel} style={btnstyles}>
             <ExpandIcon />
           </button>
 
-          <button
-            onClick={toggleQA}
-            style={{
-              background: 'none',
-              border: 'none',
-              appearance: 'none',
-              color: '#b7cbf4',
-              cursor: 'pointer',
-            }}
-          >
+          <button onClick={toggleQA} style={btnstyles}>
             <CloseIcon />
           </button>
         </div>
@@ -124,44 +95,31 @@ const OmniChat = (props: OmniChatProps) => {
             justifyContent: 'space-between',
           }}
         >
-          <button
-            style={{
-              background: 'none',
-              border: 'none',
-              appearance: 'none',
-              color: '#b7cbf4',
-              cursor: 'pointer',
-            }}
-          >
+          <button style={btnstyles}>
             <BackwardIcon />
           </button>
-          <button
-            style={{
-              background: 'none',
-              border: 'none',
-              appearance: 'none',
-              color: '#b7cbf4',
-              cursor: 'pointer',
-            }}
-          >
+          <button style={btnstyles}>
             <ForwardIcon />
           </button>
         </div>
         <br />
-        {omniChatStore?.completions?.[0]?.completion?.choices?.map(
-          (m: any, mi: number) => {
-            return (
-              <span key={mi}>
-                <dt style={{ marginBottom: 4 }}>
-                  <strong style={{ color: colors[5] }}>
-                    {m?.message?.role?.toUpperCase?.() || 'System'}:
-                  </strong>
-                </dt>
-                <dd>{m?.message?.content || m?.text}</dd>
-              </span>
-            )
-          },
-        )}
+        {msgpool.map((c: any, ci: number) => {
+          const role = c?.choices?.[0]?.message?.role
+          const content =
+            c?.choices?.[0]?.message?.content || c?.choices?.[0]?.text
+          return (
+            <span key={ci}>
+              <dt style={{ marginBottom: 4, display: 'flex' }}>
+                <strong
+                  style={{ color: role === 'user' ? colors[5] : colors[8] }}
+                >
+                  {role?.toUpperCase?.() || 'unknown sender'}:
+                </strong>
+              </dt>
+              <dd>{content || 'issue loading message'}</dd>
+            </span>
+          )
+        })}
         <br />
       </main>
       <section>{props?.children}</section>
@@ -181,34 +139,17 @@ const OmniChat = (props: OmniChatProps) => {
             value={omniChatStore.search}
             name='query'
             placeholder='Ask a question about this RFC'
-            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-              handleChange(e.target.value)
-            }
+            onChange={handleChange}
           />
           <div style={{ display: 'flex' }}>
             <button
               onClick={() => console.log('restart')}
-              style={{
-                background: 'none',
-                border: 'none',
-                appearance: 'none',
-                color: '#b7cbf4',
-                cursor: 'pointer',
-              }}
+              style={btnstyles}
               title='Regenerate response'
             >
               <RestartIcon />
             </button>
-            <button
-              type='submit'
-              style={{
-                background: 'none',
-                border: 'none',
-                appearance: 'none',
-                color: '#b7cbf4',
-                cursor: 'pointer',
-              }}
-            >
+            <button type='submit' style={btnstyles}>
               <SendMessageIcon />
             </button>
           </div>
