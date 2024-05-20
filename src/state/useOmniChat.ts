@@ -1,10 +1,13 @@
 import { OAIAUTHSECRET, RFCAPIEP } from 'src/config'
-import { v4 as uuid } from 'uuid';
+import { v4 as uuid } from 'uuid'
 import { useState } from 'react'
 import { useStore, useAuthService } from 'src/state'
 import { hashCode } from 'src/utils'
-
-const useOmniChat = () => {
+export interface UseOmniChatProps {
+  modelid?: 'gpt' | 'llama2' | 'mistral' | string
+  [x: string]: any
+}
+const useOmniChat = (opts: UseOmniChatProps) => {
   const [store, dispatch] = useStore()
   const { omniChat } = store
   const { data } = useAuthService({
@@ -66,20 +69,17 @@ const useOmniChat = () => {
         {
           message: {
             content: q,
-            role: 'user'
-          }
-        }
-      ]
+            role: 'user',
+          },
+        },
+      ],
     }
 
     dispatch({
       ...store,
       omniChat: {
         ...store.omniChat,
-        completions: [
-          ...store?.omniChat?.completions,
-          um
-        ]
+        completions: [...store?.omniChat?.completions, um],
       },
     })
 
@@ -103,7 +103,7 @@ const useOmniChat = () => {
           ?.toLowerCase()
           ?.replace(' ', '')}.txt`,
         invocation_style: 'single',
-        invocation_filter: 'mistral',
+        invocation_filter: opts?.modelid,
       }),
       redirect: 'follow',
     }
@@ -114,18 +114,17 @@ const useOmniChat = () => {
 
     if (sm?.completions?.model?.includes?.('mistral')) {
       sm.completions.choices[0].message = {}
-      sm.completions.choices[0].message.role = "assistant"
-      sm.completions.choices[0].message.content = sm.completions.choices[0].message.content || sm.completions.choices[0].text
+      sm.completions.choices[0].message.role = 'assistant'
+      sm.completions.choices[0].message.content =
+        sm.completions.choices[0].message.content ||
+        sm.completions.choices[0].text
     }
-  
+
     dispatch({
       ...store,
       omniChat: {
         ...store.omniChat,
-        completions: [
-          ...store.omniChat.completions,
-          sm?.completions
-        ]
+        completions: [...store.omniChat.completions, sm?.completions],
       },
     })
     setLoading(false)
@@ -139,7 +138,7 @@ const useOmniChat = () => {
     messages,
     input,
     handleChange,
-    handleSubmit
+    handleSubmit,
   }
 }
 

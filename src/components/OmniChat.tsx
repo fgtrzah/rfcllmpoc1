@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './OmniChat.css'
 import { useForm, useOmniChat } from 'src/state'
 import {
@@ -10,6 +10,7 @@ import {
   LLMSymbolIcon,
   RestartIcon,
   SendMessageIcon,
+  OCControlPopover,
 } from '.'
 import { colors } from 'src/config'
 
@@ -26,6 +27,10 @@ const btnstyles: React.CSSProperties = {
 }
 
 const OmniChat = (props: OmniChatProps) => {
+  const anc = useRef(null)
+  const [occopen, setoccopen] = useState(false)
+  const [occcontent, setocccontent] = useState('')
+  const [occmodel, handleselectmodel] = useState('gpt')
   const {
     omniChat: omniChatStore,
     loading,
@@ -33,7 +38,9 @@ const OmniChat = (props: OmniChatProps) => {
     toggleQA,
     handleChange,
     toggleQAPanel,
-  } = useOmniChat()
+  } = useOmniChat({
+    modelid: occmodel,
+  })
   const [msgpool, setmsgpool] = useState(omniChatStore.completions)
 
   useEffect(() => {
@@ -57,8 +64,26 @@ const OmniChat = (props: OmniChatProps) => {
     )
   }, [omniChatStore.completions])
 
+  function handleOCCOpen(ctx) {
+    console.log(ctx)
+    setocccontent(ctx)
+    setoccopen(!occopen)
+  }
+
+  useEffect(() => {
+    console.log(occmodel)
+  }, [occmodel])
+
   return window.location.hash.includes('qa') ? (
     <div className='oc-container'>
+      <OCControlPopover
+        handleselectmodel={handleselectmodel}
+        anc={anc.current}
+        modelid={occmodel}
+        open={occopen}
+        setoccopen={setoccopen}
+        occcontent={occcontent}
+      />
       <header className='oc-header'>
         <span>QA Context: {omniChatStore.scopes as any}</span>
         <div>
@@ -69,11 +94,13 @@ const OmniChat = (props: OmniChatProps) => {
             <FuseLLMIcon />
           </button>
           <button
-            onClick={() => console.log('launch llm selector')}
+            ref={anc}
+            onClick={handleOCCOpen.bind(null, 'LLM Selector')}
             style={btnstyles}
           >
             <LLMSymbolIcon />
           </button>
+
           <button onClick={toggleQAPanel} style={btnstyles}>
             <ExpandIcon />
           </button>

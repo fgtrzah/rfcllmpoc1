@@ -12,13 +12,15 @@ export default async function conductSearchRFCService(
   headers.append('x-access-token', OAIAUTHSECRET || '')
 
   try {
-    const result = await (
-      await fetch(`${RFCAPIEP}/search/query/ietf`, {
-        method: 'POST',
-        headers: headers,
-        body: JSON.stringify({ query: opts.query }),
-      })
-    ).json()
+    const result = (
+      await (
+        await fetch(`${RFCAPIEP}/search/query/ietf`, {
+          method: 'POST',
+          headers: headers,
+          body: JSON.stringify({ query: opts.query }),
+        })
+      ).json()
+    )?.data?.attributes
     return result
   } catch (error) {
     console.error(error)

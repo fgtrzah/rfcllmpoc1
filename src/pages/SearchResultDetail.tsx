@@ -26,7 +26,7 @@ const SearchResultDetail = (props: React.PropsWithChildren) => {
       redirect: 'follow',
     })
       .then((response) => response.json())
-      .then((result) => setDocument(result.result))
+      .then((result) => setDocument(result?.data?.attributes?.result))
       .catch((error) => console.log('error', error))
 
     return () => {

@@ -28,10 +28,12 @@ import RestartIcon from './RestartIcon'
 import SendMessageIcon from './SendMessageIcon'
 import FuseLLMIcon from './FuseLLMIcon'
 import ForwardIcon from './ForwardIcon'
+import OCControlPopover from './OCControlPopover'
 import BackwardIcon from './BackwardIcon'
 
 export {
   SidebarIcon,
+  OCControlPopover,
   BodyContainer,
   SearchIcon,
   SettingsIcon,
