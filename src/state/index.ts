@@ -9,6 +9,7 @@ import useAbortableStreamFetch from './useAbortableStreamFetch'
 import { RFCDOCTREE } from 'src/config'
 import useQAVisibility from './useQAVisibility'
 import { OctokitProvider, useOctokit, useAuthService } from './useOctokit'
+import useDatasets from './useDatasets'
 
 export type SearchChannel = 'Group' | 'Affiliation' | 'RFC' | string
 export type SearchResult = string[] | any
@@ -115,4 +116,5 @@ export {
   SharedStoreProvider,
   OctokitProvider,
   useQAVisibility,
+  useDatasets,
 }

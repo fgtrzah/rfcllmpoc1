@@ -1,5 +1,4 @@
 import { OAIAUTHSECRET, RFCAPIEP } from 'src/config'
-import { v4 as uuid } from 'uuid'
 import { useState } from 'react'
 import { useStore, useAuthService } from 'src/state'
 import { hashCode } from 'src/utils'
@@ -102,15 +101,17 @@ const useOmniChat = (opts: UseOmniChatProps) => {
           .pop()
           ?.toLowerCase()
           ?.replace(' ', '')}.txt`,
-        invocation_style: 'single',
+        invocation_style: 'SINGLE',
         invocation_filter: opts?.modelid,
       }),
       redirect: 'follow',
     }
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
-    let sm = (await (
-      await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
-    ).json())?.data?.attributes
+    let sm = (
+      await (
+        await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
+      ).json()
+    )?.data?.attributes
 
     if (sm?.completions?.model?.includes?.('mistral')) {
       sm.completions.choices[0].message = {}

@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Overview.css'
+import { useDatasets } from 'src/state'
 import {
   AffiliationsContinent,
   NumAPCitations,
@@ -8,10 +9,28 @@ import {
 } from 'src/components'
 
 const Overview = (_props: React.PropsWithChildren) => {
+  const [fselection, setfselected] = useState('affpoaauthorsdrafts.csv')
+  const ds = useDatasets({ file: fselection })
+  useEffect(() => {
+    console.log(ds)
+  }, [ds])
   return (
     <main style={{ fontSize: 8 }}>
       <section className='cf mt5 bt b--black-05'>
-        <h1 className='f5 ttu fw6 mb4'>Overview</h1>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+        >
+          <h1 className='f5 ttu fw6 mb4'>Overview</h1>
+          <select>
+            {Object.keys(ds?.index)?.map?.((k: string, ki: number) => {
+              return <option key={ki}>{k}</option>
+            })}
+          </select>
+        </div>
 
         <div
           style={{

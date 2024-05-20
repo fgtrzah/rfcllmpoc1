@@ -10,7 +10,7 @@ import {
   LLMSymbolIcon,
   RestartIcon,
   SendMessageIcon,
-  OCControlPopover
+  OCControlPopover,
 } from '.'
 import { colors } from 'src/config'
 
@@ -39,7 +39,7 @@ const OmniChat = (props: OmniChatProps) => {
     handleChange,
     toggleQAPanel,
   } = useOmniChat({
-    modelid: occmodel
+    modelid: occmodel,
   })
   const [msgpool, setmsgpool] = useState(omniChatStore.completions)
 
