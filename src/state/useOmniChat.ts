@@ -108,9 +108,9 @@ const useOmniChat = (opts: UseOmniChatProps) => {
       redirect: 'follow',
     }
     requestOptions.headers.append('X-Ray-Id', hashCode(requestOptions))
-    let sm = await (
+    let sm = (await (
       await fetch(`${RFCAPIEP}/qa/single/contigious`, requestOptions)
-    ).json()
+    ).json())?.data?.attributes
 
     if (sm?.completions?.model?.includes?.('mistral')) {
       sm.completions.choices[0].message = {}
