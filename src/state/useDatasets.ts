@@ -34,7 +34,7 @@ export async function getDSFile(file: string) {
 const useDatasets = (opts: DatasetProps) => {
   const [file, setFile] = useState(opts?.file || '')
   const [index, setIndex] = useState({})
-  const [response, setResponse] = useState({})
+  const [response, setResponse] = useState<any>({})
   useEffect(() => {
     getDSIndex()
       .then((v) => setIndex(v))

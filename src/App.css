@@ -32,3 +32,11 @@ input {
 input[type='radio'] {
   appearance: auto;
 }
+
+select {
+  padding: 4px;
+  background: none;
+  color: #b7cbf4;
+  border: 1px dashed #b7cbf4;
+  outline: none;
+}

@@ -9,11 +9,17 @@ import {
 } from 'src/components'
 
 const Overview = (_props: React.PropsWithChildren) => {
-  const [fselection, setfselected] = useState('affpoaauthorsdrafts.csv')
-  const ds = useDatasets({ file: fselection })
+  const { index, file, response, setFile } = useDatasets({
+    file: 'affpoaauthorsdrafts.csv',
+  })
   useEffect(() => {
-    console.log(ds)
-  }, [ds])
+    console.log(response?.content?.split('\n'))
+  }, [response])
+  const handleFileSelect = (e: any) => {
+    const f = e.target.value
+    console.log(f)
+    setFile(f)
+  }
   return (
     <main style={{ fontSize: 8 }}>
       <section className='cf mt5 bt b--black-05'>
@@ -24,12 +30,29 @@ const Overview = (_props: React.PropsWithChildren) => {
             justifyContent: 'space-between',
           }}
         >
-          <h1 className='f5 ttu fw6 mb4'>Overview</h1>
-          <select>
-            {Object.keys(ds?.index)?.map?.((k: string, ki: number) => {
-              return <option key={ki}>{k}</option>
+          <h1 className='f5 ttu fw6'>Overview</h1>
+          <select onChange={handleFileSelect}>
+            {Object.keys(index)?.map?.((k: string, ki: number) => {
+              return (
+                <option value={k} key={ki}>
+                  {k}
+                </option>
+              )
             })}
           </select>
+        </div>
+
+        <div
+          style={{
+            border: '1px dotted #B7CBF4',
+            textDecoration: 'none',
+            maxHeight: 325,
+            overflowY: 'scroll',
+            scrollbarWidth: 'none',
+            padding: 9,
+          }}
+        >
+          <pre>{response.content}</pre>
         </div>
 
         <div
