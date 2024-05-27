@@ -27,7 +27,7 @@ const Overview = (_props: React.PropsWithChildren) => {
     { x: 15, y: 35 },
     { x: 20, y: 18 },
     // ... more data points
-  ];
+  ]
   useEffect(() => {
     console.log(response?.content?.split('\n'))
   }, [response])
@@ -41,38 +41,42 @@ const Overview = (_props: React.PropsWithChildren) => {
       <section>
         <div>
           <h1>Scatter Plot</h1>
-          <ScatterPlotComponent data={data} xAccessor="x" yAccessor="y" />
+          <ScatterPlotComponent data={data} xAccessor='x' yAccessor='y' />
         </div>
       </section>
       <section>
         <form
-          className="inputs-3a86ea inputs-3a86ea-table"
-          id="inputs-3a86ea-1"
-          style={{maxHeight: 300, border: '1px solid #b7cbf4', borderRadius: 8}}
+          className='inputs-3a86ea inputs-3a86ea-table'
+          id='inputs-3a86ea-1'
+          style={{
+            maxHeight: 300,
+            border: '1px solid #b7cbf4',
+            borderRadius: 8,
+          }}
         >
           <table style={{ width: '100%', border: '1px solid #b7cbf4' }}>
-            <thead style={{backgroundColor: '#444'}}>
+            <thead style={{ backgroundColor: '#444' }}>
               <tr>
                 <th>
-                  <input type="checkbox" />
+                  <input type='checkbox' />
                 </th>
-                <th title="Date">
+                <th title='Date'>
                   <span />
                   Date
                 </th>
-                <th title="Balancing authority">
+                <th title='Balancing authority'>
                   <span />
                   Balancing authority
                 </th>
-                <th title="Abbreviation">
+                <th title='Abbreviation'>
                   <span />
                   Abbreviation
                 </th>
-                <th title="Type">
+                <th title='Type'>
                   <span />
                   Type
                 </th>
-                <th title="Value (GWh)">
+                <th title='Value (GWh)'>
                   <span />
                   Value (GWh)
                 </th>
@@ -81,7 +85,7 @@ const Overview = (_props: React.PropsWithChildren) => {
             <tbody>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={0} />
+                  <input type='checkbox' defaultValue={0} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Imperial Irrigation District</td>
@@ -91,7 +95,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={1} />
+                  <input type='checkbox' defaultValue={1} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Tampa Electric Company</td>
@@ -101,21 +105,24 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={2} />
+                  <input type='checkbox' defaultValue={2} />
                 </td>
                 <td>Apr 12, 03 PM</td>
-                <td>Western Area Power Administration - Rocky Mountain Region</td>
+                <td>
+                  Western Area Power Administration - Rocky Mountain Region
+                </td>
                 <td>WACM</td>
                 <td>Demand</td>
                 <td>3.501</td>
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={3} />
+                  <input type='checkbox' defaultValue={3} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>
-                  Louisville Gas and Electric Company and Kentucky Utilities Company
+                  Louisville Gas and Electric Company and Kentucky Utilities
+                  Company
                 </td>
                 <td>LGEE</td>
                 <td>Demand</td>
@@ -123,7 +130,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={4} />
+                  <input type='checkbox' defaultValue={4} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Florida Power &amp; Light Co.</td>
@@ -133,7 +140,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={5} />
+                  <input type='checkbox' defaultValue={5} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>South Carolina Public Service Authority</td>
@@ -143,7 +150,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={6} />
+                  <input type='checkbox' defaultValue={6} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Tennessee Valley Authority</td>
@@ -153,7 +160,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={7} />
+                  <input type='checkbox' defaultValue={7} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Seminole Electric Cooperative</td>
@@ -163,7 +170,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={8} />
+                  <input type='checkbox' defaultValue={8} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Portland General Electric Company</td>
@@ -173,7 +180,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={9} />
+                  <input type='checkbox' defaultValue={9} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>PJM Interconnection, LLC</td>
@@ -183,7 +190,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={10} />
+                  <input type='checkbox' defaultValue={10} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Public Utility District No. 1 of Chelan County</td>
@@ -193,7 +200,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={11} />
+                  <input type='checkbox' defaultValue={11} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Bonneville Power Administration</td>
@@ -203,7 +210,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={12} />
+                  <input type='checkbox' defaultValue={12} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Tucson Electric Power</td>
@@ -213,7 +220,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={13} />
+                  <input type='checkbox' defaultValue={13} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Southern Company Services, Inc. - Trans</td>
@@ -223,7 +230,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={14} />
+                  <input type='checkbox' defaultValue={14} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Associated Electric Cooperative, Inc.</td>
@@ -233,7 +240,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={15} />
+                  <input type='checkbox' defaultValue={15} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>New York Independent System Operator</td>
@@ -243,7 +250,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={16} />
+                  <input type='checkbox' defaultValue={16} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>JEA</td>
@@ -253,7 +260,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={17} />
+                  <input type='checkbox' defaultValue={17} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>City of Homestead</td>
@@ -263,7 +270,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={18} />
+                  <input type='checkbox' defaultValue={18} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Midcontinent Independent System Operator, Inc.</td>
@@ -273,7 +280,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={19} />
+                  <input type='checkbox' defaultValue={19} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Nevada Power Company</td>
@@ -283,7 +290,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={20} />
+                  <input type='checkbox' defaultValue={20} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Electric Reliability Council of Texas, Inc.</td>
@@ -293,7 +300,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={21} />
+                  <input type='checkbox' defaultValue={21} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>NorthWestern Corporation</td>
@@ -303,7 +310,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={22} />
+                  <input type='checkbox' defaultValue={22} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>ISO New England</td>
@@ -313,7 +320,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={23} />
+                  <input type='checkbox' defaultValue={23} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Los Angeles Department of Water and Power</td>
@@ -323,17 +330,19 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={24} />
+                  <input type='checkbox' defaultValue={24} />
                 </td>
                 <td>Apr 12, 03 PM</td>
-                <td>Salt River Project Agricultural Improvement and Power District</td>
+                <td>
+                  Salt River Project Agricultural Improvement and Power District
+                </td>
                 <td>SRP</td>
                 <td>Demand</td>
                 <td>3.891</td>
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={25} />
+                  <input type='checkbox' defaultValue={25} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Southwestern Power Administration</td>
@@ -343,17 +352,19 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={26} />
+                  <input type='checkbox' defaultValue={26} />
                 </td>
                 <td>Apr 12, 03 PM</td>
-                <td>Western Area Power Administration - Desert Southwest Region</td>
+                <td>
+                  Western Area Power Administration - Desert Southwest Region
+                </td>
                 <td>WALC</td>
                 <td>Demand</td>
                 <td>1.141</td>
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={27} />
+                  <input type='checkbox' defaultValue={27} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Gainesville Regional Utilities</td>
@@ -363,7 +374,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={28} />
+                  <input type='checkbox' defaultValue={28} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>City of Tallahassee</td>
@@ -373,7 +384,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={29} />
+                  <input type='checkbox' defaultValue={29} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Southwest Power Pool</td>
@@ -383,7 +394,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={30} />
+                  <input type='checkbox' defaultValue={30} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Balancing Authority of Northern California</td>
@@ -393,7 +404,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={31} />
+                  <input type='checkbox' defaultValue={31} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Avista Corporation</td>
@@ -403,7 +414,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={0} />
+                  <input type='checkbox' defaultValue={0} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Imperial Irrigation District</td>
@@ -413,7 +424,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={1} />
+                  <input type='checkbox' defaultValue={1} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Tampa Electric Company</td>
@@ -423,21 +434,24 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={2} />
+                  <input type='checkbox' defaultValue={2} />
                 </td>
                 <td>Apr 12, 03 PM</td>
-                <td>Western Area Power Administration - Rocky Mountain Region</td>
+                <td>
+                  Western Area Power Administration - Rocky Mountain Region
+                </td>
                 <td>WACM</td>
                 <td>Demand</td>
                 <td>3.501</td>
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={3} />
+                  <input type='checkbox' defaultValue={3} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>
-                  Louisville Gas and Electric Company and Kentucky Utilities Company
+                  Louisville Gas and Electric Company and Kentucky Utilities
+                  Company
                 </td>
                 <td>LGEE</td>
                 <td>Demand</td>
@@ -445,7 +459,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={4} />
+                  <input type='checkbox' defaultValue={4} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Florida Power &amp; Light Co.</td>
@@ -455,7 +469,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={5} />
+                  <input type='checkbox' defaultValue={5} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>South Carolina Public Service Authority</td>
@@ -465,7 +479,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={6} />
+                  <input type='checkbox' defaultValue={6} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Tennessee Valley Authority</td>
@@ -475,7 +489,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={7} />
+                  <input type='checkbox' defaultValue={7} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Seminole Electric Cooperative</td>
@@ -485,7 +499,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={8} />
+                  <input type='checkbox' defaultValue={8} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Portland General Electric Company</td>
@@ -495,7 +509,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={9} />
+                  <input type='checkbox' defaultValue={9} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>PJM Interconnection, LLC</td>
@@ -505,7 +519,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={10} />
+                  <input type='checkbox' defaultValue={10} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Public Utility District No. 1 of Chelan County</td>
@@ -515,7 +529,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={11} />
+                  <input type='checkbox' defaultValue={11} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Bonneville Power Administration</td>
@@ -525,7 +539,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={12} />
+                  <input type='checkbox' defaultValue={12} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Tucson Electric Power</td>
@@ -535,7 +549,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={13} />
+                  <input type='checkbox' defaultValue={13} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Southern Company Services, Inc. - Trans</td>
@@ -545,7 +559,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={14} />
+                  <input type='checkbox' defaultValue={14} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Associated Electric Cooperative, Inc.</td>
@@ -555,7 +569,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={15} />
+                  <input type='checkbox' defaultValue={15} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>New York Independent System Operator</td>
@@ -565,7 +579,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={16} />
+                  <input type='checkbox' defaultValue={16} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>JEA</td>
@@ -575,7 +589,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={17} />
+                  <input type='checkbox' defaultValue={17} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>City of Homestead</td>
@@ -585,7 +599,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={18} />
+                  <input type='checkbox' defaultValue={18} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Midcontinent Independent System Operator, Inc.</td>
@@ -595,7 +609,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={19} />
+                  <input type='checkbox' defaultValue={19} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Nevada Power Company</td>
@@ -605,7 +619,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={20} />
+                  <input type='checkbox' defaultValue={20} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Electric Reliability Council of Texas, Inc.</td>
@@ -615,7 +629,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={21} />
+                  <input type='checkbox' defaultValue={21} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>NorthWestern Corporation</td>
@@ -625,7 +639,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={22} />
+                  <input type='checkbox' defaultValue={22} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>ISO New England</td>
@@ -635,7 +649,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={23} />
+                  <input type='checkbox' defaultValue={23} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Los Angeles Department of Water and Power</td>
@@ -645,17 +659,19 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={24} />
+                  <input type='checkbox' defaultValue={24} />
                 </td>
                 <td>Apr 12, 03 PM</td>
-                <td>Salt River Project Agricultural Improvement and Power District</td>
+                <td>
+                  Salt River Project Agricultural Improvement and Power District
+                </td>
                 <td>SRP</td>
                 <td>Demand</td>
                 <td>3.891</td>
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={25} />
+                  <input type='checkbox' defaultValue={25} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Southwestern Power Administration</td>
@@ -665,17 +681,19 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={26} />
+                  <input type='checkbox' defaultValue={26} />
                 </td>
                 <td>Apr 12, 03 PM</td>
-                <td>Western Area Power Administration - Desert Southwest Region</td>
+                <td>
+                  Western Area Power Administration - Desert Southwest Region
+                </td>
                 <td>WALC</td>
                 <td>Demand</td>
                 <td>1.141</td>
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={27} />
+                  <input type='checkbox' defaultValue={27} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Gainesville Regional Utilities</td>
@@ -685,7 +703,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={28} />
+                  <input type='checkbox' defaultValue={28} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>City of Tallahassee</td>
@@ -695,7 +713,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={29} />
+                  <input type='checkbox' defaultValue={29} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Southwest Power Pool</td>
@@ -705,7 +723,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={30} />
+                  <input type='checkbox' defaultValue={30} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Balancing Authority of Northern California</td>
@@ -715,7 +733,7 @@ const Overview = (_props: React.PropsWithChildren) => {
               </tr>
               <tr>
                 <td>
-                  <input type="checkbox" defaultValue={31} />
+                  <input type='checkbox' defaultValue={31} />
                 </td>
                 <td>Apr 12, 03 PM</td>
                 <td>Avista Corporation</td>
@@ -727,7 +745,7 @@ const Overview = (_props: React.PropsWithChildren) => {
           </table>
           <style
             dangerouslySetInnerHTML={{
-              __html: "#inputs-3a86ea-1 tr>:nth-child(6){text-align:right}"
+              __html: '#inputs-3a86ea-1 tr>:nth-child(6){text-align:right}',
             }}
           />
         </form>

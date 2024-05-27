@@ -65,5 +65,5 @@ export {
   LogoutIcon,
   Drawer,
   QAPaneContainer,
-  ScatterPlot
+  ScatterPlot,
 }
