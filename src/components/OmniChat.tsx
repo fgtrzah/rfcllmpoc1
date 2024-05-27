@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './OmniChat.css'
-import { useForm, useOmniChat } from 'src/state'
+import { useOmniChat } from 'src/state'
 import {
   BackwardIcon,
   CloseIcon,
@@ -10,7 +10,7 @@ import {
   LLMSymbolIcon,
   RestartIcon,
   SendMessageIcon,
-  OCControlPopover,
+  OCControlPopover
 } from '.'
 import { colors } from 'src/config'
 
@@ -39,7 +39,7 @@ const OmniChat = (props: OmniChatProps) => {
     handleChange,
     toggleQAPanel,
   } = useOmniChat({
-    modelid: occmodel,
+    modelid: occmodel
   })
   const [msgpool, setmsgpool] = useState(omniChatStore.completions)
 
@@ -65,7 +65,7 @@ const OmniChat = (props: OmniChatProps) => {
     )
   }, [omniChatStore.completions])
 
-  function handleOCCOpen(ctx) {
+  function handleOCCOpen(ctx: React.SetStateAction<string>) {
     console.log(ctx)
     setocccontent(ctx)
     setoccopen(!occopen)
@@ -145,7 +145,7 @@ const OmniChat = (props: OmniChatProps) => {
             <span key={ci} style={{ marginBottom: 4 }}>
               <dt style={{ marginBottom: 4, display: 'flex' }}>
                 <strong
-                  style={{ color: role === 'user' ? colors[5] : colors[10] }}
+                  style={{ color: role === 'user' ? colors[5] : colors[13] }}
                 >
                   {role?.toUpperCase?.() || 'unknown sender'}:
                 </strong>

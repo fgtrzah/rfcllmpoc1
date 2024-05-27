@@ -1,4 +1,5 @@
 import SidebarIcon from './SidebarIcon'
+import ScatterPlot from './ScatterPlot'
 import SearchIcon from './SearchIcon'
 import ProfileIcon from './ProfileIcon'
 import ReadIcon from '../assets/react.svg'
@@ -64,4 +65,5 @@ export {
   LogoutIcon,
   Drawer,
   QAPaneContainer,
+  ScatterPlot
 }
